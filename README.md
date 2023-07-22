@@ -17,7 +17,8 @@ Nicolás Heredia:
 
 Fabricio Martinez:
 
-María Lamas:
+María Lamas: ambientalista y perseverante. Suelo tomar la iniciativa en los proyectos.
+Me encanta la ropa deportiva tanto como ir al gimnasio
 
 Cristina Yucra:
 
@@ -31,6 +32,9 @@ adidas.com    //lo que nos gusto de este sitio es la manera de enseñar los prod
 https://jlamas126.wixsite.com/nuk-site   // destacamos el home(inicio) donde tiene una interfaz minimalista, agradable a la vista, con la descripcion y algunos datos sobre la tienda.
 
 https://www.megasports.com.ar/  // destacamos el diseño de la barra de navegacion, y el diseño del carrito para poder dar el total de la compra.
+
+https://www.maxdeportes.com.ar/ //destacamos la barra lateral (menú) en la que se incluyen solapas originales que no vimos en otras páginas como: guía de talles
+y megaofertas; también nos gustó la adaptación al móvil.
 
 
 
