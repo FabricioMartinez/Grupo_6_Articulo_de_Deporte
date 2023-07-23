@@ -18,9 +18,9 @@ Nicolás Heredia:
 Fabricio Martinez:
 
 María Lamas: ambientalista y perseverante. Suelo tomar la iniciativa en los proyectos.
-Me encanta la ropa deportiva tanto como ir al gimnasio
+Me encanta la ropa deportiva tanto como el gimnasio.
 
-Cristina Yucra:
+Cristina Yucra: Me gusta hacer deportes en mis tiempos libres y contribuir a la sustentabilidad del medio ambiente.
 
 María De Los Angeles Apaza:
 ------------------------------------------------------------------------------------
@@ -35,6 +35,7 @@ https://www.megasports.com.ar/  // destacamos el diseño de la barra de navegaci
 
 https://www.maxdeportes.com.ar/ //destacamos la barra lateral (menú) en la que se incluyen solapas originales que no vimos en otras páginas como: guía de talles
 y megaofertas; también nos gustó la adaptación al móvil.
+https://compragamer.com/
 
 
 
