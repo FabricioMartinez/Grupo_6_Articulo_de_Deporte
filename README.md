@@ -12,7 +12,7 @@ Para lograr nuestro objetivo, nuestro sitio web contará con distintos filtros d
 
 Descripción de cada integrante : 
 
-Enzo Torres:
+Enzo Torres: Fanatico de la tecnologia, me gusta salir a caminare ir al gimnasio. Considero que el deporte es esencial para la salud.
 
 Nicolás Heredia:
 
