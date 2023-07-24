@@ -16,7 +16,7 @@ Enzo Torres: Fanatico de la tecnologia, me gusta salir a caminare ir al gimnasio
 
 Nicolás Heredia:
 
-Fabricio Martinez:
+Fabricio Martinez: Me encanta todo sobre computadoras, programas y tecnologia, aprendo rapido hacera de cosas relacionados con tecnologia.
 
 María Lamas: ambientalista y perseverante. Suelo tomar la iniciativa en los proyectos.
 Me encanta la ropa deportiva tanto como el gimnasio.
