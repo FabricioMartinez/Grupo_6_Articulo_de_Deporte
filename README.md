@@ -20,7 +20,7 @@ Fabricio Martinez: Me encanta todo sobre computadoras, programas y tecnología, 
 
 María Lamas: Tengo 22 años me considero una persona perseverante y amante de la naturaleza. Suelo tomar la iniciativa en los proyectos. Me encanta la ropa deportiva tanto como el gimnasio. La programación no es mi fuerte pero sí me parece muy interesante, así como las matemáticas o la química.
 
-Cristina Yucra: Me gusta hacer deportes en mis tiempos libres y contribuir a la sustentabilidad del medio ambiente.
+Cristina Yucra: Me gusta hacer deportes en mis tiempos libres y contribuir a la sustentabilidad del medio ambiente, soy nueva en la progracion y lo que voy aprendiendo me gusta cada ves mas, creo que es una herramienta muy util en muchos ambitos.
 
 María De Los Angeles Apaza: Tengo 22 años, me gusta mucho bailar y realizar deporte específicamente me dedico al ciclismo py, también en mis momentos libres suelo escribir poemas, leer libros y salir a jugar básquet o fútbol.
 
