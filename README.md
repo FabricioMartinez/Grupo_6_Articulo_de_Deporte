@@ -14,7 +14,7 @@ Descripción de cada integrante :
 
 Enzo Torres: Fanatico de la tecnologia, me gusta salir a caminare ir al gimnasio. Considero que el deporte es esencial para la salud.
 
-Nicolás Heredia:
+Nicolás Heredia: Tengo 19 años y me gusta mucho lo referido a la ciencia, me gustan los autos y tambien los deportes. 
 
 Fabricio Martinez: Me encanta todo sobre computadoras, programas y tecnologia, aprendo rapido hacera de cosas relacionados con tecnologia.
 
