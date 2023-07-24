@@ -23,7 +23,8 @@ Me encanta la ropa deportiva tanto como el gimnasio.
 
 Cristina Yucra: Me gusta hacer deportes en mis tiempos libres y contribuir a la sustentabilidad del medio ambiente.
 
-María De Los Angeles Apaza:
+María De Los Angeles Apaza:Tengo 22 años, me gusta mucho bailar y realizar deporrte especificamente me dedico al ciclismo py tambien en mis momentos libres suelo escribir poemas,leer libros y salir a jugar basqut o futbol 
+
 ------------------------------------------------------------------------------------
 
 Sitios WEB que tomamos como referencia: 
