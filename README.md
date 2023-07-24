@@ -1,4 +1,4 @@
-# Grupo_6_Artículo_de_Deporte
+# Grupo_6_Sportify
 Nombre de la página web: sportify.com
 Descripción de nuestra página web:
 
