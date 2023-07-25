@@ -40,5 +40,13 @@ y megaofertas; también nos gustó la adaptación al móvil.
 https://compragamer.com/ //Para hacer el boceto del home nos guíamos de esta página web debido a que presenta una interfaz sencilla para el usuario y amigable al mismo tiempo.
 
 
+sprint 2
+
+
+-
+-
+-
+
+
 
 
