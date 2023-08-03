@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background: #a8c0ff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3f2b96, #a8c0ff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3f2b96, #a8c0ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    height: 90px;
+    background: #a8ff78;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #78ffd6, #a8ff78); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    position: relative;
+    justify-content: space-between;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: center;
+    font-size: 2em;
+}
+
+nav .search-box{
+    display: flex;
+    margin: auto;
+    height: 35px;
+    line-height: 35px;
+}
+nav .search-box input{
+    border: 2px;
+    outline: none;
+    height: 100%;
+    width: 500px;
+    padding: 0 10px;
+    border-radius: 10px 0 0 10px;
+    font-size: 1em;
+}
+
+nav .search-box button{
+    position: relative;
+    border-radius: 0 10px 10px 0;
+    background-color: aqua;
+    border: 2px solid;
+    cursor: pointer;
+    height: 100%;
+    width: 50px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+.logo{
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.registro{
+    padding-right: 30px;
+    display: flex;
+    width: auto;
+    height: auto;
+    flex-direction: row;
+}
+
+.New-user{
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    width: auto;
+    height: auto;
+    flex-direction: row;
+}
+
+.buy{
+    padding-right: 60px;
+    padding-left: 30px;
+    display: flex;
+    width: auto;
+    height: auto;
+}
+
+.color-nav{
+    color: blue;
+}
+
+.Option{
+    margin-top: 20px;
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: #a8ff78;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #78ffd6, #a8ff78); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contenedor{
+    display: flex;
+}
+
+.category{
+    display: flex;
+    height: 40px;
+    align-items: center;
+    text-decoration: none;
+}
+
+.offer{
+    display: flex;
+    height: 40px;
+    align-items: center;
+    text-decoration: none;
+}
+
+.record{
+    display: flex;
+    height: 40px;
+    align-items: center;
+    text-decoration: none;
+}
+.sell{
+    display: flex;
+    height: 40px;
+    align-items: center;
+    text-decoration: none;
+}
+
+.trend{
+    display: flex;
+    height: 40px;
+    align-items: center;
+    text-decoration: none;
+}
+
+.help{
+    display: flex;
+    height: 40px;
+    align-items: center;
+    text-decoration: none;
+}
+
+main section ul button{
+    display: flex;
+    width: 313px;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid;
+    font-size: 20px;
+}
+
+.banner{
+    margin-top: 20px;
+}
+
+.destacado{
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    background: #a8ff78;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #78ffd6, #a8ff78); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-size: 25px;
+}
+
+main section h1{
+    padding: 20px;
+}
+
+.articulos{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+}
+
+.destacado1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 5px 5px;
+    border: 1px solid;
+}
+
+.destacado2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 30px;
+    border: 1px solid;
+}
+
+.destacado3{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 30px;
+    border: 1px solid;
+}
+
+.carrito{
+    display: flex;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.detalle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.productos{
+    width: 100%;
+    height: auto;
+    background: #a8ff78;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #78ffd6, #a8ff78); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding-top: 30px;
+}
+
+.compra{
+    display: flex;
+    width: 100px;
+    text-decoration: none;
+    font-size: 23px;
+    justify-content: center;
+    align-items: center;
+}
+
+.stock{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+}
+
+.cuadro{
+    border-radius: 30px;
+}
+
+section div p{
+    padding: 5px;
+}
+
+.caja-compra{
+    display: flex;
+    width: auto;
+    height: 40px;
+    border: 2px solid;
+}
