@@ -5,21 +5,16 @@
 }
 
 body{
-    background: #a8c0ff;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #3f2b96, #a8c0ff);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #3f2b96, #a8c0ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
 }
 
 nav{
     display: flex;
-    width: 100%;
-    height: 90px;
-    background: #a8ff78;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #78ffd6, #a8ff78); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    position: relative;
-    justify-content: space-between;
+    height: auto;
+    background: #0F2027; 
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 nav ul{
@@ -27,37 +22,28 @@ nav ul{
     align-items: center;
     flex-direction: row-reverse;
     justify-content: center;
-    font-size: 2em;
+    font-size: 25px;
 }
 
 nav .search-box{
-    display: flex;
     margin: auto;
-    height: 35px;
-    line-height: 35px;
 }
 nav .search-box input{
-    border: 2px;
-    outline: none;
-    height: 100%;
+    border: none;
+    height: 30px;
     width: 500px;
     padding: 0 10px;
-    border-radius: 10px 0 0 10px;
     font-size: 1em;
 }
 
 nav .search-box button{
-    position: relative;
-    border-radius: 0 10px 10px 0;
-    background-color: aqua;
-    border: 2px solid;
-    cursor: pointer;
-    height: 100%;
-    width: 50px;
-    top: 0;
-    bottom: 0;
-    right: 0;
+    background-color: white;
+    position: absolute;
+    height: 30px;
+    width: 40px;
     margin: auto;
+    cursor: pointer;
+    border: none;
 }
 
 .logo{
@@ -93,90 +79,56 @@ nav .search-box button{
 }
 
 .color-nav{
-    color: blue;
+    color: white;
+}
+
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
 }
 
 .Option{
     margin-top: 20px;
     display: flex;
-    position: relative;
-    width: 100%;
-    height: auto;
-    background: #a8ff78;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #78ffd6, #a8ff78); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background:white;
     align-items: center;
     justify-content: space-evenly;
-}
-
-.contenedor{
-    display: flex;
-}
-
-.category{
-    display: flex;
-    height: 40px;
-    align-items: center;
-    text-decoration: none;
-}
-
-.offer{
-    display: flex;
-    height: 40px;
-    align-items: center;
-    text-decoration: none;
-}
-
-.record{
-    display: flex;
-    height: 40px;
-    align-items: center;
-    text-decoration: none;
-}
-.sell{
-    display: flex;
-    height: 40px;
-    align-items: center;
-    text-decoration: none;
-}
-
-.trend{
-    display: flex;
-    height: 40px;
-    align-items: center;
-    text-decoration: none;
-}
-
-.help{
-    display: flex;
-    height: 40px;
-    align-items: center;
-    text-decoration: none;
+    padding: 10px 10px;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
 }
 
 main section ul button{
     display: flex;
-    width: 313px;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    background-color: transparent;
     cursor: pointer;
     border: 1px solid;
     font-size: 20px;
 }
 
-.banner{
+.category{
+    display: flex;
+    width: 300px;
+    align-items: center;
+    text-decoration: none;
+    justify-content: space-evenly;
+}
+
+.banner img{
     margin-top: 20px;
+    width: 100%;
+    height: 500px;
 }
 
 .destacado{
     margin-top: 20px;
-    width: 100%;
-    height: auto;
-    background: #a8ff78;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #78ffd6, #a8ff78); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    font-size: 25px;
+    background: rgb(192, 191, 191);
+    font-size: 20px;
 }
 
 main section h1{
@@ -185,6 +137,7 @@ main section h1{
 
 .articulos{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     margin-bottom: 20px;
     padding-bottom: 30px;
@@ -196,7 +149,7 @@ main section h1{
     flex-direction: column;
     background-color: white;
     border-radius: 30px;
-    box-shadow: 5px 5px;
+    margin-bottom: 20px;
     border: 1px solid;
 }
 
@@ -206,15 +159,7 @@ main section h1{
     flex-direction: column;
     background-color: white;
     border-radius: 30px;
-    border: 1px solid;
-}
-
-.destacado3{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background-color: white;
-    border-radius: 30px;
+    margin-bottom: 20px;
     border: 1px solid;
 }
 
@@ -236,35 +181,32 @@ main section h1{
 }
 
 .productos{
-    width: 100%;
-    height: auto;
-    background: #a8ff78;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #78ffd6, #a8ff78); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    padding-top: 30px;
+    margin-top: 20px;
+    background: white;
+    font-size: 20px;
+}
+
+.stock{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    padding-bottom: 30px;
 }
 
 .compra{
     display: flex;
     width: 100px;
     text-decoration: none;
-    font-size: 23px;
     justify-content: center;
     align-items: center;
-}
-
-.stock{
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 20px;
-    padding-bottom: 30px;
 }
 
 .cuadro{
     border-radius: 30px;
 }
 
-section div p{
+section article p{
     padding: 5px;
 }
 
@@ -273,4 +215,45 @@ section div p{
     width: auto;
     height: 40px;
     border: 2px solid;
+}
+
+ footer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #0F2027;
+    color: white;
+}
+
+.container{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    padding: 45px 0px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px;
+}
+.texto{
+    border-left: 1px solid;
+}
+.colaboracion{
+    border-left: 1px solid;
+}
+.redes{
+    border-left: 1px solid;
+}
+.contacto{
+    margin-top: 40px;
+    display: flex;
+    font-size: 2em;
+    list-style-type: none;
+    border-top: 1px solid;
+}
+
+.contacto li{
+    padding: 20px 20px;
+    color: white;
+}
+.fa-brands{
+    color: white;
 }
