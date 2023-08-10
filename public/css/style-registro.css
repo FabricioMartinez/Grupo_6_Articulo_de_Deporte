@@ -70,7 +70,7 @@ button {
 
 .container {
     display: flex;
-    flex-direction: row;
+   flex-direction: column;
         
 }
 
@@ -124,15 +124,15 @@ button {
 
 .image-container {
     
-    padding: 50px;
+    
     margin: 0px 3000px 200px 0px;
     height: auto;
     width: 500px;
     /* arriba derech, abajo, iz*/
-    display: flex;
+    
     background-color: bisque;
-    float: left;
-    max width: 50%;
+   
+    
    
    
     
@@ -144,3 +144,9 @@ button {
     
 
 }
+main {
+    background-image: url(/images/registro/registro1.jpeg);
+    background-size: cover; /* Ajustar el tamaño de la imagen para cubrir el área */
+    background-repeat: no-repeat; /* Evitar que la imagen se repita */
+    background-position: center center; /* Posición centrada */
+  }
