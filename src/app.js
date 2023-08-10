@@ -13,3 +13,7 @@ app.get("/", (req, res)=>{
 app.get("/formulario-de-registro", (req, res)=>{
     res.sendFile(path.join(__dirname, "./views/formulario-de-registro.html"));
 });
+
+app.get("/carrito", (req, res)=>{
+    res.sendFile(path.join(__dirname, "./views/formulario-de-registro.html"));
+});
