@@ -83,6 +83,11 @@ button {
 
 }
 
+.card4 {
+    display:flex;
+    flex-direction: column;
+
+}
 
 .container .form-container .card2 input {
     font-size: 16px; /* Cambiar el tamaño del texto */
@@ -106,4 +111,10 @@ button {
     background-color: 
     black; 
     
+}
+
+.card3 {
+    display:flex;
+    flex-direction: column;
+
 }
