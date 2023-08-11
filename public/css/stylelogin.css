@@ -7,13 +7,21 @@
 
 
 body {
+  font-family: 'Roboto', sans-serif;
   background-image: url('../images/munbaik-cycling-clothing-Ln9uvGy5Yio-unsplash.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   background-color: #f2f2f2;
+  color: #333;
   min-height: 100vh; 
+  display: flex;
   flex-direction: column; 
+}
+
+
+body{
+  background-color: white;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -88,10 +96,38 @@ nav .search-box button{
 
 .color-nav{
   color: white;
-} 
+}
+
+.contenedor{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.Option{
+  margin-top: 20px;
+  display: flex;
+  background:white;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px 10px;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+}
+
+main section ul button{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 1px solid;
+  font-size: 20px;
+}
 
 /* Formulario de inicio de sesión */
-
 
 h1{
 
@@ -146,11 +182,12 @@ h1{
 }
 
 /* Pie de página */
-footer{
+footer {
   display: flex;
+  background-color: #0F2027;
+  margin-top: auto; 
   flex-wrap: wrap;
   align-items: center;
-  background-color: #0F2027;
   color: white;
 }
 
