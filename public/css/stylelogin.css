@@ -1,208 +1,242 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-.titulo{
-    font-size: 34px;
-    color:#fff
-}
-body{
-    font-family: 'Roboto', sans-serif;
-
+/* Reset de estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-h1 {
-    
-   
-    text-align: center;
-        margin-top: 200px;
-        color:#fff
-    }
-    
-    form {
-        
-        max-width: 300px;
-        margin: 0 auto;
-        
-       
-    padding: 20px;
-        border-radius: 5px;
-        box-shadow: 0 2px 5px rgba(202, 202, 202, 0.2);
-    }
-    
-    label {
-        font-weight: bold;
-        display: block;
-        margin-bottom: 5px;
-        color: #fff;
-    }
-    
-    input[type="text"],
-    input[type="password"] {
-        
-       
-    width: 100%;
-        padding: 8px;
-        margin-bottom: 50px;
-        border: 1px solid #ccc;
-        
-       
-    border-radius: 3px;
-    }
-    
-    input[type="submit"] {
-        background-color: #007bff;
-        color: #fff;
-        border: none;
-        padding: 10px 20px;
-        border-radius: 3px;
-        cursor: pointer;
-        text-align: center;
-    }
-    
-    input[type="submit"]:hover {
-        background-color: #0056b3;
-    }
-   .register{
-    text-align: center;
-    font-size: 18px; 
-    color: #fff;
-}
-
-.fa-bars{
-    background-color:#1259c3;
-    color:#fff;
-    padding: 10px;
-    border-radius: 5px;
-    margin: 10px;
-    text-align: center;
-}
-
-@media (max-width: 361px){
-    body{
-        background-image: url('../img/munbaik-cycling-clothing-Ln9uvGy5Yio-unsplash.jpg');
-        background-size: cover;
-        background-position: center center;
-        background-attachment: fixed;
-        width: 100%;
-        height: 900px;
-    }
-   
-}
 
 body {
-    background-image: url('../images/munbaik-cycling-clothing-Ln9uvGy5Yio-unsplash.jpg');
-    background-size: cover;
-    
-    background-position: center ;
-    background-attachment: fixed; 
+  font-family: 'Roboto', sans-serif;
+  background-image: url('../images/munbaik-cycling-clothing-Ln9uvGy5Yio-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: #f2f2f2;
+  color: #333;
+  min-height: 100vh; 
+  display: flex;
+  flex-direction: column; 
 }
-.logo{
-    padding-left: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
+
 body{
-    background-color: white;
-    font-family: 'Montserrat', sans-serif;
+  background-color: white;
+  font-family: 'Montserrat', sans-serif;
 }
 
 nav{
-    display: flex;
-    height: auto;
-    background: #0F2027; 
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+  display: flex;
+  height: auto;
+  background: #0F2027; 
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 nav ul{
-    display: flex;
-    align-items: center;
-    flex-direction: row-reverse;
-    justify-content: center;
-    font-size: 25px;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: center;
+  font-size: 25px;
 }
 
 nav .search-box{
-    margin: auto;
+  margin: auto;
 }
 nav .search-box input{
-    border: none;
-    height: 30px;
-    width: 500px;
-    padding: 0 10px;
-    font-size: 1em;
+  border: none;
+  height: 30px;
+  width: 500px;
+  padding: 0 10px;
+  font-size: 1em;
 }
 
 nav .search-box button{
-    background-color: white;
-    position: absolute;
-    height: 30px;
-    width: 40px;
-    margin: auto;
-    cursor: pointer;
-    border: none;
+  background-color: white;
+  position: absolute;
+  height: 30px;
+  width: 40px;
+  margin: auto;
+  cursor: pointer;
+  border: none;
 }
 
-footer {
-    background-color: #f2f2f2;
-    padding: 20px;
-  }
-  
+.logo{
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  
-  .qr img {
-    max-width: 200px;
-  }
-  
+.registro{
+  padding-right: 30px;
+  display: flex;
+  width: auto;
+  height: auto;
+  flex-direction: row;
+}
 
-  .texto p {
-    font-weight: bold;
-  }
-  
+.New-user{
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+  width: auto;
+  height: auto;
+  flex-direction: row;
+}
+
+.buy{
+  padding-right: 60px;
+  padding-left: 30px;
+  display: flex;
+  width: auto;
+  height: auto;
+}
+
+.color-nav{
+  color: white;
+}
+
+.contenedor{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.Option{
+  margin-top: 20px;
+  display: flex;
+  background:white;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px 10px;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+}
+
+main section ul button{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 1px solid;
+  font-size: 20px;
+}
+
+/* Formulario de inicio de sesión */
+
+h1{
+
+  text-align: center;
+  color:#fff
+}
+.for {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 70px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(202, 202, 202, 0.2);
  
-  .colaboracion p {
-    color: #555;
-  }
-  
-  
-  .redes {
-    margin-top: 20px;
-    text-align: center;
-  }
-  
-  
-  .redes .contacto li {
-    display: inline-block;
-    margin: 0 10px;
-  }
-  
-  
-  .redes .contacto a {
-    color: #333;
-    font-size: 24px;
-  }
-  
-  
-  .redes .contacto a i.fa-brands.fa-twitter {
-    color: #1da1f2; 
-  }
-  
-  .redes .contacto a i.fa-brands.fa-facebook {
-    color: #1877f2; 
-  }
-  
-  .redes .contacto a i.fa-brands.fa-instagram {
-    color: #c32aa3; /* Color para Instagram */
-  }
-  
-  .redes .contacto a i.fa-brands.fa-whatsapp {
-    color: #25d366; /* Color para WhatsApp */
-  }
+  text-align: center;
+}
+
+.for label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+  color:#fff;
+}
+
+.for input[type="text"],
+.for input[type="password"] {
+  width: 200%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.for input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.for input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.register {
+  font-size: 18px;
+  color: #333;
+  text-align: center;
+  margin-top: 15px;
+}
+
+/* Pie de página */
+footer {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+  margin-top: auto; 
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.qr img {
+  max-width: 200px;
+}
+
+.texto p {
+  font-weight: bold;
+}
+
+.colaboracion p {
+  color: #555;
+}
+
+.redes {
+  margin-top: 20px;
+}
+
+.redes .contacto li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.redes .contacto a {
+  color: #333;
+  font-size: 24px;
+}
+
+/* Iconos de redes sociales */
+.redes .contacto a i.fa-brands {
+  font-size: 28px;
+}
+
+.redes .contacto a i.fa-brands.fa-twitter {
+  color: #1da1f2; 
+}
+
+.redes .contacto a i.fa-brands.fa-facebook {
+  color: #1877f2; 
+}
+
+.redes .contacto a i.fa-brands.fa-instagram {
+  color: #c32aa3; 
+}
+
+.redes .contacto a i.fa-brands.fa-whatsapp {
+  color: #25d366; 
+}
