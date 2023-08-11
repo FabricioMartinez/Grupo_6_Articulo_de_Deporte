@@ -233,10 +233,16 @@ footer{
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 50px;
 }
+.qr{
+    list-style: none;
+    margin-left: 20px;
+}
 .texto{
+    list-style: none;
     border-left: 1px solid;
 }
 .colaboracion{
+    list-style: none;
     border-left: 1px solid;
 }
 .redes{
