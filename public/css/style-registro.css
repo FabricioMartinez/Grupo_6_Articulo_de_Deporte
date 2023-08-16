@@ -9,6 +9,9 @@ body {
     background-color: white;
 }
 
+/*HEADER*/
+
+
 main{
     background-image: url(/images/registro/5769.jpg);
     background-repeat: no-repeat;
@@ -27,11 +30,7 @@ main{
     background-color: black;
 
 }*/
-h1{
-    background-color: black;
-    color: yellow;
-    margin: 0px 0px 20px 0px;
-}
+
 h2{
     color: yellow;
     padding-top: 20px;
@@ -46,20 +45,23 @@ h3 {
 
 
 input {
-    background-color: white ;
+    font-size: 16px;
+    background-color: rgb(211, 201, 201, 0.4) ;
     border: 2px black solid;
-    padding: 10px;
+    padding: 10px 0px 10px 7px;
     margin-bottom: 15px;
     border-radius: 5px;
+    color: yellow;
+    
 
 }
-/*
+
 ::placeholder {
-    color: black
-    font-weight: bold;
+    color:rgba(255, 255, 255, 0.74);
+    font-weight: lighter;
     font-style: normal;
     text-align: left;
-}*/
+}
 
 button {
 
@@ -88,7 +90,9 @@ button {
 .card1{
     display:flex;
     flex-direction: row;
+    width: 120px;
 }
+
 
 .card2 {
     display:flex;
@@ -99,7 +103,6 @@ button {
 .card4 {
     display:flex;
     flex-direction: column;
-
     width: 50%;
 
 }
@@ -108,12 +111,7 @@ button {
     margin-left: 10px;
 }
 .container .form-container .card2 input {
-    font-size: 16px; /* Cambiar el tamaño del texto */
-    width: 250px; /* Cambiar el ancho del campo */
-    padding: 5px; /* Agregar relleno alrededor del texto */
-
-    border: 1px solid black; /* Cambiar el borde */
-    background-color: white;
+    width: 415px; /* Cambiar el ancho del campo */   
 }
 
 
@@ -142,10 +140,96 @@ button {
 
 .card3 {
     display:flex;
-    flex-direction: column;
-    
+    flex-direction: row;
+}
+
+.account{
+    width: 90%;
+    align-items: center;
+}
+
+
+footer{
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fdffc2;
+    font-weight:500
+}
+.footer-lista > a > li{
+    line-height: 30px;
 
 }
+.footer-redes > i{
+    margin: 10px 5px;
+}
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/*FOOTER*/
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #0F2027;
+    color: white;
+    justify-content: space-around;
+    font-weight:500;
+    /*padding: 2rem 0;*/
+}
+
+.container{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    padding: 45px 0px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px;
+}
+.texto{
+    border-left: 1px solid;
+}
+.colaboracion{
+    border-left: 1px solid;
+}
+.redes{
+    border-left: 1px solid;
+}
+.contacto{
+    margin-top: 40px;
+    display: flex;
+    font-size: 2em;
+    list-style-type: none;
+    border-top: 1px solid;
+}
+
+.contacto li{
+    padding: 20px 20px;
+    color: white;
+}
+.fa-brands{
+    color: white;
+}
+
+.footer-lista > a > li{
+    line-height: 30px;
+}
+
+.footer-redes > a > i{
+    margin: 10px 5px;
+}
+
+
+
+
 
 @media (max-width: 361px){
     main{
@@ -159,5 +243,12 @@ button {
     .container{
         display: flex;
         justify-content: flex-start;
+    }
+}
+
+@media (max-width: 481px){
+    
+    .footer-lista{
+        display: none;
     }
 }

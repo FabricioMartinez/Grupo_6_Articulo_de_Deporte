@@ -217,12 +217,13 @@ section article p{
     border: 2px solid;
 }
 
- footer{
+footer{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     background-color: #0F2027;
     color: white;
+    
 }
 
 .container{
@@ -257,3 +258,4 @@ section article p{
 .fa-brands{
     color: white;
 }
+
