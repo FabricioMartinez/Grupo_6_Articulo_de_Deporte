@@ -2,6 +2,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: 'Montserrat', sans-serif;
+}
 li{
     list-style: none;
 }
@@ -9,6 +12,7 @@ a{
     text-decoration: none;
     color: inherit;
 }
+
 nav{
     display: flex;
     height: auto;
@@ -59,6 +63,27 @@ nav .search-box button{
     width: auto;
     height: auto;
     flex-direction: row;
+}
+
+.New-user{
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    width: auto;
+    height: auto;
+    flex-direction: row;
+}
+
+.buy{
+    padding-right: 60px;
+    padding-left: 30px;
+    display: flex;
+    width: auto;
+    height: auto;
+}
+
+.color-nav{
+    color: white;
 }
 .presentacion{
     display: flex;
@@ -129,28 +154,51 @@ nav .search-box button{
     width: 15vw;
     padding: 0.5rem;
 }
-.footer{
-    padding: 2rem 0;
+footer{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
-    background-color: #fdffc2;
-    font-weight:500
+    background-color: #0F2027;
+    color: white;
 }
-.footer-lista > a > li{
-    line-height: 30px;
+
+.container{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    padding: 45px 0px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px;
 }
-.footer-redes > a > i{
-    margin: 10px 5px;
+.qr{
+    list-style: none;
+    margin-left: 20px;
 }
-@media (max-width: 481px){
-    .presentacion{
-        display: flex;
-        flex-direction: column;
-    }
-    .footer-lista{
-        display: none;
-    }
+.texto{
+    list-style: none;
+    border-left: 1px solid;
+}
+.colaboracion{
+    list-style: none;
+    border-left: 1px solid;
+}
+.redes{
+    border-left: 1px solid;
+}
+.contacto{
+    margin-top: 40px;
+    display: flex;
+    font-size: 2em;
+    list-style-type: none;
+    border-top: 1px solid;
+}
+
+.contacto li{
+    padding: 20px 20px;
+    color: white;
+}
+.fa-brands{
+    color: white;
 }
 @media (min-width: 1000px){
     .main-detalles{

@@ -8,3 +8,5 @@ Aspectos a mejorar:
 Mejores aspectos del grupo:
 -toma de desiciones: con ayuda de encuestas por el grupo se tomaron decisiones por voto de la mayoria
 -meet: consideramos que fue un ayuda para avanzar en los proyectos al completar las tareas
+
+tablero de trabajo: https://app.asana.com/0/1205157368582799/1205157368582799

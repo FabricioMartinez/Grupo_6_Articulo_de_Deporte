@@ -9,7 +9,80 @@ body {
     background-color: white;
 }
 
-/*HEADER*/
+
+nav{
+    display: flex;
+    height: auto;
+    background: #0F2027; 
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: center;
+    font-size: 25px;
+}
+
+nav .search-box{
+    margin: auto;
+}
+nav .search-box input{
+    border: none;
+    height: 30px;
+    width: 500px;
+    padding: 0 10px;
+    font-size: 1em;
+}
+
+nav .search-box button{
+    background-color: white;
+    position: absolute;
+    height: 30px;
+    width: 40px;
+    margin: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.logo{
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.registro{
+    padding-right: 30px;
+    display: flex;
+    width: auto;
+    height: auto;
+    flex-direction: row;
+}
+
+.New-user{
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    width: auto;
+    height: auto;
+    flex-direction: row;
+}
+
+.buy{
+    padding-right: 60px;
+    padding-left: 30px;
+    display: flex;
+    width: auto;
+    height: auto;
+}
+
+.color-nav{
+    color: white;
+}
+
 
 
 main{
@@ -30,7 +103,6 @@ main{
     background-color: black;
 
 }*/
-
 h2{
     color: yellow;
     padding-top: 20px;
@@ -63,8 +135,7 @@ input {
     text-align: left;
 }
 
-button {
-
+.card4 button {
     background-color: white;
     border: 3px solid black;
     border-radius: 10px;
@@ -75,8 +146,6 @@ button {
     margin-top: 10px;
     margin-bottom: 10px;
     cursor: pointer;
-
-
 }
 
 
@@ -246,9 +315,49 @@ footer{
     }
 }
 
-@media (max-width: 481px){
-    
-    .footer-lista{
-        display: none;
-    }
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #0F2027;
+    color: white;
+}
+
+.pie{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    padding: 45px 0px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px;
+}
+.qr{
+    list-style: none;
+    margin-left: 20px;
+}
+.texto{
+    list-style: none;
+    border-left: 1px solid;
+}
+.colaboracion{
+    list-style: none;
+    border-left: 1px solid;
+}
+.redes{
+    border-left: 1px solid;
+}
+.contacto{
+    margin-top: 40px;
+    display: flex;
+    font-size: 2em;
+    list-style-type: none;
+    border-top: 1px solid;
+}
+
+.contacto li{
+    padding: 20px 20px;
+    color: white;
+}
+.fa-brands{
+    color: white;
 }

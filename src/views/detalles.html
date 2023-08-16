@@ -5,22 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style-detalles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <title>Detalles del Producto</title>
 </head>
 <body>
     <header>
         <nav>
             <div class="logo">
-            <img src="./images/Home/header/todos_los_logos_de_los_juegos_olimpicos_16430_orig.jpg" width="100px" alt="logo">
+                <a href="./"><img src="./images/Home/header/todos_los_logos_de_los_juegos_olimpicos_16430_orig.jpg" width="100px" alt="logo"></a>
             </div>
             <form class="search-box" action="" method="get">
                 <input type="text" placeholder="Buscar Articulo...">
                 <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
             <ul>
-                <li class="buy"><a class="color-nav" href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
-                <li class="New-user"><a class="color-nav" href=""><i class="fa-solid fa-user-plus"></i></a></li>
-                <li class="registro"><a class="color-nav" href="./formulario-de-registro"><i class="fa-solid fa-user"></i></a></li>
+                <li class="buy"><a class="color-nav" href="./carrito"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li class="New-user"><a class="color-nav" href="./formulario-de-registro"><i class="fa-solid fa-user-plus"></i></a></li>
+                <li class="registro"><a class="color-nav" href="./login"><i class="fa-solid fa-user"></i></a></li>
             </ul>
         </nav>
     </header>
@@ -68,31 +70,34 @@
         </section>
     </main>
     <footer class="footer">
-        <ul class="footer-lista">
-            <a><li>Zapatillas</li></a>
-            <a><li>Pantalones</li></a>
-            <a><li>Remeras</li></a>
-            <a><li>Buzos</li></a>
-        </ul>
-        <ul class="footer-lista">
-            <a><li>Seleccion Argetina</li></a>
-            <a><li>Boca Juniors</li></a>
-            <a><li>Inter Miami</li></a>
-            <a><li>Real Madrid</li></a>
-        </ul>
-        <ul class="footer-lista">
-            <a><li>Futbol</li></a>
-            <a><li>Basquet</li></a>
-            <a><li>Natacion</li></a>
-            <a><li>Voley</li></a>
-        </ul>
-        <div class="footer-redes">
-            <p>Redes sociales</p>
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-regular fa-envelope"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-        </div>
+        <div class= "container">
+            <div class="qr">
+                <a><li>Zapatillas</li></a>
+                <a><li>Pantalones</li></a>
+                <a><li>Remeras</li></a>
+                <a><li>Buzos</li></a>
+            </div>
+            <div class="texto">
+                <a><li>Seleccion Argetina</li></a>
+                <a><li>Boca Juniors</li></a>
+                <a><li>Inter Miami</li></a>
+                <a><li>Real Madrid</li></a>
+            </div>
+            <div class="colaboracion">
+                <a><li>Futbol</li></a>
+                <a><li>Basquet</li></a>
+                <a><li>Natacion</li></a>
+                <a><li>Voley</li></a>
+            </div>
+            <div class="redes">
+                <h1>Redes Sociales</h1>
+                <div class="contacto">
+                    <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-whatsapp"></i></a></li>
+                </div>
+            </div>
     </footer>
 </body>
 </html>
