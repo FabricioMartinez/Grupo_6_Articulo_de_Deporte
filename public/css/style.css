@@ -217,7 +217,7 @@ section article p{
     border: 2px solid;
 }
 
- footer{
+footer{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -233,10 +233,16 @@ section article p{
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 50px;
 }
+.qr{
+    list-style: none;
+    margin-left: 20px;
+}
 .texto{
+    list-style: none;
     border-left: 1px solid;
 }
 .colaboracion{
+    list-style: none;
     border-left: 1px solid;
 }
 .redes{
