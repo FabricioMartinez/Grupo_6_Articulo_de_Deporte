@@ -76,7 +76,7 @@ nav .search-box button{
     color: white;
 }
 .caja{
-    border: 1px solid #ccc;
+    border: 1px solid #4e4848;
     padding: 10px;
     margin: 20px;
     max-width: 400px;
@@ -87,16 +87,57 @@ nav .search-box button{
     height: auto;
     margin-bottom: 10px;
 }
+.caja img{
+    width: 100%;
+    border-bottom: solid 1px #111612 ;
+    margin-right: 20px;
+}
+
 .zapatilla{
     font-size: 14px;
     color: #333;
 }
 .zapatilla{
-    border: 1px solid #ccc;
+    
     padding: 10px;
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
+
+}
+.zapatilla {
+    margin-right: 20px; /* Espacio entre la imagen y el contenido */
+}
+@media(min-width:460px){
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .card{
+        width: 35%;
+    }
+}
+.descripcion{
+    flex: 1;
+
+}
+.precio{
+    flex: 1;
+    padding: 15px;
+}
+.container{
+    flex: 1;
+}
+.fa-solid{
+    margin: 4px;
+}
+button{
+    margin: 2px;
+}
+input{
+    width: 50px;
+    margin: 4px;
 }
