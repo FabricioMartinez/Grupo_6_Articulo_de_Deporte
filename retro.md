@@ -10,3 +10,45 @@ Mejores aspectos del grupo:
 -meet: consideramos que fue un ayuda para avanzar en los proyectos al completar las tareas
 
 tablero de trabajo: https://app.asana.com/0/1205157368582799/1205157368582799
+
+----------------------------------------------------------------------------------------
+RETROSPECTIVA DEL SPRINT 2
+
+*Comenzar a hacer:
+Hacer más práctica con CSS para mejorar la estructura y el diseño
+ 
+Definir si haremos meets fijos (día por medio, 2 o 3 días de la semana ) de 15 minutos en los que responder 3 preguntas. 
+1. Qué hice ayer
+2. Me encontré con algún impedimento.
+3. Qué voy a hacer hoy.
+También deberíamos usar más el Asana (tablero de organización)
+
+Las clases están directamente relacionadas con el Sprint por lo que sería bueno también ayudarnos con las tareas de clase durante los 15 o 20 minutos que nos dan por zoom y así poder avanzar.
+Ya que los conocimientos de las clases son los que luego usaremos en el Sprint 
+
+Pasar nuestros horarios para organizar un día en la semana en el que podamos estar todos o al menos la mayoría
+
+Tratar de ser algo más responsables con las tareas
+
+*Hacer más: 
+Hacer más práctica con CSS para mejorar la estructura y el diseño
+Hacer más meets en los que puedan participar más integrantes del grupo para que todos estén informados sobre lo que se está trabajando o leer el tablero de trabajo y usarlo más para que 2 o más personas no hagan la misma tarea. Es decir, con esto podremos revisar el progreso de cada uno y nos podremos ayudar en caso de ser necesario.
+
+Compremeternos más con los sprints, para poder dedicarles más tiempo (tanto en lo individual como en lo grupal) y obtener mejores resultados
+
+*Continuar haciendo: 
+Continuar haciendo más código de html para mejorar la estructura y comprensión del código.
+Comunicarse como lo hicimos en el Sprint 2
+Seguir haciendo encuestas. Repartir tareas. 
+
+Podríamos ser mas unidos como equipo y tener mas confianza entre nosotros para pedir ayuda en caso de ser necesario
+
+*Hacer menos:  ---
+
+
+*Dejar de hacer:  
+Estaria bueno que como equipo dejemos de desplazar fechas para las reuniones de trabajo o revision. Que propongamos una fecha y no se modifique salvo casos especiales.
+También deberíamos dejar de dar demasiadas vueltas y trabajar de forma concreta para agilizar cada tarea y con ello avanzar de forma más eficiente en el proyecto
+
+Ventajas: hubo más comunicación
+Desventajas: no todos pudimos cumplir con los plazos establecidos para cada tarea

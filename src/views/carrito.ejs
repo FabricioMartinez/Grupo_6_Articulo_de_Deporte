@@ -9,28 +9,17 @@
     
     <title>Sportify</title>
 </head>
+
+
+
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <a href="./"><img src="./images/Home/header/todos_los_logos_de_los_juegos_olimpicos_16430_orig.jpg" width="100px" alt="logo"></a>
-            </div>
-            <form class="search-box" action="" method="get">
-                <input type="text" placeholder="Buscar Articulo...">
-                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-            </form>
-            <ul>
-                <li class="buy"><a class="color-nav" href="./carrito"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                <li class="New-user"><a class="color-nav" href="./formulario-de-registro"><i class="fa-solid fa-user-plus"></i></a></li>
-                <li class="registro"><a class="color-nav" href="./login"><i class="fa-solid fa-user"></i></a></li>
-               
-            </ul>
-        </nav>
-    </header>
+    <%- include ("./partials/header")%>
     <main>
+
+      <h2> <%=título %></h2>
         <ul>
             
-            <li>
+            <li> 
                 
                 <div class="caja"><div class="container">
                     <div class="zapatilla">
@@ -46,7 +35,7 @@
             </div>
 
             </li>
-            <li>
+            <li> 
                 <div class="caja"><div class="container">
                     <div class="zapatilla">
                  <img src="./images/carrito/pelota-volley-striker.jpg" alt=""></div>
@@ -77,13 +66,13 @@
 
             </li>
             
-
         </ul>
             
                 
     </main>
-    <footer>
-        
-    </footer>
+    <%- include ("./partials/footer") %>
 </body>
 </html>
+
+
+ 
