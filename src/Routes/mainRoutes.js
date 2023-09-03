@@ -12,4 +12,5 @@ mainRouter.get("/login", mainController.showLogin);
 mainRouter.get("/admin-confirm", mainController.showConfirmation);
 
 
+mainRouter.get("/Crear-Producto", mainController.showCrearProducto);
 module.exports = mainRouter;

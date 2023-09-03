@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style-Crear-Producto.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vidaloka&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <title>Sportify</title>
+</head>
+<body>
+    <%- include ("./partials/header")%>
+    <main>
+        <form action="" class="New-product" method="get">
+            <h1>Crear Producto</h1>
+            <div class="Product-name">
+                <h2>Nombre del Producto</h2>
+                <input type="text" name="Nombre del Producto" id="" placeholder="Insertar nombre">
+            </div>
+            <div class="Category">
+                <h2>Categoria del productos</h2>
+                <select name="select" id="" class="etiqueta">
+                    <option selected>Seleccionar Categoria</option>
+                    <option value="Ropa">Ropa</option>
+                    <option value="">Accesorio de deporte</option>
+                    <option value="Gimnasio">Gimnasio</option>
+                </select>
+                </div>
+            </div>
+            <div class="Precio">
+                <h2>Precio del Producto</h2>
+                <input type="text" name="Precio" id="" placeholder="Insetar precio">
+            </div>
+            <div class="imagen">
+                <h2>Imagen del pruducto</h2>
+                <input type="file" name="imagen" id="">
+            </div>
+            <div class="Descripcion">
+                <h2>Descripcion</h2>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Agregar Descripcion"></textarea>
+            </div>
+            <div class="Terminos">
+                <input type="checkbox" name="condiciones" id="terminos y condiciones" value="terminos y condiciones">
+                <label for="terminos y condiciones">Aceptar Terminos y Condiciones</label>
+            </div>
+            <div class="botones">
+                <input type="submit" value="Atras" id="" placeholder="Atras">
+                <input type="submit" value="Enviar" id="" placeholder="Enviar">
+            </div>
+        </form>
+    </main>
+    <%- include ("./partials/footer")%>
+</body>
+</html>

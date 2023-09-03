@@ -19,16 +19,10 @@ body {
   flex-direction: column; 
 }
 
-
-body{
-  background-color: white;
-  font-family: 'Montserrat', sans-serif;
-}
-
 nav{
   display: flex;
   height: auto;
-  background: #0F2027; 
+  background: #ffd850; 
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
@@ -63,10 +57,18 @@ nav .search-box button{
 }
 
 .logo{
-  padding-left: 20px;
+  padding-left: 70px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.logo a{
+  display: flex;
+}
+.logo a img{
+  border-radius: 5%;
 }
 
 .registro{
@@ -95,7 +97,7 @@ nav .search-box button{
 }
 
 .color-nav{
-  color: white;
+  color: black;
 }
 
 .contenedor{
@@ -234,40 +236,40 @@ footer{
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  background-color: #0F2027;
-  color: white;
-  
+  background-color: #ffd850;
+  color: black;
 }
 
 .container{
   width: 100%;
   margin: auto;
   display: grid;
-  padding: 45px 0px;
+  padding: 20px 0px;
+  border-top: 5px solid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 50px;
 }
 .qr{
   list-style: none;
-  margin-left: 20px;
+  margin-left: 60px;
 }
 .texto{
   list-style: none;
-  border-left: 1px solid;
+  border-left: 5px solid;
 }
 .colaboracion{
   list-style: none;
-  border-left: 1px solid;
+  border-left: 5px solid;
 }
 .redes{
-  border-left: 1px solid;
+  border-left: 5px solid;
 }
 .contacto{
   margin-top: 40px;
   display: flex;
   font-size: 2em;
   list-style-type: none;
-  border-top: 1px solid;
+  border-top: 5px solid;
 }
 
 .contacto li{
@@ -275,5 +277,5 @@ footer{
   color: white;
 }
 .fa-brands{
-  color: white;
+  color: black;
 }

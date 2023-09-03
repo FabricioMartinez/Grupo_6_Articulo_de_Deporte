@@ -20,8 +20,10 @@ const mainController={
     },
     showConfirmation: (req,res)=>{
         res.render("admin-confirm");
+    },
+    showCrearProducto: (req, res)=>{
+    res.render("Crear-Producto")
     }
-
 };
 
 module.exports = mainController;
