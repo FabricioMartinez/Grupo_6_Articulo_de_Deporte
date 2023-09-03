@@ -1,0 +1,30 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+button{
+     color: yellow;
+}
+.articlesend{
+    margin-left: 20px;
+}
+
+.confirm{
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    
+}
+
+.buttonscontainer{
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 3px;
+    margin: 20px 0px;
+    padding-bottom: 200px;
+}
+
+.articlebutton{
+    margin-left: 200px;
+}

@@ -17,7 +17,11 @@ const mainController={
     },
     showLogin: (req,res)=>{
     res.render("login");
+    },
+    showConfirmation: (req,res)=>{
+        res.render("admin-confirm");
     }
+
 };
 
 module.exports = mainController;
