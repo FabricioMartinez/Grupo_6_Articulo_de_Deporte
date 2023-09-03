@@ -17,6 +17,9 @@ const mainController={
     },
     showLogin: (req,res)=>{
     res.render("login");
+    },
+    showCrearProducto: (req, res)=>{
+    res.render("Crear-Producto")
     }
 };
 
