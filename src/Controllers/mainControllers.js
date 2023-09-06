@@ -18,6 +18,9 @@ const mainController={
     showLogin: (req,res)=>{
     res.render("login");
     },
+    showConfirmation: (req,res)=>{
+        res.render("admin-confirm");
+    },
     showCrearProducto: (req, res)=>{
     res.render("Crear-Producto")
     },

@@ -95,25 +95,94 @@ main{
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
-    height: 800px;
+    width: 100%;
+    height: 700px;
 }
 
-main h1{
-    padding-left: 30px;
-}
 .New-product{
     padding-left: 30px;
 }
 
+.New-product h1{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 
+.Product-name input{
+    background-color: #ffd850;
+    border: none;
+    width: 400px;
+    height: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-size: 17px;
+}
 
+.Precio input{
+    background-color: #ffd850;
+    border: none;
+    width: 400px;
+    height: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-size: 17px;
+}
 
+.Descripcion textarea{
+    resize: none;
+    background-color: #ffd850;
+    border: none;
+    width: 400px;
+    height: 100px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-size: 17px;
+}
 
+.imagen input{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
 
+.etiqueta{
+    background-color: white;
+    border: none;
+    width: 400px;
+    height: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-size: 17px;
+}
 
+.Terminos{
+    font-size: 20px;
+}
 
+.Terminos input{
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
 
+.botones{
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
 
+.botones input{
+    width: 100px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    border: 2px solid;
+    cursor: pointer;
+}
 
 footer{
     display: flex;
@@ -162,4 +231,3 @@ footer{
 .fa-brands{
     color: black;
 }
-
