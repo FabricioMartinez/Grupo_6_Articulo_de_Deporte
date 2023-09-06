@@ -21,10 +21,13 @@ button{
     cursor: pointer;
 
 }
+
 .articlesend{
     margin-left: 20px;
     padding: 10px;
 }
+
+
 
 .confirm{
     display: flex;
