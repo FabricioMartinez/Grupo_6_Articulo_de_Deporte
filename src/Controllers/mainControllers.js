@@ -20,7 +20,10 @@ const mainController={
     },
     showCrearProducto: (req, res)=>{
     res.render("Crear-Producto")
-    }
+    },
+    showSeleccion: (req, res)=>{
+        res.render("Seleccion")
+        }
 };
 
 module.exports = mainController;
