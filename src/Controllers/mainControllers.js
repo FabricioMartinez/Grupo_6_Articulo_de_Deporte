@@ -24,9 +24,15 @@ const mainController={
     showCrearProducto: (req, res)=>{
     res.render("Crear-Producto")
     },
+<<<<<<< HEAD
     showEdit: (req,res)=>{
         res.render('edit')
     }
+=======
+    showSeleccion: (req, res)=>{
+        res.render("Seleccion")
+        }
+>>>>>>> 2faba630e3c3b5ffbcfc2901c4aa5abceaf1f5f2
 };
 
 module.exports = mainController;
