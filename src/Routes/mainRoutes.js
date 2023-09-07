@@ -10,6 +10,7 @@ mainRouter.get("/carrito", mainController.showCart );
 mainRouter.get("/detalles", mainController.showDetails);
 mainRouter.get("/login", mainController.showLogin);
 mainRouter.get("/admin-confirm", mainController.showConfirmation);
+mainRouter.get("/edit", mainController.showEdit);
 
 
 mainRouter.get("/Crear-Producto", mainController.showCrearProducto);

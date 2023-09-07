@@ -23,6 +23,9 @@ const mainController={
     },
     showCrearProducto: (req, res)=>{
     res.render("Crear-Producto")
+    },
+    showEdit: (req,res)=>{
+        res.render('edit')
     }
 };
 
