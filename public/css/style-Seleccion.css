@@ -170,7 +170,7 @@ footer{
     display: inline-block;
     text-align: center;
     border-radius: 20px; 
-
+    cursor: pointer;
 }
 
 
@@ -178,7 +178,7 @@ footer{
     display: flex;
     font-size: 30px; 
     margin-top: auto;
-    
+    color: black;
 }
 .boton-volver {
     position: absolute;
@@ -195,4 +195,9 @@ footer{
     background-color: #eaca56;
     color: #000000; 
     cursor: pointer;
+}
+
+.botones button a{
+    text-decoration: none;
+    color: black;
 }

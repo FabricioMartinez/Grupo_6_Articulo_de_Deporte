@@ -14,7 +14,7 @@
 <body>
     <%- include ("./partials/header")%>
     <main>
-        <form action="" class="New-product" method="get">
+        <form action="/" class="New-product" method="POST" enctype="multipart/form-data">
             <h1>Crear Producto</h1>
             <div class="Product-name">
                 <h2>Nombre del Producto</h2>
@@ -24,9 +24,8 @@
                 <h2>Categoria del productos</h2>
                 <select name="select" id="" class="etiqueta">
                     <option selected>Seleccionar Categoria</option>
-                    <option value="Ropa">Ropa</option>
-                    <option value="">Accesorio de deporte</option>
-                    <option value="Gimnasio">Gimnasio</option>
+                    <option value="offer">Oferta</option>
+                    <option value="Sport">Sport</option>
                 </select>
                 </div>
             </div>
@@ -47,8 +46,9 @@
                 <label for="terminos y condiciones">Aceptar Terminos y Condiciones</label>
             </div>
             <div class="botones">
-                <input type="submit" value="Atras" id="" placeholder="Atras">
-                <input type="submit" value="Enviar" id="" placeholder="Enviar">
+                
+                <button class="articlebutton" type="submit"><a href="./admin-confirm">Atras</a></button>
+                <button class="articlebutton" type="submit">Enviar</button>
             </div>
         </form>
     </main>
