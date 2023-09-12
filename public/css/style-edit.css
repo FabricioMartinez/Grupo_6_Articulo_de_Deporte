@@ -1,14 +1,8 @@
-* {
-    margin: 0;
-    padding: 0px;
+*{
+    margin:0;
+    padding:0;
     box-sizing: border-box;
 }
-
-body{
-    background-color: white;
-    font-family: 'Vidaloka', serif;
-}
-
 nav{
     display: flex;
     height: auto;
@@ -16,7 +10,7 @@ nav{
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-
+  
 nav ul{
     display: flex;
     align-items: center;
@@ -24,7 +18,7 @@ nav ul{
     justify-content: center;
     font-size: 25px;
 }
-
+  
 nav .search-box{
     margin: auto;
 }
@@ -35,7 +29,7 @@ nav .search-box input{
     padding: 0 10px;
     font-size: 1em;
 }
-
+  
 nav .search-box button{
     background-color: white;
     position: absolute;
@@ -45,7 +39,7 @@ nav .search-box button{
     cursor: pointer;
     border: none;
 }
-
+  
 .logo{
     padding-left: 70px;
     margin-top: 10px;
@@ -61,6 +55,7 @@ nav .search-box button{
     border-radius: 5%;
 }
 
+  
 .registro{
     padding-right: 30px;
     display: flex;
@@ -89,121 +84,59 @@ nav .search-box button{
 .color-nav{
     color: black;
 }
-
-main{
-    background-image: url(/images/Producto-Nuevo/portada.png);
+/*estilo del main*/
+.main-edit{
+    background-image: url("/images/edit/esgrima.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    color: white;
-    width: 100%;
-    height: 700px;
+    background-position: center;
+    width: auto;
+}
+.titulo{
+    text-align: center;
+    padding: 1rem 0;
+    color: #fff;
+    font-family: 'Vidaloka', serif;
+}
+.container-edit{
+    margin: 0 10px;
+    text-align: center;
+}
+/*estilo primer columna*/
+.container-general{
+    padding: 10px;
+}
+.general-img{
+    width: 20vw;
 }
 
-.New-product{
-    padding-left: 30px;
+/*estilo segunda columna*/
+.container-especificaciones{
+    padding: 10px;
 }
 
-.New-product h1{
-    padding-top: 20px;
-    padding-bottom: 20px;
+/*estilo tercer columna*/
+.container-caracteristicas{
+    padding: 10px;
 }
 
-.Product-name input{
-    background-color: #ffd850;
-    border: none;
-    width: 400px;
-    height: 30px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+.label{
+   margin: 10px 0;
+   color: #fff;
+   font-family: 'Vidaloka', serif;
+}
+.input-text{
     border-radius: 5px;
-    font-size: 17px;
+    border: none;
+    background-color: burlywood;
+    height: 20px;
 }
-.form-label {
-    display: inline-block;
-    font-size: 1.6em;
-    margin: 10px 0;
-  }
-.form-input {
-    display: block;
-    width: 400px;
-    height: 30px;
-    margin-bottom: 15px;
-    font-size: 1.5em;
-    border-radius: 8px;
-    border: none;
-    border: solid 1px var(--gray);
-    padding: 0 15px;
-  }
-.Precio input{
-    background-color: #ffd850;
-    border: none;
-    width: 400px;
-    height: 30px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+.textarea{
     border-radius: 5px;
-    font-size: 17px;
-}
-
-.Descripcion textarea{
-    resize: none;
-    background-color: #ffd850;
     border: none;
-    width: 400px;
-    height: 100px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    border-radius: 5px;
-    font-size: 17px;
+    background-color: burlywood;
 }
-
-.imagen input{
-    margin-top: 15px;
-    margin-bottom: 15px;
-    cursor: pointer;
-}
-
-.etiqueta{
-    background-color: white;
-    border: none;
-    width: 400px;
-    height: 30px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    border-radius: 5px;
-    font-size: 17px;
-}
-
-.Terminos{
-    font-size: 20px;
-}
-
-.Terminos input{
-    margin-top: 15px;
-    margin-bottom: 20px;
-}
-
-.botones{
-    width: 400px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.botones button{
-    width: 100px;
-    height: 40px;
-    background-color: black;
-    color: white;
-    border-radius: 10px;
-    border: 2px solid;
-    cursor: pointer;
-}
-
-.botones button a{
-    text-decoration: none;
-    color: white;
-}
-
+/*partial footer*/
 footer{
     display: flex;
     flex-wrap: wrap;
@@ -211,7 +144,6 @@ footer{
     background-color: #ffd850;
     color: black;
 }
-
 .container{
     width: 100%;
     margin: auto;
@@ -250,4 +182,12 @@ footer{
 }
 .fa-brands{
     color: black;
+}
+
+@media (min-width:769px) {
+    .container-edit{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }

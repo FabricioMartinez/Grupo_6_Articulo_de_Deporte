@@ -14,29 +14,28 @@
 <body>
     <%- include ("./partials/header")%>
     <main>
-        <form action="" class="New-product" method="get">
+        <form action="/" class="New-product" method="POST" enctype="multipart/form-data">
             <h1>Crear Producto</h1>
             <div class="Product-name">
                 <h2>Nombre del Producto</h2>
-                <input type="text" name="Nombre del Producto" id="" placeholder="Insertar nombre">
+                <input type="text" name="Nombre del Producto" id="" placeholder="Insertar nombre" class="form-input">
             </div>
             <div class="Category">
                 <h2>Categoria del productos</h2>
-                <select name="select" id="" class="etiqueta">
+                <select name="select" id="" class="form-input">
                     <option selected>Seleccionar Categoria</option>
-                    <option value="Ropa">Ropa</option>
-                    <option value="">Accesorio de deporte</option>
-                    <option value="Gimnasio">Gimnasio</option>
+                    <option value="offer">Oferta</option>
+                    <option value="Sport">Sport</option>
                 </select>
                 </div>
             </div>
             <div class="Precio">
-                <h2>Precio del Producto</h2>
-                <input type="text" name="Precio" id="" placeholder="Insetar precio">
+                <label for="price" class="form-label">Precio del Producto:</label>
+                <input type="text" name="Precio" id="" placeholder="Insetar precio" class="form-input">
             </div>
             <div class="imagen">
                 <h2>Imagen del pruducto</h2>
-                <input type="file" name="imagen" id="">
+                <input type="file" name="producImage" id="foto">
             </div>
             <div class="Descripcion">
                 <h2>Descripcion</h2>
@@ -47,8 +46,9 @@
                 <label for="terminos y condiciones">Aceptar Terminos y Condiciones</label>
             </div>
             <div class="botones">
-                <input type="submit" value="Atras" id="" placeholder="Atras">
-                <input type="submit" value="Enviar" id="" placeholder="Enviar">
+                
+                <button class="articlebutton" type="submit"><a href="./admin-confirm">Atras</a></button>
+                <button class="articlebutton" type="submit">Enviar</button>
             </div>
         </form>
     </main>

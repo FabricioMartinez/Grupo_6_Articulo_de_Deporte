@@ -15,11 +15,11 @@
     <%- include ("./partials/header")%>
     <main class="main-detalles">
         <section>
-            <h1></h1>
             <article class="presentacion">
-                <img class="img" src="/images/detalles/modelo-ej-sportify.jpg" alt="">
+                <img class="img" src="/images/Home/main/<%= product.image %>" alt="">
                 <div class="ajustables-producto">
-                    <h2>Adidas Campus</h2>
+                    <h2>Detalle del producto:  <%= product.name %> </h2>
+                    <h1>Precio: $<%= product.price %></h1>
                     <p>Conoce los metodos de entrega <a href="#"><i class="fa-solid fa-truck-fast"></i></a></p>
                     <div class="disponibles-colores">
                         <p>Colores disponibles:</p>
@@ -39,7 +39,9 @@
             </article>
             <article class="descripcion">
                 <h2>Descripcion del Producto</h2>
-                <p class="descripcion-parrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio adipisci quia eum et quaerat voluptate sapiente voluptatum quis dolorum impedit, vitae illum libero, consequuntur neque. Neque veritatis natus aliquid qui! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, recusandae temporibus ex corporis exercitationem magnam inventore suscipit deleniti enim, a voluptatum aliquid odio facere aut dolore? Voluptate dolore sit natus.</p>
+                <p class="descripcion-parrafo">
+                    <%= product.description %>
+                </p>
                 <img src="/images/detalles/modelo2-ej-sportify.jpg" alt="">
             </article>
         </section>
