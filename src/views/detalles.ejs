@@ -35,22 +35,17 @@
                         <input type="button" value="XX">
                         <input type="button" value="XX">
                     </div>
+
                     <div class="botones">
-                        <a
-                        href="./edit/<%= product.id %>"
-                        class="action-button edit"
-                        >MODIFICAR</a
-                      >
-                      <form
-                        action="./delete/<%= product.id %>"
-                        method="POST"
-                        style="display: inline-flex"
-                      >
-                        <button type="submit" class="action-button delete">
-                          ELIMINAR
-                        </button>
-                      </form>
-                    </div>
+                    <a href="./edit/<%= product.id %>" 
+                        class="action-button edit">MODIFICAR</a>
+   
+                        <form action="./delete/<%= product.id %>" 
+                            method="POST" style="display: inline-flex">
+                       <button type="submit" class="action-button delete">ELIMINAR</button>
+   
+                    </form>
+                   </div>
                 </div>
             </article>
 

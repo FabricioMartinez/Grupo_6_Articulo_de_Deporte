@@ -217,27 +217,23 @@ footer{
         padding: 0.5rem;
     }
 }
+/* Estilos para los botones "MODIFICAR" y "ELIMINAR" */
 .action-button {
-    padding: 20px 20px;
-    background-color: #020202; /* Color para el botón Eliminar */
-    color: #FFFFFF; /* Color del texto en el botón */
-    border: none;
-    border-radius: 5px;
-  
+    color: #e9e9e9; 
+    padding: 16px 20px;
+    text-decoration: none;
+    border:#dfd10a;
+    cursor: pointer; 
+    font-weight: bold;
+    font-size: 16px; 
 }
 
-.modify {
-    background-color: #0077FF; /* Color para el botón Modificar */
+.action-button.edit {
+    background-color: #dfd10a;
 }
 
-/* Estilos para el contenedor de botones */
-.botones {
-    width: 50px;
-    margin-bottom: 10px;
-}
+.action-button.delete {
+    background-color: #000000; 
+    
+};
 
-/* Estilos para los botones */
-button {
-    padding: 10px;
-    margin-bottom: 10px; /* Espacio entre los botones */
-}

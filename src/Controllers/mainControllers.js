@@ -85,9 +85,7 @@ const mainController={
         res.render("product",{products})
     },
     
-  destroy: (req, res) => {
-    res.send("producto eliminado");
-  },
+  
 
 };
 
