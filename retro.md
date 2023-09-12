@@ -15,9 +15,9 @@ tablero de trabajo: https://app.asana.com/0/1205157368582799/1205157368582799
 RETROSPECTIVA DEL SPRINT 2
 
 *Comenzar a hacer:
-Hacer más práctica con CSS para mejorar la estructura y el diseño
+Hacer más práctica con CSS para mejorar la estructura y el diseño.
  
-Definir si haremos meets fijos (día por medio, 2 o 3 días de la semana ) de 15 minutos en los que responder 3 preguntas. 
+Definir si haremos meets fijos (día por medio, 2 o 3 días de la semana) de 15 minutos en los que responder 3 preguntas. 
 1. Qué hice ayer
 2. Me encontré con algún impedimento.
 3. Qué voy a hacer hoy.
@@ -52,3 +52,23 @@ También deberíamos dejar de dar demasiadas vueltas y trabajar de forma concret
 
 Ventajas: hubo más comunicación
 Desventajas: no todos pudimos cumplir con los plazos establecidos para cada tarea
+
+----------------------------------------------------------------------------------------
+RETROSPECTIVA DEL SPRINT 3
+
+En este sprint tuvimos pocos daylis. Hubo poca comunicaciÓn. Dejamos muchas cosas para el último momento. 
+La mayoria cumplió las tareas asiganadas.
+
+Se desarrollaron los 2 primeros puntos del sprint. 
+El último punto estaba a cargo de un compañero que por motivos personales tuvo que dejar el curso. Como se fue sin avisarnos tuvimos que repartir su tarea entre todos los integrantes del grupo
+Fue aquí que hubo una mejor organización y pudimos completar el sprint. a partir de ese momento se notó más participación. Esperamos tener la misma predisposición.
+Nos proponemos seguir trabajando como equipo y ayudarnos mutuamente.
+
+*Comenzar a hacer: llevar las clases al día y practicar más para poder desarrollar el sprint con mayor efiencia.
+*Hacer más: mejorar la comunicación y la participación en los meets. Tomar iniciativa en las actividades y pedir ayuda ante cualquier duda. Informar a nuestros compañeros cualquier inconveniente personal.
+Participar en las encuestas del grupo de WhatsApp y proponer nuevas ideas de trabajo.
+*Continuar haciendo: seguir repartiendo las actividades para una buena organización.
+*Hacer menos: dejar de pasar por alto los mensajes del grupo.
+*Dejar de hacer: no dejar el sprint para los últimos días de entrega
+
+DAYLI DEL 9/9/23: realizamos un meet en el que pudieron asistir 3 personas. En el mismo se asignaron las tareas para cada integrante del grupo.

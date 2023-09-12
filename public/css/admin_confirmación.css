@@ -121,6 +121,20 @@ nav{
     cursor: pointer;
     margin-top: 20px;
     margin-left: 20px;
+    font-size: 30px;
+}
+button {
+    font-family:'Vidaloka', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+}
+
+.articlesend:hover{
+    background-color: #fff24e; 
+}
+.new-article-button:hover{
+    background-color: #fff24e; 
+}
+.articlebutton:hover{
+    background-color: #fff24e; 
 }
 
 .confirmar{
@@ -134,8 +148,10 @@ nav{
     align-items: center;
     background-color: rgba(255, 255, 255, 0.848);
     border-radius: 10px;
-    width: 600px;
+    width: 700px;
     height: 100px;
+    font-family:'Vidaloka', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+    font-size: 40px;
 }
 
 /* .articlesend{
