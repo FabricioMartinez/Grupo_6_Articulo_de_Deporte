@@ -32,5 +32,7 @@ mainRouter.get("/product", mainController.showproduct)
 mainRouter.get("/Seleccion", mainController.showSeleccion)
 mainRouter.get("/admin-confirm", mainController.showConfirmation);
 mainRouter.get("/edit", mainController.showEdit);
-
+mainRouter.get("/detalles/edit/:id", mainController.showEdit);
+mainRouter.post('/', uploadFile.single("producImage"), mainController.article); 
+mainRouter.post("/detalles/delete/:id", mainController.destroy);
 module.exports = mainRouter;

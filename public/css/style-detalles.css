@@ -217,3 +217,27 @@ footer{
         padding: 0.5rem;
     }
 }
+.action-button {
+    padding: 20px 20px;
+    background-color: #020202; /* Color para el botón Eliminar */
+    color: #FFFFFF; /* Color del texto en el botón */
+    border: none;
+    border-radius: 5px;
+  
+}
+
+.modify {
+    background-color: #0077FF; /* Color para el botón Modificar */
+}
+
+/* Estilos para el contenedor de botones */
+.botones {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para los botones */
+button {
+    padding: 10px;
+    margin-bottom: 10px; /* Espacio entre los botones */
+}

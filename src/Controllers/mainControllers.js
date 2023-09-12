@@ -23,6 +23,17 @@ const mainController={
 		const product = products.find((item) => item.id == id);
 		res.render("detalles", {product, toThousand})
     },
+    
+  // Delete - Delete one product from DB
+  destroy: (req, res) => {
+    // Do the magic
+    const id = req.params.id;
+
+    const leftProducts = products.filter((product) => product.id != id);
+    fs.writeFileSync(productsFilePath, JSON.stringify(leftProducts));
+
+    res.redirect("/");
+  },
 
 
     showLogin: (req,res)=>{
@@ -60,7 +71,11 @@ const mainController={
     showEdit: (req,res)=>{
         res.render('edit')
     },
-
+    edit: (req, res) => {
+        const id = req.params.id;
+        const product = products.find((product) => product.id == id);
+        res.render("edit", {  product : product });
+      },
 
     showSeleccion: (req, res)=>{
         res.render("Seleccion")
@@ -68,9 +83,14 @@ const mainController={
 
     showproduct: (req, res)=>{
         res.render("product",{products})
-    }
+    },
+    
+  destroy: (req, res) => {
+    res.send("producto eliminado");
+  },
 
 };
+
 
 module.exports = mainController;
 
