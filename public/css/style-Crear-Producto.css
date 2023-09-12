@@ -118,7 +118,22 @@ main{
     border-radius: 5px;
     font-size: 17px;
 }
-
+.form-label {
+    display: inline-block;
+    font-size: 1.6em;
+    margin: 10px 0;
+  }
+.form-input {
+    display: block;
+    width: 400px;
+    height: 30px;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    border-radius: 8px;
+    border: none;
+    border: solid 1px var(--gray);
+    padding: 0 15px;
+  }
 .Precio input{
     background-color: #ffd850;
     border: none;

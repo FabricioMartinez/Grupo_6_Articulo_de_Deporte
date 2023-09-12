@@ -10,7 +10,7 @@
             <ul class="contenedor">
                 <lu><a class="category" href="#">Categoria</a></lu>
                 <lu><a class="category" href="#">Oferta</a></lu>
-                <lu><a class="category" href="./product">Todos los productos</a></lu>
+                <lu><a class="category" href="#">Todos los productos</a></lu>
                 <lu><a class="category" href="./admin-confirm">Vender</a></lu>
                 <lu><a class="category" href="#">Tendencia</a></lu>
                 <lu><a class="category" href="#">Ayuda</a></lu>
@@ -18,30 +18,6 @@
         </section>
         <section class="banner">
             <img src="./images/Home/main/Banner-Sportify.png" alt="logo">
-        </section>
-        
-        <section class="destacado">
-            <div class="texto1">
-                <h1>Destacado</h1>
-            </div>
-            <div class="articulos">
-                <% products.map(product =>{ %>
-                <section>
-                    <a href="./detalles/<%= product.id %>">
-                        <article class="destacado1">
-                            <figure>
-                                <img src="/images/Home//main/<%= product.image %>" alt="imagen de productos">
-                            </figure>
-                            <div class="detalle">
-                                <p><%= product.name %></p>
-                                <p><%= product.price %></p>
-                                <li class="caja-compra"><a class="compra" href="./carrito">Comprar</i></a></li>
-                            </div>
-                        </article>
-                    </a>
-                </section>
-                <% }) %>
-            </div>
         </section>
         <section class="productos">
             <div class="texto1">
