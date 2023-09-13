@@ -64,11 +64,11 @@ El último punto estaba a cargo de un compañero que por motivos personales tuvo
 Fue aquí que hubo una mejor organización y pudimos completar el sprint. a partir de ese momento se notó más participación. Esperamos tener la misma predisposición.
 Nos proponemos seguir trabajando como equipo y ayudarnos mutuamente.
 
-*Comenzar a hacer: llevar las clases al día y practicar más para poder desarrollar el sprint con mayor efiencia.
+*Comenzar a hacer: llevar las clases al día y practicar más para poder desarrollar el sprint con mayor efiencia y tambien agregar que podemos al fianl de cada sprint hacer un meet donde se vea las dificultades que tubo cada uno o que no pudo llegar a hacer, para asi poder continuar con los siguientes sprint de una manera organizada.
 *Hacer más: mejorar la comunicación y la participación en los meets. Tomar iniciativa en las actividades y pedir ayuda ante cualquier duda. Informar a nuestros compañeros cualquier inconveniente personal.
 Participar en las encuestas del grupo de WhatsApp y proponer nuevas ideas de trabajo.
-*Continuar haciendo: seguir repartiendo las actividades para una buena organización.
+*Continuar haciendo: seguir repartiendo las actividades para una buena organización 
 *Hacer menos: dejar de pasar por alto los mensajes del grupo.
-*Dejar de hacer: no dejar el sprint para los últimos días de entrega
+*Dejar de hacer: no dejar el sprint para los últimos días de entrega.
 
 DAYLI DEL 9/9/23: realizamos un meet en el que pudieron asistir 3 personas. En el mismo se asignaron las tareas para cada integrante del grupo.
