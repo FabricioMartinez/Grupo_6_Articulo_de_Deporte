@@ -69,13 +69,16 @@ const mainController={
 
 
     showEdit: (req,res)=>{
-        res.render('edit')
+        
+        const id = req.params.id;
+        const product = products.find(product => product.id == id);
+        res.render("edit", {  product : product });
     },
     edit: (req, res) => {
         const id = req.params.id;
-        const product = products.find((product) => product.id == id);
-        res.render("edit", {  product : product });
-      },
+        const product = products.find(product => product.id == id);
+        res.render('edit', {  product : product });
+    },
 
       update: (req, res) => {
 		// Do the magic
