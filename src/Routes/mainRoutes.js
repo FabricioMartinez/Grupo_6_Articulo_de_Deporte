@@ -35,12 +35,7 @@ mainRouter.get("/Seleccion", mainController.showSeleccion)
 mainRouter.get("/admin-confirm", mainController.showConfirmation);
 
 
-// mainRouter.get("/edit/:id", mainController.edit);
-// mainRouter.post("/edit/:id", mainController.update)
 
-
-//mainRouter.get("/edit", mainController.edit);
-//mainRouter.get("/Seleccion/edit/:id", mainController.edit);
 mainRouter.get("/detalles/edit/:id", mainController.edit);
 mainRouter.post("/detalles/edit/:id", mainController.edit);
 mainRouter.post('/', uploadFile.single("producImage"), mainController.article); 

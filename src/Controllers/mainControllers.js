@@ -80,7 +80,7 @@ const mainController={
         res.render('edit', {  product : product });
     },
 
-      update: (req, res) => {
+      /*update: (req, res) => {
 		// Do the magic
 		const id= req.params.id;
 		const editProduct= req.body;
@@ -93,7 +93,7 @@ const mainController={
 
 		fs.writeFileSync(productsFilePath,JSON.stringify (products));
 		res.redirect("/");
-	},
+	},*/
 
     showSeleccion: (req, res)=>{
         res.render("Seleccion")
