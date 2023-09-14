@@ -69,15 +69,16 @@ const mainController={
 
 
     showEdit: (req,res)=>{
-        res.render('edit')
-    },
-    edit: (req, res) => {
-        const id = req.params.id;
-        const product = products.find((product) => product.id == id);
-        res.render("edit", {  product : product });
+      
+        res.render("edit");
       },
+    // edit: (req, res) => {
+    //     const id = req.params.id;
+    //     const product = products.find((product) => product.id == id);
+    //     res.render("edit");
+    //   },
 
-      update: (req, res) => {
+      /*update: (req, res) => {
 		// Do the magic
 		const id= req.params.id;
 		const editProduct= req.body;
@@ -90,7 +91,7 @@ const mainController={
 
 		fs.writeFileSync(productsFilePath,JSON.stringify (products));
 		res.redirect("/");
-	},
+	},*/
 
     showSeleccion: (req, res)=>{
         res.render("Seleccion")

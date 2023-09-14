@@ -22,6 +22,7 @@ mainRouter.get("/formulario-de-register", mainController.showRegister );
 mainRouter.get("/carrito", mainController.showCart );
 mainRouter.get("/detalles/:id", mainController.showDetails);
 mainRouter.get("/login", mainController.showLogin);
+mainRouter.get("/edit", mainController.showEdit);
 
 
 mainRouter.get("/Crear-Producto", mainController.showCrear);
@@ -31,10 +32,10 @@ mainRouter.get("/product", mainController.showproduct)
 
 mainRouter.get("/Seleccion", mainController.showSeleccion)
 mainRouter.get("/admin-confirm", mainController.showConfirmation);
+mainRouter.get("/edit", mainController.showEdit);
 
-
-mainRouter.get("/edit/:id", mainController.showEdit);
-mainRouter.post("/edit/:id", mainController.update)
+// mainRouter.get("/edit/:id", mainController.showEdit);
+// mainRouter.post("/edit/:id", mainController.update)
 
 
 mainRouter.get("/detalles/edit/:id", mainController.showEdit);
