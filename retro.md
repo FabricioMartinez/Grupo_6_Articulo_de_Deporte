@@ -57,14 +57,14 @@ Desventajas: no todos pudimos cumplir con los plazos establecidos para cada tare
 RETROSPECTIVA DEL SPRINT 3
 
 En este sprint tuvimos pocos daylis. Hubo poca comunicaciÓn. Dejamos muchas cosas para el último momento. 
-La mayoria cumplió las tareas asiganadas.
+La mayoria cumplio con las tareas asignadas. 
 
-Se desarrollaron los 2 primeros puntos del sprint. 
-El último punto estaba a cargo de un compañero que por motivos personales tuvo que dejar el curso. Como se fue sin avisarnos tuvimos que repartir su tarea entre todos los integrantes del grupo
-Fue aquí que hubo una mejor organización y pudimos completar el sprint. a partir de ese momento se notó más participación. Esperamos tener la misma predisposición.
+Se desarrollaron los 2 primeros puntos del sprint sin inconvenientes. 
+El último punto estaba a cargo de un compañero que por motivos personales tuvo que dejar el curso. Como se fue sin avisarnos tuvimos que repartir su tarea entre todos los integrantes del grupo.
+Fue aquí que hubo una mejor organización, mas participacion de parte de todos los integrantes l que nos permitio  completar el sprint. A partir de ese momento se notó más participación en cuanto a tomar la iniciativa para relizar los meet . Esperamos tener la misma predisposición en los proximos sprint.
 Nos proponemos seguir trabajando como equipo y ayudarnos mutuamente.
 
-*Comenzar a hacer: llevar las clases al día y practicar más para poder desarrollar el sprint con mayor efiencia y tambien agregar que podemos al fianl de cada sprint hacer un meet donde se vea las dificultades que tubo cada uno o que no pudo llegar a hacer, para asi poder continuar con los siguientes sprint de una manera organizada.
+*Comenzar a hacer: llevar las clases al día y practicar más para poder desarrollar el sprint con mayor efiencia y tambien agregar que al final de cada sprint podemos hacer un meet donde se vea las dificultades que tubo cada uno o que no pudo llegar a hacer, para asi poder continuar con los siguientes sprint de una manera organizada.
 *Hacer más: mejorar la comunicación y la participación en los meets. Tomar iniciativa en las actividades y pedir ayuda ante cualquier duda. Informar a nuestros compañeros cualquier inconveniente personal.
 Participar en las encuestas del grupo de WhatsApp y proponer nuevas ideas de trabajo.
 *Continuar haciendo: seguir repartiendo las actividades para una buena organización 
@@ -72,3 +72,4 @@ Participar en las encuestas del grupo de WhatsApp y proponer nuevas ideas de tra
 *Dejar de hacer: no dejar el sprint para los últimos días de entrega.
 
 DAYLI DEL 9/9/23: realizamos un meet en el que pudieron asistir 3 personas. En el mismo se asignaron las tareas para cada integrante del grupo.
+DAYLI DEL 14/9/23: Se realizo un meet para ver los ultimos detalles del sprint donde pudieron participar 3 personas.

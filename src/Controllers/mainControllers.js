@@ -68,27 +68,32 @@ const mainController={
     },
 
 
-
+    showEdit: (req,res)=>{
+        
+        const id = req.params.id;
+        const product = products.find(product => product.id == id);
+        res.render("edit", {  product : product });
+    },
     edit: (req, res) => {
         const id = req.params.id;
-        const product = products.find((product) => product.id == id);
-        res.render("edit", {  productToEdit : product });
-      },
+        const product = products.find(product => product.id == id);
+        res.render('edit', {  product : product });
+    },
 
-    // update: (req, res) => {
-	// 	// Do the magic
-	// 	const id= req.params.id;
-	// 	const editProduct= req.body;
-	// 	const index = products.findIndex(product => product.id == id);
-	// 	products[index].name = editProduct.name
-	// 	products[index].price = editProduct.price
-	// 	products[index].discount = editProduct.discount
-	// 	products[index].category = !editProduct.category? products[index].category:editProduct.category
-	// 	products[index].description = editProduct.description
+      /*update: (req, res) => {
+		// Do the magic
+		const id= req.params.id;
+		const editProduct= req.body;
+		const index = products.findIndex(product => product.id == id);
+		products[index].name = editProduct.name
+		products[index].price = editProduct.price
+		products[index].discount = editProduct.discount
+		products[index].category = !editProduct.category? products[index].category:editProduct.category
+		products[index].description = editProduct.description
 
-	// 	fs.writeFileSync(productsFilePath,JSON.stringify (products));
-	// 	res.redirect("/");
-	// },
+		fs.writeFileSync(productsFilePath,JSON.stringify (products));
+		res.redirect("/");
+	},*/
 
     showSeleccion: (req, res)=>{
         res.render("Seleccion")

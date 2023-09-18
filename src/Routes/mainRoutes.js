@@ -22,6 +22,8 @@ mainRouter.get("/formulario-de-register", mainController.showRegister );
 mainRouter.get("/carrito", mainController.showCart );
 mainRouter.get("/detalles/:id", mainController.showDetails);
 mainRouter.get("/login", mainController.showLogin);
+mainRouter.get('/edit/:id', mainController.showEdit);
+
 
 
 mainRouter.get("/Crear-Producto", mainController.showCrear);
@@ -33,13 +35,9 @@ mainRouter.get("/Seleccion", mainController.showSeleccion)
 mainRouter.get("/admin-confirm", mainController.showConfirmation);
 
 
-mainRouter.get("/detalles/edit:id", mainController.edit)
 
-
-
-// mainRouter.get("/edit:id", mainController.edit);
-// mainRouter.post('/edit:id', mainController.update); 
-
-
+mainRouter.get("/detalles/edit/:id", mainController.edit);
+mainRouter.post("/detalles/edit/:id", mainController.edit);
+mainRouter.post('/', uploadFile.single("producImage"), mainController.article); 
 mainRouter.post("/detalles/delete/:id", mainController.destroy);
 module.exports = mainRouter;
