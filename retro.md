@@ -72,5 +72,20 @@ Participar en las encuestas del grupo de WhatsApp y proponer nuevas ideas de tra
 *Dejar de hacer: no dejar el sprint para los últimos días de entrega.
 
 DAYLI DEL 9/9/23: realizamos un meet en el que pudieron asistir 3 personas. En el mismo se asignaron las tareas para cada integrante del grupo.
+<<<<<<< HEAD
 DAYLI DEL 14/9/23: Se realizó un meet para ver los ultimos detalles del sprint donde pudieron participar 3 personas.
 
+=======
+DAYLI DEL 14/9/23: Se realizo un meet para ver los ultimos detalles del sprint donde pudieron participar 3 personas.
+
+Retrospectiva del Sprint 4
+
+1. Comenzar a hacer: determinamos la tarea de que cada integrante sea el responsable de organizar la reunion de meet correspondiente a su dia asignado. Usar el tablero de trabajo.
+2. Hacer más: reuniones en donde participen todos los integrantes.
+3. Continuar haciendo: la distribucion de tareas.
+4. Hacer menos: pasar por alto los mensajes del grupo.
+5. Dejar de hacer: poca comunicacion
+   Tuvimos complicaciones para el desarrollo de las tareas asignadas y sus respectivas entregas, no pudimos llevar un desarrollo entre el grupo, donde no todas las personas pudieron aportar al trabajo pero se logro terminar el trabajo y entregarlo a tiempo. Seguimos con complicaciones en la comunicacion entre los integrantes y un compañero por razones personale tuvo que dejar el curso y eso tambien significo una complicacion. Otra complicacion que estamos viendo son los acotados tiempos por la carga horario que lleva la facultad. En las reuniones se nota un clima muy calido y alegre.
+
+   dayli 17/09/23:leimos las consignas del sprint 5 y realizamos la retrospectiva del sprint 4. Se realizo una distribucion de tareas y se establecio un tiempo para ponernos al dia con el curso
+>>>>>>> ffadb6512f0d2706214b497eaf8269b64232e6f1
