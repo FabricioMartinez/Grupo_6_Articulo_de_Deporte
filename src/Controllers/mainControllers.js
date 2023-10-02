@@ -51,7 +51,6 @@ const mainController={
     },
     article:(req, res)=>{
         const data= req.body;
-        console.log(data);
         const index= products[products.length -1].id;
         const NuevoProducto ={
             id: index +1,
