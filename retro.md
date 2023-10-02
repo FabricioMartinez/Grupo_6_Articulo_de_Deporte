@@ -72,4 +72,5 @@ Participar en las encuestas del grupo de WhatsApp y proponer nuevas ideas de tra
 *Dejar de hacer: no dejar el sprint para los últimos días de entrega.
 
 DAYLI DEL 9/9/23: realizamos un meet en el que pudieron asistir 3 personas. En el mismo se asignaron las tareas para cada integrante del grupo.
-DAYLI DEL 14/9/23: Se realizo un meet para ver los ultimos detalles del sprint donde pudieron participar 3 personas.
+DAYLI DEL 14/9/23: Se realizó un meet para ver los ultimos detalles del sprint donde pudieron participar 3 personas.
+
