@@ -20,38 +20,43 @@
             <article class="container-general">
                 <h2 class="titulo">General</h2>
                 <img class="general-img" src="/images/edit/edit-sportify.jpg" alt="" >
-                <form action="">
+                <form action=".mainRooutes/detalles/edit/<%= product.id %>">
                     <label class="label" for="name">Nombre del articulo:</label>
-                    <input value= "<%= product.name%>" class="input-text label" type="text" name="name" id="name">
+                    <input placeholder= "<%= product.name%>" class="input-text label" type="text" name="name" id="name">
                     <br>
                     <label class="label" for="descript">Descripcion del articulo:</label>
-                    <input class="input-text label" type="text" name="descript" id="descript">
+                    <input placeholder= "<%= product.description%>" class="input-text label" type="text" name="descript" id="descript">
                     <br>
                     <label class="label" for="price">Precio del articulo:</label>
-                    <input class="input-text label" type="text" name="price" id="price">
+                    <input placeholder= "<%= product.price%>" class="input-text label" type="text" name="price" id="price">
                 </form>
             </article>
             <article class="container-especificaciones">
                 <div class="contitulo"><h2 class="titulo">Especificaciones</h2></div>
-                <form action="">
+                <form action=" ">
+
                     <label class="label" for="name-edit">Cambiar nombre:</label>
-                    <input class="input-text" type="text" name="name-edit label" id="name-edit">
+                    <input value= "<%= product.name%>" class="input-text" type="text" name="name-edit label" id="name-edit">
                     <br>
                     <label class="label" for="categoria-edit">Cambiar categoria:</label>
-                    <input class="input-text label" type="text" name="categoria-edit" id="categoria-edit">
+                    <input value="<%= product.category%>" class="input-text label" type="text" name="categoria-edit" id="categoria-edit">
                     <br>
                     <label class="label" for="price-edit">Cambiar precio:</label>
-                    <input class="input-text label" type="text" name="price-edit" id="price-edit">
+                    <input value="<%= product.price%>" class="input-text label" type="text" name="price-edit" id="price-edit">
+                    <button type="submit" >GUARDAR CAMBIOS</button>
                 </form>
             </article>
             <article class="container-caracteristicas">
                 <h2 class="titulo">Caracteristicas</h2>
                 <form action="">
+
                     <label class="label" for="img-edit">Cambiar imagen:</label>
                     <input class="input-text label" type="file" name="img-edit" id="img-edit">
                     <br>
                     <label class="label" for="descript-edit">Cambiar descripcion:</label>
-                    <textarea class="textarea label" name="descript-edit" id="descript-edit" cols="30" rows="6"></textarea>
+                    <textarea value="<%= product.description%>" class="textarea label" name="descript-edit" id="descript-edit" cols="30" rows="6"></textarea>
+                    
+                    <button type="submit" >GUARDAR CAMBIOS</button>
                 </form>
             </article>
         </div>

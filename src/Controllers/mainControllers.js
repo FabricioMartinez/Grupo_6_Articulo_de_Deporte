@@ -1,17 +1,17 @@
 const fs= require("fs")
 const path = require ("path");
 const productsFilePath = path.join(__dirname, '../data/productDatos.json');
-const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
+
+
+
 const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+const {validationResult}= require("express-validator");
 
 const mainController={
     showHome:(req, res)=>{
         res.render("index",{products});
     },
-    showRegister: (req, res)=>{
-    res.render("formulario-de-register");
-    },
-
 
     showCart: (req, res)=>{
     res.render("carrito",  {products ,título: "Productos para comprar"});
@@ -50,7 +50,16 @@ const mainController={
     res.render("Crear-Producto")
     },
     article:(req, res)=>{
+        //Realizar la validaciones
+        const resultvalidation= validationResult(req);
+        if(resultvalidation.errors.length>0){
+            res.render("Crear-Producto",{
+                errors: resultvalidation.mapped(),
+                oldData:req.body
+            })
+        }else{
         const data= req.body;
+        console.log(data);
         const index= products[products.length -1].id;
         const NuevoProducto ={
             id: index +1,
@@ -64,9 +73,12 @@ const mainController={
         products.push(NuevoProducto);
 		fs.writeFileSync(productsFilePath,JSON.stringify (products));
         res.redirect("/");
+    }
     },
 
 
+    
+    //Editar producto
     showEdit: (req,res)=>{
         
         const id = req.params.id;
@@ -79,7 +91,7 @@ const mainController={
         res.render('edit', {  product : product });
     },
 
-      /*update: (req, res) => {
+    update: (req, res) => {
 		// Do the magic
 		const id= req.params.id;
 		const editProduct= req.body;
@@ -87,12 +99,12 @@ const mainController={
 		products[index].name = editProduct.name
 		products[index].price = editProduct.price
 		products[index].discount = editProduct.discount
-		products[index].category = !editProduct.category? products[index].category:editProduct.category
+		products[index].category = !editProduct.category? products[index]:editProduct.category
 		products[index].description = editProduct.description
 
 		fs.writeFileSync(productsFilePath,JSON.stringify (products));
 		res.redirect("/");
-	},*/
+	},
 
     showSeleccion: (req, res)=>{
         res.render("Seleccion")
