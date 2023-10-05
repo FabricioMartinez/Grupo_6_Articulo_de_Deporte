@@ -42,6 +42,13 @@ const mainController={
     console.log(Data);
     const resultValidation = validationResult(req) ;
     console.log(resultValidation);
+    //validación de contraseña - probando
+    const contraseña = "P@ssw0rd";
+    if (validarContraseña(contraseña)) {
+      console.log("Contraseña válida");
+    } else {
+      console.log("Contraseña no válida");
+    }
 
     },
 
