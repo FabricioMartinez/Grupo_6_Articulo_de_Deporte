@@ -11,6 +11,7 @@ app.use(express.json());
 app.set("view engine", "ejs");
 app.set("views", "./src/views");
 
+
 app.use(express.static("public"));
 
 
@@ -18,7 +19,22 @@ app.use(express.static("public"));
 app.use(mainRouterUser);
 app.use('/', mainRouter);
 
-
+// Middleware para verificar si el usuario está logueado
+function isAuthenticated(req, res, next) {
+    if (req.isAuthenticated()) {
+      return next();
+    }
+    res.redirect('/login'); // Redirigir al login si no está logueado
+  }
+  
+  // Rutas accesibles solo sin login
+  app.use('/', (req, res, next) => {
+    if (req.isAuthenticated()) {
+      res.redirect('/perfil'); // Redirigir al perfil si está logueado
+    } else {
+      next(); // Continuar con las rutas si no está logueado
+    }
+  });
 
 
 

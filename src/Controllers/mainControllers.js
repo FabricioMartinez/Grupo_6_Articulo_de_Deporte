@@ -116,8 +116,21 @@ const mainController={
     
   
 
-};
 
+    profile: (req, res) => {
+        console.log(req.cookies);
+        return res.render("userProfile", {
+          user: req.session.userLogged,
+        });
+      },
+    
+      logout: (req, res) => {
+        res.clearCookie("userEmail");
+        req.session.destroy(() => {
+          res.redirect("/");
+        });
+      },
+    };
 
 module.exports = mainController;
 
