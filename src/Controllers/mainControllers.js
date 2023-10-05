@@ -38,6 +38,11 @@ const mainController={
 
     showLogin: (req,res)=>{
     res.render("login");
+    const Data =req.body;
+    console.log(Data);
+    const resultValidation = validationResult(req) ;
+    console.log(resultValidation);
+
     },
 
 
