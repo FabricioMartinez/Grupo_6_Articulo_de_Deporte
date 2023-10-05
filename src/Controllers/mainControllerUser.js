@@ -13,19 +13,14 @@ const mainControllerUser={
     },
     user:(req,res)=>{
         const data= req.body;
-        console.log(req.body);
+        //console.log(req.body);
 
         const resultValidation = validationResult(req) ;
-        console.log(resultValidation);
-
-
-
-
-
-
-
-
-        const index= products[products.length -1].id;
+        //console.log(resultValidation);
+        if(resultValidation.errors.length > 0){
+            res.render('formulario-de-register',{errors:resultValidation.mapped(),oldData:req.body});
+        }else{
+            const index= products[products.length -1].id;
          const NuevoUsuario={
              id: index+1,
              fullname: data.fullname,
@@ -38,6 +33,7 @@ const mainControllerUser={
          products.push(NuevoUsuario);
 		 fs.writeFileSync(productsFilePath,JSON.stringify (products));
          res.redirect("/product");
+        }   
     },
 }
 
