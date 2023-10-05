@@ -33,7 +33,8 @@
             </article>
             <article class="container-especificaciones">
                 <div class="contitulo"><h2 class="titulo">Especificaciones</h2></div>
-                <form action=" ">
+                <form action=" ./edit/<%= product.id %> "
+                    method="POST">
 
                     <label class="label" for="name-edit">Cambiar nombre:</label>
                     <input value= "<%= product.name%>" class="input-text" type="text" name="name-edit label" id="name-edit">
@@ -44,6 +45,7 @@
                     <label class="label" for="price-edit">Cambiar precio:</label>
                     <input value="<%= product.price%>" class="input-text label" type="text" name="price-edit" id="price-edit">
                     <button type="submit" >GUARDAR CAMBIOS</button>
+
                 </form>
             </article>
             <article class="container-caracteristicas">
