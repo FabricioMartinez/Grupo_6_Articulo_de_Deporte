@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include ("./partials/head") %>
+</head>
+<body>
+    <%- include ("./partials/header")%>
+    <main>
+        <section class="Option">
+            <ul class="contenedor">
+                <li><a class="category" href="#">Categoría</a></li>
+                <li><a class="category" href="#">Ofertas</a></li>
+                <li><a class="category" href="./product">Todos los productos</a></li>
+                <li><a class="category" href="./admin-confirm">Vender</a></li>
+                <li><a class="category" href="#">Tendencias</a></li>
+                <li><a class="category" href="#">Ayuda</a></li>
+            </ul>
+        </section>
+        <section class="banner">
+            <img src="./images/Home/main/Banner-Sportify.png" alt="logo">
+        </section>
+        
+        <!-- Container -->
+        <div class="contenedor" style="margin-top: 40px">
+            <div class="row">
+                <div class="col-md-3">
+                    <h2>Hi User: <%= user.fullname %></h2>
+                    <!-- Cambia la línea siguiente con la variable correcta del producto -->
+                    <img src="/images/Home/main/<%= user.avatar %>" alt="User" />
+                    <br />
+                    <br />
+                    <div class="alert alert-success"><%= user.email %></div>
+                </div>
+            </div>
+        </div>
+        <!-- //Container -->
+    </main>
+    <%- include ("./partials/footer")%>
+</body>
+</html>

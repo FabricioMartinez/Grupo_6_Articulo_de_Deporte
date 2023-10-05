@@ -1,17 +1,17 @@
 const fs= require("fs")
 const path = require ("path");
 const productsFilePath = path.join(__dirname, '../data/productDatos.json');
-const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
+
+
+
 const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+const {validationResult}= require("express-validator");
 
 const mainController={
     showHome:(req, res)=>{
         res.render("index",{products});
     },
-    showRegister: (req, res)=>{
-    res.render("formulario-de-register");
-    },
-
 
     showCart: (req, res)=>{
     res.render("carrito",  {products ,título: "Productos para comprar"});
@@ -38,6 +38,11 @@ const mainController={
 
     showLogin: (req,res)=>{
     res.render("login");
+    const Data =req.body;
+    console.log(Data);
+    const resultValidation = validationResult(req) ;
+    console.log(resultValidation);
+
     },
 
 
@@ -50,8 +55,16 @@ const mainController={
     res.render("Crear-Producto")
     },
     article:(req, res)=>{
+        //Realizar la validaciones
+        const resultvalidation= validationResult(req);
+        if(resultvalidation.errors.length>0){
+            res.render("Crear-Producto",{
+                errors: resultvalidation.mapped(),
+                oldData:req.body
+            })
+        }else{
         const data= req.body;
-        console.log(data);
+        //console.log(data);
         const index= products[products.length -1].id;
         const NuevoProducto ={
             id: index +1,
@@ -65,9 +78,12 @@ const mainController={
         products.push(NuevoProducto);
 		fs.writeFileSync(productsFilePath,JSON.stringify (products));
         res.redirect("/");
+    }
     },
 
 
+    
+    //Editar producto
     showEdit: (req,res)=>{
         
         const id = req.params.id;
@@ -105,8 +121,21 @@ const mainController={
     
   
 
-};
 
+    profile: (req, res) => {
+        console.log(req.cookies);
+        return res.render("userProfile", {
+          user: req.session.userLogged,
+        });
+      },
+    
+      logout: (req, res) => {
+        res.clearCookie("userEmail");
+        req.session.destroy(() => {
+          res.redirect("/");
+        });
+      },
+    };
 
 module.exports = mainController;
 

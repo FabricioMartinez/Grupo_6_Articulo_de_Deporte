@@ -2,7 +2,17 @@ const express = require ("express");
 const mainController = require("../Controllers/mainControllers");
 const mainRouter = express.Router();
 const multer= require("multer");
-const path = require("path")
+const path = require("path");
+const {body} = require("express-validator"); 
+const validationLogin = require("../../middleware/validationLongin");
+
+//configuracion de express validator
+const validations=[
+    body("name").notEmpty().withMessage("Se requiere completar el campo de nombre"),
+    body("price").notEmpty().withMessage("Se requiere completar el campo de precio").bail().isNumeric().withMessage("El campo precio debe ser un numero."),
+]
+
+
 
 const storage= multer.diskStorage({
     destination: (req, file, cb)=>{
@@ -18,17 +28,21 @@ const uploadFile = multer({storage});
 
 mainRouter.get("/", mainController.showHome);
 
-mainRouter.get("/formulario-de-register", mainController.showRegister );
+
+
 mainRouter.get("/carrito", mainController.showCart );
 mainRouter.get("/detalles/:id", mainController.showDetails);
 mainRouter.get("/login", mainController.showLogin);
-/*mainRouter.get('/edit/:id', mainController.showEdit);*/
+//post login
+mainRouter.post("/login",validationLogin,mainController.showLogin);
+mainRouter.get('/edit/:id', mainController.showEdit);
 
 
 
-
+// Ruta para crear producto
 mainRouter.get("/Crear-Producto", mainController.showCrear);
-mainRouter.post('/', uploadFile.single("producImage"), mainController.article); 
+//validar campos de este formulario, pasar validaciones
+mainRouter.post('/', uploadFile.single("producImage"),validations, mainController.article); 
 
 mainRouter.get("/product", mainController.showproduct)
 
@@ -39,7 +53,7 @@ mainRouter.get("/admin-confirm", mainController.showConfirmation);
 
 mainRouter.get("/detalles/edit/:id", mainController.edit);
 mainRouter.post("/detalles/edit/:id", mainController.update);
-
-mainRouter.post('/', uploadFile.single("producImage"), mainController.article); 
 mainRouter.post("/detalles/delete/:id", mainController.destroy);
+
+
 module.exports = mainRouter;

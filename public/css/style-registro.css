@@ -169,6 +169,9 @@ input {
     width: 120px;
 }
 
+.card3{
+    display: flex;
+}
 
 .card2 {
     display:flex;

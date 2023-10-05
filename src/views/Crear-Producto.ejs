@@ -18,7 +18,10 @@
             <h1>Crear Producto</h1>
             <div class="Product-name">
                 <h2>Nombre del Producto</h2>
-                <input type="text" name="name" id="" placeholder="Insertar nombre" class="form-input">
+                <input type="text" name="name" id="name" value="<%=  locals.oldData? oldData.name : null%>" placeholder="Insertar nombre" class="form-input">
+                <% if(locals.errors && errors.name){ %>
+                <%= errors.name.msg %>
+                <% } %>
             </div>
             <div class="Category">
                 <h2>Categoria del productos</h2>
@@ -31,7 +34,10 @@
             </div>
             <div class="Precio">
                 <label for="price" class="form-label">Precio del Producto:</label>
-                <input type="text" name="price" id="" placeholder="Insetar precio" class="form-input">
+                <input type="text" name="price" id="" value="<%=  locals.oldData? oldData.price : null%>" placeholder="Insetar precio" class="form-input">
+                <% if(locals.errors && errors.price){ %>
+                    <%= errors.price.msg %>
+                    <% } %>
             </div>
             <div class="imagen">
                 <h2>Imagen del pruducto</h2>

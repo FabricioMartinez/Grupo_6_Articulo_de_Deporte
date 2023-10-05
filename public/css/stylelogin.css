@@ -6,7 +6,7 @@
 }
 
 
-body {
+main {
   font-family: 'Roboto', sans-serif;
   background-image: url('../images/munbaik-cycling-clothing-Ln9uvGy5Yio-unsplash.jpg');
   background-size: cover;
@@ -17,6 +17,7 @@ body {
   min-height: 100vh; 
   display: flex;
   flex-direction: column; 
+  justify-content: center;
 }
 
 nav{
@@ -136,6 +137,7 @@ h1{
   text-align: center;
   color:#fff
 }
+
 .for {
   max-width: 300px;
   margin: 0 auto;
