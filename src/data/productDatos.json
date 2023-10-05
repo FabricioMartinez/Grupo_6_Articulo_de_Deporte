@@ -1,1 +1,74 @@
-[{"id":1,"name":"Zapatillas nike","price":12000,"category":"offer","description":"pal futbol","image":"zapatillas-nike--tanjun-mujer.jpg"},{"id":2,"name":"Pelota del mundial","price":25000,"category":"offer","description":"pal futbol","image":"al-rihla_w416.jpg"},{"id":3,"name":"Campera re piola","price":8000,"category":"offer","description":"pal frio","image":"DD2124_010_A_PREM.jpg"},{"id":4,"name":"Raqueta","price":3500,"category":"offer","description":"pal tenis","image":"raqueta-de-tenis-wilson-us-open-21-ni_o-86004r002031001-1.jpg"},{"id":5,"name":"Camiseta Argentina 2022","price":12000,"category":"Sport","description":"pal futbol","image":"WhatsAppImage2023-02-06at10.42.54_4ccffd09-f555-4c5e-ae3b-c1a7731b581b.jpg"},{"id":6,"name":"Pelota de Basquet","price":8000,"category":"Sport","description":"pal basket","image":"786236-800-auto.png"},{"id":7,"name":"Bate de Besiball","price":3000,"category":"Sport","description":"pal beibol","image":"D_NQ_NP_666219-MLA45094246389_032021-O.jpg"},{"id":10,"name":"Mouse","price":"20000","category":"offer","description":"","image":"products_1696396439133.jpg"},{"id":11,"name":"Mouse","price":"13000","category":"Sport","description":"","image":"products_1696429706403.png"}]
+[
+    {
+        "id": 1,
+        "name": "Zapatillas nike",
+        "price": 12000,
+        "category": "offer",
+        "description": "pal futbol",
+        "image": "zapatillas-nike--tanjun-mujer.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Pelota del mundial",
+        "price": 25000,
+        "category": "offer",
+        "description": "pal futbol",
+        "image": "al-rihla_w416.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Campera re piola",
+        "price": 8000,
+        "category": "offer",
+        "description": "pal frio",
+        "image": "DD2124_010_A_PREM.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Raqueta",
+        "price": 3500,
+        "category": "offer",
+        "description": "pal tenis",
+        "image": "raqueta-de-tenis-wilson-us-open-21-ni_o-86004r002031001-1.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Camiseta Argentina 2022",
+        "price": 12000,
+        "category": "Sport",
+        "description": "pal futbol",
+        "image": "WhatsAppImage2023-02-06at10.42.54_4ccffd09-f555-4c5e-ae3b-c1a7731b581b.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Pelota de Basquet",
+        "price": 8000,
+        "category": "Sport",
+        "description": "pal basket",
+        "image": "786236-800-auto.png"
+    },
+    {
+        "id": 7,
+        "name": "Bate de Besiball",
+        "price": 3000,
+        "category": "Sport",
+        "description": "pal beibol",
+        "image": "D_NQ_NP_666219-MLA45094246389_032021-O.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Mouse",
+        "price": "20000",
+        "category": "offer",
+        "description": "",
+        "image": "products_1696396439133.jpg"
+    },
+    {
+        "id": 11,
+        "name": "Mouse",
+        "price": "13000",
+        "category": "Sport",
+        "description": "",
+        "image": "products_1696429706403.png"
+    }
+]

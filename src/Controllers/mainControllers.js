@@ -59,7 +59,7 @@ const mainController={
             })
         }else{
         const data= req.body;
-        console.log(data);
+        //console.log(data);
         const index= products[products.length -1].id;
         const NuevoProducto ={
             id: index +1,
