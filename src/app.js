@@ -14,7 +14,7 @@ app.set("views", "./src/views");
 app.use(express.static("public"));
 
 app.use(express.urlencoded({extended:false}));
-app.use(express.json());
+app.use(express.json());//lineas para capturar la informacion y convertirla en json
 
 
 app.use(mainRouterUser); //ruta a mainRouterUser
