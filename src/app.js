@@ -13,10 +13,12 @@ app.set("views", "./src/views");
 
 app.use(express.static("public"));
 
+app.use(express.urlencoded({extended:false}));
+app.use(express.json());
 
 
-app.use(mainRouterUser);
-app.use('/', mainRouter);
+app.use(mainRouterUser); //ruta a mainRouterUser
+app.use('/', mainRouter); //ruta a mainRouter
 
 
 

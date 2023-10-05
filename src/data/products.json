@@ -1,0 +1,227 @@
+[
+    {
+        "id": 1,
+        "name": "Zapatillas de Running Nike Air Zoom Pegasus 38",
+        "description": "Las zapatillas de running Nike Air Zoom Pegasus 38 ofrecen una amortiguación reactiva y una tracción duradera para tus carreras diarias. Son ideales para corredores de todos los niveles.",
+        "img": ".jpg",
+        "category": "Zapatillas",
+        "colors": ["Negro/Azul", "Blanco/Gris", "Rojo/Negro"],
+        "price": 129.99
+    },
+    {
+        "id": 2,
+        "name": "Balón de Fútbol Adidas Tango",
+        "description": "El balón de fútbol Adidas Tango es famoso por su diseño icónico y su rendimiento excepcional en el campo. Está hecho de materiales duraderos y proporciona un buen control.",
+        "img": ".jpg",
+        "category": "Pelotas",
+        "colors": ["Blanco/Negro", "Rojo/Blanco"],
+        "price": 39.99
+    },
+    {
+        "id": 3,
+        "name": "Raqueta de Tenis Wilson Pro Staff RF97",
+        "description": "La raqueta de tenis Wilson Pro Staff RF97 es la elección de Roger Federer. Ofrece un control excepcional y potencia en cada golpe. Ideal para jugadores avanzados.",
+        "img": "wilson_prostaff_rf97.jpg",
+        "category": "Raquetas",
+        "colors": ["Negro/Azul", "Blanco/Negro"],
+        "price": 239.99
+    },
+    {
+        "id": 4,
+        "name": "Camiseta de Fútbol Adidas Entrada 18",
+        "description": "La camiseta de fútbol Adidas Entrada 18 es perfecta para entrenamientos y partidos. Ofrece comodidad y transpirabilidad. Disponible en varios colores.",
+        "img": "adidas_entrada18.jpg",
+        "category": "Camisetas",
+        "colors": ["Azul/Negro", "Rojo/Blanco", "Verde/Amarillo"],
+        "price": 24.99
+    },
+    {
+        "id": 5,
+        "name": "Bicicleta de Montaña Cannondale Trail 7",
+        "description": "La bicicleta de montaña Cannondale Trail 7 es ideal para aventuras en senderos. Tiene una construcción resistente y componentes de alta calidad para un rendimiento excepcional.",
+        "img": "cannondale_trail7.jpg",
+        "category": "Bicicletas",
+        "colors": ["Negro/Azul", "Rojo/Negro"],
+        "price": 899.99
+    },
+    {
+        "id": 6,
+        "name": "Pantalones de Yoga Lululemon Align",
+        "description": "Los pantalones de yoga Lululemon Align están diseñados para brindar comodidad y libertad de movimiento durante tus prácticas de yoga. Fabricados con tela suave y elástica.",
+        "img": "lululemon_align.jpg",
+        "category": "Ropa",
+        "colors": ["Negro", "Gris", "Azul"],
+        "price": 79.99
+    },
+    {
+        "id": 7,
+        "name": "Pelota de Baloncesto Spalding NBA Street",
+        "description": "La pelota de baloncesto Spalding NBA Street es perfecta para partidos informales en la calle. Tiene un buen agarre y durabilidad. Aprobada por la NBA.",
+        "img": "spalding_nba_street.jpg",
+        "category": "Balones",
+        "colors": ["Naranja/Negro"],
+        "price": 29.99
+    },
+    {
+        "id": 8,
+        "name": "Raqueta de Squash Dunlop Hyperfibre XT",
+        "description": "La raqueta de squash Dunlop Hyperfibre XT es una elección popular entre jugadores de todos los niveles. Ofrece potencia y control excepcionales en la cancha.",
+        "img": "dunlop_hyperfibre_xt.jpg",
+        "category": "Raquetas",
+        "colors": ["Negro/Amarillo"],
+        "price": 129.99
+    },
+    {
+        "id": 9,
+        "name": "Casco de Ciclismo Giro Syntax",
+        "description": "El casco de ciclismo Giro Syntax ofrece una protección confiable y un diseño aerodinámico. Cuenta con ventilación eficiente para mantenerte fresco en tus rutas.",
+        "img": "giro_syntax.jpg",
+        "category": "Cascos",
+        "colors": ["Blanco", "Negro", "Amarillo"],
+        "price": 79.99
+    },
+    {
+        "id": 10,
+        "name": "Patineta Element Section",
+        "description": "La patineta Element Section es perfecta para skaters de todos los niveles. Cuenta con una construcción duradera y un diseño moderno para un rendimiento óptimo.",
+        "img": "element_section.jpg",
+        "category": "Patinetas",
+        "colors": ["Rojo/Negro", "Azul/Blanco"],
+        "price": 89.99
+    },
+    {
+        "id": 11,
+        "name": "Leggings Deportivos Reebok Lux 2.0",
+        "description": "Los leggings deportivos Reebok Lux 2.0 son ideales para entrenamientos de alta intensidad. Ofrecen compresión y soporte para una experiencia cómoda y segura.",
+        "img": "reebok_lux_2.jpg",
+        "category": "Ropa",
+        "colors": ["Negro", "Azul Marino", "Rosa"],
+        "price": 49.99
+    },
+    {
+        "id": 12,
+        "name": "Balón de Voleibol Mikasa MVA200",
+        "description": "El balón de voleibol Mikasa MVA200 es el balón oficial de la FIVB y se ha utilizado en numerosos campeonatos mundiales. Ofrece un gran agarre y durabilidad.",
+        "img": "mikasa_mva200.jpg",
+        "category": "Balones",
+        "colors": ["Amarillo/Azul"],
+        "price": 69.99
+    },
+    {
+        "id": 13,
+        "name": "Gorra New Era 9FORTY MLB",
+        "description": "La gorra New Era 9FORTY MLB es un accesorio imprescindible para los fanáticos del béisbol. Cuenta con el logotipo de tu equipo favorito y ofrece comodidad durante todo el día.",
+        "img": "new_era_9forty.jpg",
+        "category": "Gorras",
+        "colors": ["Azul Marino", "Rojo", "Negro"],
+        "price": 29.99
+    },
+    {
+        "id": 14,
+        "name": "Mochila de Senderismo Osprey Atmos AG 65",
+        "description": "La mochila de senderismo Osprey Atmos AG 65 es conocida por su comodidad y ventilación. Es ideal para travesías de varios días en la montaña.",
+        "img": "osprey_atmos_ag65.jpg",
+        "category": "Mochilas",
+        "colors": ["Verde", "Gris"],
+        "price": 299.99
+    },
+    {
+        "id": 15,
+        "name": "Guantes de Ciclismo Giro Monaco II",
+        "description": "Los guantes de ciclismo Giro Monaco II proporcionan un ajuste perfecto y una gran comodidad en tus rutas en bicicleta. Son ideales para cualquier tipo de clima.",
+        "img": "giro_monaco2.jpg",
+        "category": "Guantes",
+        "colors": ["Negro/Azul", "Rojo/Negro"],
+        "price": 39.99
+    },
+    {
+        "id": 16,
+        "name": "Pelota de Golf Titleist Pro V1",
+        "description": "La pelota de golf Titleist Pro V1 es la elección de muchos golfistas profesionales. Ofrece un vuelo consistente y un gran control en el campo de golf.",
+        "img": "titleist_prov1.jpg",
+        "category": "Pelotas",
+        "colors": ["Blanco"],
+        "price": 49.99
+    },
+    {
+        "id": 17,
+        "name": "Pistola de Paintball Tippmann Cronus Tactical",
+        "description": "La pistola de paintball Tippmann Cronus Tactical es perfecta para jugadores de paintball recreativo. Cuenta con características tácticas y es altamente confiable en el campo.",
+        "img": "tippmann_cronus_tactical.jpg",
+        "category": "Pistolas",
+        "colors": ["Negro/Tan"],
+        "price": 149.99
+    },
+    {
+        "id": 18,
+        "name": "Tabla de Surf Channel Islands Al Merrick",
+        "description": "La tabla de surf Channel Islands Al Merrick es una opción popular entre los surfistas avanzados. Ofrece un rendimiento excepcional en olas grandes y potentes.",
+        "img": "channel_islands_al_merrick.jpg",
+        "category": "Tablas",
+        "colors": ["Azul", "Blanco"],
+        "price": 699.99
+    },
+    {
+        "id": 19,
+        "name": "Pesa Rusa Bowflex SelectTech",
+        "description": "La pesa rusa Bowflex SelectTech es ajustable y te permite cambiar el peso con facilidad. Es perfecta para una variedad de ejercicios de entrenamiento de fuerza.",
+        "img": "bowflex_selecttech.jpg",
+        "category": "Pesas",
+        "colors": ["Negro"],
+        "price": 149.99
+    },
+    {
+        "id": 20,
+        "name": "Casco de Escalada Black Diamond Half Dome",
+        "description": "El casco de escalada Black Diamond Half Dome proporciona una protección confiable y una comodidad excepcional durante tus aventuras de escalada en roca.",
+        "img": "black_diamond_half_dome.jpg",
+        "category": "Cascos",
+        "colors": ["Azul", "Blanco"],
+        "price": 64.99
+    },
+    {
+        "id": 21,
+        "name": "Raqueta de Pádel Bullpadel Vertex 03",
+        "description": "La raqueta de pádel Bullpadel Vertex 03 es una elección popular entre jugadores de pádel avanzados. Ofrece un buen equilibrio entre potencia y control.",
+        "img": "bullpadel_vertex03.jpg",
+        "category": "Raquetas",
+        "colors": ["Negro/Azul", "Rojo/Negro"],
+        "price": 149.99
+    },
+    {
+        "id": 22,
+        "name": "Gafas de Sol Oakley Radar EV Path",
+        "description": "Las gafas de sol Oakley Radar EV Path están diseñadas para atletas y ofrecen una protección óptima contra los rayos UV. Son ideales para deportes al aire libre.",
+        "img": "oakley_radar_ev.jpg",
+        "category": "Gafas",
+        "colors": ["Negro", "Blanco"],
+        "price": 179.99
+    },
+    {
+        "id": 23,
+        "name": "Calcetines Deportivos Nike Everyday",
+        "description": "Los calcetines deportivos Nike Everyday son cómodos y duraderos. Son ideales para entrenamientos de todo tipo y ofrecen un ajuste perfecto.",
+        "img": "nike_everyday_socks.jpg",
+        "category": "Ropa",
+        "colors": ["Negro/Blanco", "Gris/Negro"],
+        "price": 14.99
+    },
+    {
+        "id": 24,
+        "name": "Bicicleta Estática Schwinn 170",
+        "description": "La bicicleta estática Schwinn 170 es perfecta para entrenamientos en casa. Cuenta con una variedad de programas y niveles de resistencia para un entrenamiento personalizado.",
+        "img": "schwinn_170.jpg",
+        "category": "Bicicletas",
+        "colors": ["Gris"],
+        "price": 599.99
+    },
+    {
+        "id": 25,
+        "name": "Gorra de Natación Speedo Solid Latex",
+        "description": "La gorra de natación Speedo Solid Latex es ideal para entrenamientos y competiciones en la piscina. Ofrece un ajuste cómodo y evita el pelo mojado.",
+        "img": "speedo_latex_cap.jpg",
+        "category": "Gorras",
+        "colors": ["Negro", "Azul"],
+        "price": 4.99
+    }
+]
