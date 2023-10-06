@@ -3,7 +3,8 @@ const mainController = require("../Controllers/mainControllers");
 const mainRouter = express.Router();
 const multer= require("multer");
 const path = require("path");
-const {body} = require("express-validator") 
+const {body} = require("express-validator"); 
+const validationLogin = require("../../middleware/validationLongin");
 
 //configuracion de express validator
 const validations=[
@@ -32,6 +33,8 @@ mainRouter.get("/", mainController.showHome);
 mainRouter.get("/carrito", mainController.showCart );
 mainRouter.get("/detalles/:id", mainController.showDetails);
 mainRouter.get("/login", mainController.showLogin);
+//post login
+mainRouter.post("/login",validationLogin,mainController.showLogin);
 mainRouter.get('/edit/:id', mainController.showEdit);
 
 

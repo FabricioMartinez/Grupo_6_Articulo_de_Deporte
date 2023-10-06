@@ -38,6 +38,18 @@ const mainController={
 
     showLogin: (req,res)=>{
     res.render("login");
+    const Data =req.body;
+    console.log(Data);
+    const resultValidation = validationResult(req) ;
+    console.log(resultValidation);
+    //validación de contraseña - probando
+    const contraseña = "P@ssw0rd";
+    if (validarContraseña(contraseña)) {
+      console.log("Contraseña válida");
+    } else {
+      console.log("Contraseña no válida");
+    }
+
     },
 
 
@@ -59,7 +71,7 @@ const mainController={
             })
         }else{
         const data= req.body;
-        console.log(data);
+        //console.log(data);
         const index= products[products.length -1].id;
         const NuevoProducto ={
             id: index +1,
@@ -116,8 +128,21 @@ const mainController={
     
   
 
-};
 
+    profile: (req, res) => {
+        console.log(req.cookies);
+        return res.render("userProfile", {
+          user: req.session.userLogged,
+        });
+      },
+    
+      logout: (req, res) => {
+        res.clearCookie("userEmail");
+        req.session.destroy(() => {
+          res.redirect("/");
+        });
+      },
+    };
 
 module.exports = mainController;
 
