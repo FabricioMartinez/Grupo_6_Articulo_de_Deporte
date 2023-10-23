@@ -62,13 +62,5 @@
         "category": "offer",
         "description": "",
         "image": "products_1696396439133.jpg"
-    },
-    {
-        "id": 11,
-        "name": "Mouse",
-        "price": "13000",
-        "category": "Sport",
-        "description": "",
-        "image": "products_1696429706403.png"
     }
 ]

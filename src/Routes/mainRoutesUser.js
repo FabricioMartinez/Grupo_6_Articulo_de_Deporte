@@ -8,7 +8,7 @@ const validationRegister = require("../../middleware/validationRegister");
 
 
 
-mainRouterUser.get("/register", mainControllerUser.showRegister );
+mainRouterUser.get("/register", mainControllerUser.showRegister);
 mainRouterUser.post("/register",validationRegister, mainControllerUser.user)
 
 

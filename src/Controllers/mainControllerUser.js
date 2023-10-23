@@ -9,7 +9,7 @@ const {validationResult}= require('express-validator');
 const mainControllerUser={
     //Crear usuario
     showRegister: (req, res)=>{
-        res.render("formulario-de-register");
+        res.render("register");
     },
     user:(req,res)=>{
         const data= req.body;
@@ -32,7 +32,7 @@ const mainControllerUser={
          //console.log(NuevoUsuario);
          products.push(NuevoUsuario);
 		 fs.writeFileSync(productsFilePath,JSON.stringify (products));
-         res.redirect("/product");
+         res.redirect("/");
         }   
     },
 }
