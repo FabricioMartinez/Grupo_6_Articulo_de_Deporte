@@ -84,3 +84,12 @@ Retrospectiva del Sprint 4
    Tuvimos complicaciones para el desarrollo de las tareas asignadas y sus respectivas entregas, no pudimos llevar un desarrollo entre el grupo, donde no todas las personas pudieron aportar al trabajo pero se logro terminar el trabajo y entregarlo a tiempo. Seguimos con complicaciones en la comunicacion entre los integrantes y un compañero por razones personale tuvo que dejar el curso y eso tambien significo una complicacion. Otra complicacion que estamos viendo son los acotados tiempos por la carga horario que lleva la facultad. En las reuniones se nota un clima muy calido y alegre.
 
    dayli 17/09/23:leimos las consignas del sprint 5 y realizamos la retrospectiva del sprint 4. Se realizo una distribucion de tareas y se establecio un tiempo para ponernos al dia con el curso
+
+Retrospectiva del sprint 5:
+1. Comenzar a hacer: Usar el tablero de trabajo.Hacer mas daily para mantenernos en contacto.
+2. Hacer mas: participacion en los espacios grupales de las clases de zoom.
+3. Continuar haciendo: la distribucion de responsables para cada reuniones.
+4. Hacer menos: Postergar las cosas y no perder el contacto entre nosotros.
+5. Dejar de hacer: Las tareas a ultimo momento.
+        En este sprint , tuvimos complicaciones con el tiempo por lo que nos cuesta llevar al dia el curso y sus temas respectivos. Empezamos a notar complicaciones en la comprension de los temas dados. Por otra parte notamos las ganas de continuar con el curso en grupo y las ganas de seguir enfocados en llegar hasta el final.
+   Durante el meet participaron todos los integrantes del grupo para la resolucion de la retro.
