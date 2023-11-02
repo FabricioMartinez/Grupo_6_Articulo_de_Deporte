@@ -14,38 +14,57 @@
 <body>
     <%- include ("./partials/header")%>
     <main>
-        <form action="/" class="New-product" method="POST" enctype="multipart/form-data">
+        <form action="/Crear-Producto/crear" class="New-product" method="POST" enctype="multipart/form-data">
+            
             <h1>Crear Producto</h1>
             <div class="Product-name">
                 <h2>Nombre del Producto</h2>
-                <input type="text" name="name" id="name" value="<%=  locals.oldData? oldData.name : null%>" placeholder="Insertar nombre" class="form-input">
-                <% if(locals.errors && errors.name){ %>
-                <%= errors.name.msg %>
-                <% } %>
-            </div>
-            <div class="Category">
-                <h2>Categoria del productos</h2>
-                <select name="category" id="" class="form-input">
-                    <option selected>Seleccionar Categoria</option>
-                    <option value="offer">Oferta</option>
-                    <option value="Sport">Sport</option>
-                </select>
-                </div>
+                <input type="text" name="name" id="name"  placeholder="Insertar nombre" class="form-input">
+
             </div>
             <div class="Precio">
                 <label for="price" class="form-label">Precio del Producto:</label>
-                <input type="text" name="price" id="" value="<%=  locals.oldData? oldData.price : null%>" placeholder="Insetar precio" class="form-input">
-                <% if(locals.errors && errors.price){ %>
-                    <%= errors.price.msg %>
-                    <% } %>
+                <input type="text" name="price" id="price"  placeholder="Insetar precio" class="form-input">
+
             </div>
+
+            <div class="Category">
+                <h2>Categoría del producto</h2>
+                <select name="id_categoria" id="id_categoria" class="form-input">
+                    <option selected>Seleccionar Categoria</option>
+                    <% for(let i=0; i<categorias.length; i++) {%>
+                        <option value="<%= categorias[i].id_categoria %>"><%= categorias[i].opciones %></option>
+                    <% } %>
+                </select>
+            </div>
+
+            <div class="Category">
+                <h2>Color del producto</h2>
+                <select name="id_color" id="id_color" class="form-input">
+                    <option selected>Seleccionar color</option>
+                    <% for(let i=0; i<color.length; i++) {%>
+                        <option value="<%= color[i].id_color %>"><%= color[i].colores %></option>
+                    <% } %>
+                </select>
+            </div>
+
+            <div class="Category">
+                <h2>Talla del producto</h2>
+                <select name="id_tallas" id="id_tallas" class="form-input">
+                    <option selected>Seleccionar talla</option>
+                    <% for(let i=0; i<tallas.length; i++) {%>
+                        <option value="<%= tallas[i].id_tallas %>"><%= tallas[i].talles %></option>
+                    <% } %>
+                </select>
+            </div>
+
             <div class="imagen">
                 <h2>Imagen del pruducto</h2>
                 <input type="file" name="producImage" id="foto">
             </div>
             <div class="Descripcion">
                 <h2>Descripcion</h2>
-                <textarea name="description" id="" cols="30" rows="10" placeholder="Agregar Descripcion"></textarea>
+                <textarea name="description" id="description" cols="30" rows="10" placeholder="Agregar Descripcion"></textarea>
             </div>
             <div class="Terminos">
                 <input type="checkbox" name="condiciones" id="terminos y condiciones" value="terminos y condiciones">
@@ -54,7 +73,9 @@
             <div class="botones">
                 
                 <button class="articlebutton" type="submit"><a href="./admin-confirm">Atras</a></button>
+
                 <button class="articlebutton" type="submit">Enviar</button>
+
             </div>
         </form>
     </main>

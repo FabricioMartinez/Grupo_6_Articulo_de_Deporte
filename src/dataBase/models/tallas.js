@@ -1,3 +1,10 @@
+/**
+ * 
+ * @param {import('sequelize').Sequelize} sequelize 
+ * @param {import('sequelize/types').DataTypes} dataTypes 
+ * @returns 
+ */
+
 module.exports = (sequelize, dataTypes) => {
     let alias = 'tallas';
     let colum = {
@@ -15,6 +22,12 @@ module.exports = (sequelize, dataTypes) => {
         timestamps: false
     };
     const tallas = sequelize.define(alias, colum, config)
+    tallas.associate = (models) => {
+        tallas.hasMany(models.Products, {
+            as: "productos",
+            foreignKey: "id_tallas"
+        });
+    }
 
     return tallas
 }

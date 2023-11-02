@@ -25,16 +25,16 @@
                 <h1>Sport</h1>
             </div>
             <div class="stock">
-                <% products.map(product =>{ %>
+                <% producto.map(producto =>{ %>
                     <section>
-                        <a href="./detalles/<%= product.id %>">
+                        <a href="./detalles/<%= producto.id %>">
                             <article class="destacado1">
                                 <figure>
-                                    <img src="/images/Home//main/<%= product.image %>" alt="imagen de productos">
+                                    <img src="/images/Home//main/<%= producto.image %>" alt="imagen de productos">
                                 </figure>
                                 <div class="detalle">
-                                    <p><%= product.name %></p>
-                                    <p><%= product.price %></p>
+                                    <p><%= producto.name %></p>
+                                    <p><%= producto.price %></p>
                                     <li class="caja-compra"><a class="compra" href="./carrito">Comprar</i></a></li>
                                 </div>
                             </article>
