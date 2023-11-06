@@ -75,7 +75,6 @@ const productControllers= {
         const id= req.params.id
         db.Products.findByPk(id,{raw: true}).then(result => {res.render('prueba2', {producto: result});});
     },
-
 }
 
 module.exports= productControllers
