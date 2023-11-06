@@ -46,6 +46,18 @@ const productControllers= {
         });
 
     },
+    //EDICIÓN DE PRODUCTO
+    edit: db.sportify.update({
+        title: "Zapatilla Olimpikus",
+        talles: 35,
+
+    }, 
+    {
+        where:{
+            id:1
+        }
+
+    }),
     listado:function(req,res){
         db.Products.findAll({raw: true}).then((result) =>
         res.render("product",{producto: result}));
