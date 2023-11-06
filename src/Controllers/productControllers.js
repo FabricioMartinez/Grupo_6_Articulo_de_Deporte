@@ -4,6 +4,15 @@ const express = require('express');
 const app = express();
 
 const productControllers= {
+    //creacion 1
+    getcreat: function (req, res) {
+        res.render("Crear-producto")
+    },
+    crear: function (req, res){
+        const newproducto= req.body
+        console.log(newproducto)
+    },
+    
     showHome:(req, res)=>{
         db.Products.findAll({raw: true}).then((result) =>
             res.render("index",{producto: result}));
