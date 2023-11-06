@@ -7,10 +7,20 @@
 </head>
 <body>
     <h1>prueba</h1>
-    <div>
-    <% producto.map(producto=>{ %>
-        <a href="/prueba/<%= producto.id_productos %>"><div><%= producto.name %></div></a>
-        <% }) %>
-    </div>
+    <ul>
+        <% for(let i=0; i<productos.length;i++) {%>
+            <li>
+                <a href="/prueba/<%= productos[i].id_productos %>"><%= productos[i].name %></a>
+                <span>
+                    -
+                    <% if(productos[i].categoria){ %>
+                        <i>
+                            <%= productos[i].categoria.opciones  %>
+                        </i>
+                    <% } %>
+                </span>
+            </li>
+        <% } %>
+    </ul>
 </body>
 </html>

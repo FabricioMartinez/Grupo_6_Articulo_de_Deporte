@@ -40,7 +40,7 @@ mainRouter.get('/edit/:id', mainController.showEdit);
 
 
 // Ruta para crear producto
-mainRouter.get("/Crear-Producto", mainController.showCrear);
+//mainRouter.get("/Crear-Producto", mainController.showCrear);
 //validar campos de este formulario, pasar validaciones
 mainRouter.post('/', uploadFile.single("producImage"),validations, mainController.article); 
 
