@@ -31,3 +31,13 @@ productRouter.get('/prueba/:id', productControllers.getOneproduct)
 productRouter.delete("/eliminar/:id", productControllers.eliminar)
 productRouter.get("/detalles/:id", productControllers.detalle)
 module.exports=productRouter
+
+
+//Edición de productos
+productRouter.get('/edit/:id', productControllers.edit)
+productRouter.put("/edit/:id", productControllers.update)
+
+
+
+
+module.exports=productRouter
