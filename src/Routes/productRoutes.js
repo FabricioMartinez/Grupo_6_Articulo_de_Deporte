@@ -28,4 +28,13 @@ productRouter.get('/product',productControllers.listado)
 
 productRouter.get('/prueba', productControllers.getAllproduct)
 productRouter.get('/prueba/:id', productControllers.getOneproduct)
+
+
+//Edición de productos
+productRouter.get('/edit/:id', productControllers.edit)
+productRouter.put("/edit/:id", productControllers.update)
+
+
+
+
 module.exports=productRouter
