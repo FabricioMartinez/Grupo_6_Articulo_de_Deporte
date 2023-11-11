@@ -47,7 +47,7 @@ const productControllers= {
 
     },
     //EDICIÓN DE PRODUCTO
-    edit: db.sportify.update({
+    edit:function(req, res) {db.sportify.update({
         title: "Zapatilla Olimpikus",
         talles: 35,
 
@@ -57,7 +57,7 @@ const productControllers= {
             id:1
         }
 
-    }),
+    })},
     listado:function(req,res){
         db.Products.findAll({raw: true}).then((result) =>
         res.render("product",{producto: result}));
@@ -87,6 +87,18 @@ const productControllers= {
         const id= req.params.id
         db.Products.findByPk(id,{raw: true}).then(result => {res.render('prueba2', {producto: result});});
     },
+    //eliminar
+    eliminar: function(req, res){ 
+        const productId = req.params.id;
+        db.Products.destroy({where:{id:productId}}).then((result)=> {console.log("producto eliminado"); res.redirect('/');})
+    },
+    //detalle
+    detalle: function(req, res){
+        const productId = req.params.id;
+        db.Products.findByPk(productId, { raw: true })
+        .then((product)=> {res.render('detalles', { producto: product })})
+    }
 }
+
 
 module.exports= productControllers

@@ -28,4 +28,6 @@ productRouter.get('/product',productControllers.listado)
 
 productRouter.get('/prueba', productControllers.getAllproduct)
 productRouter.get('/prueba/:id', productControllers.getOneproduct)
+productRouter.delete("/eliminar/:id", productControllers.eliminar)
+productRouter.get("/detalles/:id", productControllers.detalle)
 module.exports=productRouter
