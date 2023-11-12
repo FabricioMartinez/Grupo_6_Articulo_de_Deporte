@@ -92,4 +92,9 @@ Retrospectiva del sprint 5:
 4. Hacer menos: Postergar las cosas y no perder el contacto entre nosotros.
 5. Dejar de hacer: Las tareas a ultimo momento.
         En este sprint , tuvimos complicaciones con el tiempo por lo que nos cuesta llevar al dia el curso y sus temas respectivos. Empezamos a notar complicaciones en la comprension de los temas dados. Por otra parte notamos las ganas de continuar con el curso en grupo y las ganas de seguir enfocados en llegar hasta el final.
-   Durante el meet participaron todos los integrantes del grupo para la resolucion de la retro.
+   Durante el meet participaron todos los integrantes del grupo para la resolucion de la retro. 
+
+  Retrospectiva del sprint 6:
+  DAILY 1: se realizo una reuniòn de meet en el que asistieron todos los itegrantes del grupo y se realizo la retrospectiva del  sprint 5, tambien se logro avanzar un poco del sprint 6 y se repartieron tareas.
+  DAILY 2: hicimos un meet grupaln en el que nos sacamos dudas que teníamos. Surgió un error con el create, por lo que se consultó a los profesores y pudimos resolver la duda.
+  

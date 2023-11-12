@@ -16,10 +16,10 @@
     <main class="main-detalles">
         <section>
             <article class="presentacion">
-                <img class="img" src="/images/Home/main/<%= product.image %>" alt="">
+                
                 <div class="ajustables-producto">
-                    <h2>Detalle del producto:  <%= product.name %> </h2>
-                    <h1>Precio: $<%= product.price %></h1>
+                    <h2>Detalle del producto:  <%= producto.name %> </h2>
+                    <h1>Precio: $<%= producto.price %></h1>
                     <p>Conoce los metodos de entrega <a href="#"><i class="fa-solid fa-truck-fast"></i></a></p>
                     <div class="disponibles-colores">
                         <p>Colores disponibles:</p>
@@ -39,11 +39,11 @@
                     </form>
                     <div class="botones">
                         
-                    <a href="./edit/<%= product.id %>" 
+                    <a href="./edit/<%= producto.id_productos %>" 
                         class="action-button edit">MODIFICAR</a>
    
-                        <form action="./delete/<%= product.id %>" 
-                            method="POST" style="display: inline-flex">
+                        <form action="./eliminar/<%= producto.id_productos %>" 
+                            method="delete" style="display: inline-flex">
                        <button type="submit" class="action-button delete">ELIMINAR</button>
    
                     </form>
@@ -57,7 +57,7 @@
             <article class="descripcion">
                 <h2>Descripcion del Producto</h2>
                 <p class="descripcion-parrafo">
-                    <%= product.description %>
+                    <%= producto.description %>
                 </p>
                 <img src="/images/detalles/modelo2-ej-sportify.jpg" alt="">
             </article>

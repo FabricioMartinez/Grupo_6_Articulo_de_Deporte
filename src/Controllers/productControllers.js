@@ -4,6 +4,15 @@ const express = require('express');
 const app = express();
 
 const productControllers= {
+    //creacion 1
+    getcreat: function (req, res) {
+        res.render("Crear-producto")
+    },
+    crear: function (req, res){
+        const newproducto= req.body
+        console.log(newproducto)
+    },
+    
     showHome:(req, res)=>{
         db.Products.findAll({raw: true}).then((result) =>
             res.render("index",{producto: result}));
@@ -37,6 +46,45 @@ const productControllers= {
         });
 
     },
+    //EDICIÓN DE PRODUCTO
+
+    edit: function (req, res) {
+        const productId = req.params.id;
+        db.Products.findByPk(productId, { raw: true })
+      .then((product) => {
+        // Consulta la base de datos para obtener categorías y colores
+        Promise.all([
+            db.categoria.findAll({ raw: true }),
+            db.color.findAll({ raw: true }),
+            db.tallas.findAll({raw: true})
+
+
+        ]).then(([categorias, color, tallas]) => {
+            res.render("edit", {product, categorias, color, tallas });
+        }).catch((error) => {
+        })});
+    },
+
+    update: function(req,res) {
+        const editproduct= req.params.id;
+        db.Products.update({
+        name: req.body.name,
+        price: req.body.price,
+        // description: req.body.description,
+        // id_categoria: req.body.id_categoria,
+        // id_color: req.body.id_color,
+        // id_tallas: req.body.id_tallas,
+
+    }, 
+    {
+        where:{
+            id: editproduct
+        }
+
+    }).then((result)=>{console.log("producto actualizado: ", result) 
+        res.render("/")})},
+
+
     listado:function(req,res){
         db.Products.findAll({raw: true}).then((result) =>
         res.render("product",{producto: result}));
@@ -66,7 +114,18 @@ const productControllers= {
         const id= req.params.id
         db.Products.findByPk(id,{raw: true}).then(result => {res.render('prueba2', {producto: result});});
     },
-
+    //eliminar
+    eliminar: function(req, res){ 
+        const productId = req.params.id;
+        db.Products.destroy({where:{id:productId}}).then((result)=> {console.log("producto eliminado"); res.redirect('/');})
+    },
+    //detalle
+    detalle: function(req, res){
+        const productId = req.params.id;
+        db.Products.findByPk(productId, { raw: true })
+        .then((product)=> {res.render('detalles', { producto: product })})
+    }
 }
+
 
 module.exports= productControllers

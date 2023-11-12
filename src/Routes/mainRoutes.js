@@ -31,7 +31,7 @@ mainRouter.get("/", mainController.showHome);
 
 
 mainRouter.get("/carrito", mainController.showCart );
-mainRouter.get("/detalles/:id", mainController.showDetails);
+
 mainRouter.get("/login", mainController.showLogin);
 //post login
 mainRouter.post("/login",validationLogin,mainController.showLogin);
