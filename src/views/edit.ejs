@@ -1,60 +1,63 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style-edit.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Vidaloka&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
     <title>Sportify</title>
 </head>
+
 <body>
-    
+
     <%- include('partials/header') %>
-    <main class="main-edit">
-        <h1 class="titulo">Editar producto</h1>
-        <div  class="container-edit">
-            <article class="container-general">
-                <h2 class="titulo">General</h2>
-                <img class="general-img" src="/images/edit/edit-sportify.jpg" alt="" >
-            </article>
-            <article class="container-especificaciones">
-                <div class="contitulo"><h2 class="titulo">Especificaciones</h2></div>
-                <form action=" ./edit/<%= product.id %> "
-                    method="POST">
-
-                    <label class="label" for="name-edit">Cambiar nombre:</label>
-                    <input value= "<%= product.name%>" class="input-text" type="text" name="name-edit label" id="name-edit">
-                    <br>
+        <main class="main-edit">
+            <h1 class="titulo">Editar producto</h1>
+            <div class="container-edit">
+                <article class="container-general">
+                    <h2 class="titulo">General</h2>
+                    <img class="general-img" src="/images/Home//main/<%= producto.imagen %>" alt="">
+                </article>
+                <article class="container-especificaciones">
+                    <div class="contitulo">
+                        <h2 class="titulo">Especificaciones</h2>
+                    </div>
+                    <form action="/edit/<%= producto.id_productos %>?_method=PUT" method="POST" enctype="multipart/form-data">
+                        <input type="hidden" name="_method" value="PUT">
+                        <label class="label" for="name">Cambiar nombre:</label>
+                        <input value="<%= producto.name%>" class="input-text" type="text" name="name"
+                            id="name-edit">
+                        <!-- <br>
                     <label class="label" for="categoria-edit">Cambiar categoria:</label>
-                    <input value="<%= product.category%>" class="input-text label" type="text" name="categoria-edit" id="categoria-edit">
-                    <br>
-                    <label class="label" for="price-edit">Cambiar precio:</label>
-                    <input value="<%= product.price%>" class="input-text label" type="text" name="price-edit" id="price-edit">
-                    <button type="submit" >GUARDAR CAMBIOS</button>
+                    <% //for(let i=0; i<categorias.length; i++) {%>
+                    <input value="<%= //categorias[i].opciones %>"  class="input-text label" type="text" name="categoria-edit" id="categoria-edit">
+                    <%//}%>
+                    <br> -->
 
-                </form>
-            </article>
-            <article class="container-caracteristicas">
-                <h2 class="titulo">Caracteristicas</h2>
-                <form action="">
+                        <label class="label" for="price-edit">Cambiar precio:</label>
+                        <input value="<%= producto.price%>" class="input-text label" type="text" name="price" id="price">
 
-                    <label class="label" for="img-edit">Cambiar imagen:</label>
-                    <input class="input-text label" type="file" name="img-edit" id="img-edit">
-                    <br>
-                    <label class="label" for="descript-edit">Cambiar descripcion:</label>
-                    <textarea value="<%= product.description%>" class="textarea label" name="descript-edit" id="descript-edit" cols="30" rows="6"></textarea>
-                    
-                    <button type="submit" >GUARDAR CAMBIOS</button>
-                </form>
-            </article>
-        </div>
-    </main>
-    <footer>
-        <%- include ("./partials/footer")%>
-    </footer>
+                        <label class="label" for="description">Cambiar descripcion:</label>
+                        <textarea value="<%= producto.description %>" class="textarea label" name="description" id="description" cols="30" rows="6"><%= producto.description %></textarea>
+
+                        <label class="label" for="imagen">Cambiar imagen:</label>
+                        <input class="input-text label" type="file" name="imagen" id="imagen">
+
+                        <button type="submit">GUARDAR CAMBIOS</button>
+                        </form>
+                </article>
+            </div>
+        </main>
+        <footer>
+            <%- include ("./partials/footer")%>
+        </footer>
 </body>
+
 </html>

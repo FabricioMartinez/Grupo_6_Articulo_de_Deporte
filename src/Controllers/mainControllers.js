@@ -2,9 +2,6 @@ const fs= require("fs")
 const path = require ("path");
 const productsFilePath = path.join(__dirname, '../data/productDatos.json');
 const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
-
-
-
 const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 const {validationResult}= require("express-validator");
 
@@ -16,7 +13,6 @@ const mainController={
     showCart: (req, res)=>{
     res.render("carrito",  {products ,título: "Productos para comprar"});
     },
-
 
     showDetails: (req, res) =>{
         const id= req.params.id;
@@ -34,7 +30,6 @@ const mainController={
 
     res.redirect("/");
   },
-
 
     showLogin: (req,res)=>{
     res.render("login");
@@ -56,7 +51,6 @@ const mainController={
     showConfirmation: (req,res)=>{
         res.render("admin-confirm");
     },
-
     //Crear producto:
     showCrear: (req, res)=>{
     res.render("Crear-Producto")
@@ -87,9 +81,6 @@ const mainController={
         res.redirect("/");
     }
     },
-
-
-    
     //Editar producto
     showEdit: (req,res)=>{
         
@@ -102,7 +93,6 @@ const mainController={
         const product = products.find(product => product.id == id);
         res.render('edit', {  product : product });
     },
-
     update: (req, res) => {
 		// Do the magic
 		const id= req.params.id;
@@ -117,17 +107,12 @@ const mainController={
 		fs.writeFileSync(productsFilePath,JSON.stringify (products));
 		res.redirect("/");
 	},
-
     showSeleccion: (req, res)=>{
         res.render("Seleccion")
     },
-
     showproduct: (req, res)=>{
         res.render("product",{products})
     },
-    
-  
-
 
     profile: (req, res) => {
         console.log(req.cookies);

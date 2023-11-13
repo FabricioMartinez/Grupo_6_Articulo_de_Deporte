@@ -1,80 +1,79 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style-detalles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Vidaloka&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
     <title>Detalles del Producto</title>
 </head>
+
 <body>
     <%- include ("./partials/header")%>
-    <main class="main-detalles">
-        <section>
-            <article class="presentacion">
-                
-                <div class="ajustables-producto">
-                    <h2>Detalle del producto:  <%= producto.name %> </h2>
-                    <h1>Precio: $<%= producto.price %></h1>
-                    <p>Conoce los metodos de entrega <a href="#"><i class="fa-solid fa-truck-fast"></i></a></p>
-                    <div class="disponibles-colores">
-                        <p>Colores disponibles:</p>
-                        <a href="#"><img src="/images/detalles/modelo-ej-sportify.jpg" alt=""></a>
-                        <a href="#"><img src="/images/detalles/modelo-ej-sportify.jpg" alt=""></a>
-                        <a href="#"><img src="/images/detalles/modelo-ej-sportify.jpg" alt=""></a>
-                        
+        <main class="main-detalles">
+            <section>
+                <article class="presentacion">
+                    <figure>
+                        <img src="/images/Home//main/<%= producto.imagen %>" alt="imagen de productos" class="img">
+                    </figure>
+                    <div class="ajustables-producto">
+                        <h2>Detalle del producto: <%= producto.name %>
+                        </h2>
+                        <h1>Precio: $<%= producto.price %>
+                        </h1>
+                        <p>Conoce los metodos de entrega <a href="#"><i class="fa-solid fa-truck-fast"></i></a></p>
+                        <div class="disponibles-colores">
+                            <p>Colores disponibles:</p>
+                            <a href="#"><img src="/images/detalles/modelo-ej-sportify.jpg" alt=""></a>
+                            <a href="#"><img src="/images/detalles/modelo-ej-sportify.jpg" alt=""></a>
+                            <a href="#"><img src="/images/detalles/modelo-ej-sportify.jpg" alt=""></a>
+                        </div>
+                        <div class="disponibles-talles">
+                            <p>Talles:</p>
+                            <input type="button" value="XX">
+                            <input type="button" value="XX">
+                            <input type="button" value="XX">
+                            <input type="button" value="XX">
+                        </div>
+                        </form>
+                        <div class="botones">
+                            <a href="/edit/<%= producto.id_productos %>" class="action-button edit">MODIFICAR</a>
+                            <form action="/eliminar/<%= producto.id_productos %>?_method=DELETE" method="POST" style="display: inline-flex">
+                                <input type="hidden" name="_method" value="DELETE">
+                                <button type="submit" class="action-button delete">ELIMINAR</button>
+                            </form>
+                        </div>
                     </div>
-                    <div class="disponibles-talles">
-                        <p>Talles:</p>
-                        <input type="button" value="XX">
-                        <input type="button" value="XX">
-                        <input type="button" value="XX">
-                        <input type="button" value="XX">
-                    </div>
+                </article>
+                <article class="descripcion">
+                    <h2>Descripcion del Producto</h2>
+                    <p class="descripcion-parrafo">
+                        <%= producto.description %>
+                    </p>
+                    <img src="/images/detalles/modelo2-ej-sportify.jpg" alt="">
+                </article>
+            </section>
+            <section class="similares">
+                <h2 class="titulo-similares">Productos similares</h2>
+                <div class="similares-carrusel">
+                    <img src="/images/detalles/modelo3-ej-sportify.jpg" alt="">
+                    <img src="/images/detalles/modelo3-ej-sportify.jpg" alt="">
+                    <img src="/images/detalles/modelo3-ej-sportify.jpg" alt="">
+                    <img src="/images/detalles/modelo3-ej-sportify.jpg" alt="">
+                    <img src="/images/detalles/modelo3-ej-sportify.jpg" alt="">
+                    <img src="/images/detalles/modelo3-ej-sportify.jpg" alt="">
 
-                    </form>
-                    <div class="botones">
-                        
-                    <a href="./edit/<%= producto.id_productos %>" 
-                        class="action-button edit">MODIFICAR</a>
-   
-                        <form action="./eliminar/<%= producto.id_productos %>" 
-                            method="delete" style="display: inline-flex">
-                       <button type="submit" class="action-button delete">ELIMINAR</button>
-   
-                    </form>
-                   </div>
                 </div>
-            </article>
-
-           
-           
-
-            <article class="descripcion">
-                <h2>Descripcion del Producto</h2>
-                <p class="descripcion-parrafo">
-                    <%= producto.description %>
-                </p>
-                <img src="/images/detalles/modelo2-ej-sportify.jpg" alt="">
-            </article>
-        </section>
-        <section class="similares">
-            <h2 class="titulo-similares">Productos similares</h2>
-            <div class="similares-carrusel">
-                <img src="/images/detalles/modelo3-ej-sportify.jpg" alt="">
-                <img src="/images/detalles/modelo3-ej-sportify.jpg" alt="">
-                <img src="/images/detalles/modelo3-ej-sportify.jpg" alt="">
-                <img src="/images/detalles/modelo3-ej-sportify.jpg" alt="">
-                <img src="/images/detalles/modelo3-ej-sportify.jpg" alt="">
-                <img src="/images/detalles/modelo3-ej-sportify.jpg" alt="">
-
-            </div>
-        </section>
-    </main>
-    <%- include ("./partials/footer")%>
+            </section>
+        </main>
+        <%- include ("./partials/footer")%>
 </body>
+
 </html>
