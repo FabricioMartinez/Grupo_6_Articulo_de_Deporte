@@ -21,23 +21,19 @@ productRouter.get("/", productControllers.showHome);
 
 //Creacion de producto
 productRouter.get('/Crear-Producto', productControllers.add)
-productRouter.post("/Crear-Producto/crear", productControllers.create)
+productRouter.post("/Crear-Producto/crear",uploadFile.single("imagen"), productControllers.create)
 
 //Listado de productos
 productRouter.get('/product',productControllers.listado)
 
-productRouter.get('/prueba', productControllers.getAllproduct)
-productRouter.get('/prueba/:id', productControllers.getOneproduct)
-productRouter.delete("/eliminar/:id", productControllers.eliminar)
+//Detalle de producto
 productRouter.get("/detalles/:id", productControllers.detalle)
-module.exports=productRouter
-
 
 //Edición de productos
 productRouter.get('/edit/:id', productControllers.edit)
-productRouter.put("/edit/:id", productControllers.update)
+productRouter.put("/edit/:id",uploadFile.single("imagen"), productControllers.update);
 
-
-
+//Eliminar producto
+productRouter.delete("/eliminar/:id", productControllers.eliminar)
 
 module.exports=productRouter
