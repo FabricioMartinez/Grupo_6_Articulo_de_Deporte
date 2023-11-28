@@ -97,4 +97,5 @@ Retrospectiva del sprint 5:
   Retrospectiva del sprint 6:
   DAILY 1: se realizo una reuniòn de meet en el que asistieron todos los itegrantes del grupo y se realizo la retrospectiva del  sprint 5, tambien se logro avanzar un poco del sprint 6 y se repartieron tareas.
   DAILY 2: hicimos un meet grupaln en el que nos sacamos dudas que teníamos. Surgió un error con el create, por lo que se consultó a los profesores y pudimos resolver la duda.
-  
+  DAILY 3: Edición y eliminación de pruductos. Quedaron algunos errores pendientes.
+  DAILY 4 (14/11/23): Organización para realizar el CRUD de usuarios

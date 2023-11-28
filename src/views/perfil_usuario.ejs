@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style-perfildeusuario.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    <%- include ("./partials/header")%>
+    <main>
+        <h2>PERFIL DE USUARIO</h2>
+        <section class="nombre-perfil">
+            <div class="foto">
+                <img src="./images/carrito/zapatillas-new-balance.jpg" alt="">
+            </div>
+            <div>
+                <h2>FULANITO DE AL</h2>
+            </div> 
+        </section>
+
+
+        <div class="container">
+
+            <section class="card4">
+
+                <form action="/perfil_usuario" class="form-container" method="post">
+
+                    
+                    <div class="card2">
+                        <label class="label" for="name">Cambiar nombre:</label>
+                        <input type="text" name="name" id="" >
+                    </div>
+                    <div class="card2">
+                        <label class="label" for="last_name">Cambiar apellido:</label>
+                        <input type="text" name="last_name" id="">
+                    </div>
+                    <div class="card2" >
+                        <label class="label" for="email">Cambiar e-mail:</label>
+                        <input type="email" name="email" id="">
+                    </div>
+                    <div class="card2">
+                        <label class="label" for="password">Cambiar contraseña:</label>
+                        <input type="password" name="password" id="" >
+                    </div>
+                    <!-- <div class="card2">
+                        <input type="password" name="confirm_password" id="" placeholder="Confirmar contraseña">
+                    </div> -->
+                    <div class="card2">
+                        <label class="label" for="phone">Cambiar número:</label>
+                        <input type="text" name="phone" id="" >
+                    </div>
+                    <div class="buttons1">
+                        <button type="submit">Guardar Cambios</button>
+                   </div>   
+                </form>
+                
+                
+            </section>
+
+        </div> 
+
+
+
+
+
+    </main>
+    <%- include ("./partials/footer")%>
+
+
+</body>
+</html>

@@ -78,6 +78,7 @@ CREATE TABLE `productos` (
   `id_categoria` int(11) NOT NULL,
   `id_color` int(11) NOT NULL,
   `id_tallas` int(11) NOT NULL,
+  `imagen` varchar(500) DEFAULT NULL,
   PRIMARY KEY (`id_productos`),
   KEY `id_categoria` (`id_categoria`),
   KEY `id_color` (`id_color`),
@@ -85,7 +86,7 @@ CREATE TABLE `productos` (
   CONSTRAINT `productos_ibfk_1` FOREIGN KEY (`id_categoria`) REFERENCES `categorias` (`id_categoria`),
   CONSTRAINT `productos_ibfk_2` FOREIGN KEY (`id_color`) REFERENCES `color` (`id_color`),
   CONSTRAINT `productos_ibfk_3` FOREIGN KEY (`id_tallas`) REFERENCES `tallas` (`id_tallas`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -94,7 +95,7 @@ CREATE TABLE `productos` (
 
 LOCK TABLES `productos` WRITE;
 /*!40000 ALTER TABLE `productos` DISABLE KEYS */;
-INSERT INTO `productos` VALUES (1,'Zapatillas nike',12000,'pal futbol',1,5,6),(2,'Pelota del mundial',25000,'pal futbol',2,6,6);
+INSERT INTO `productos` VALUES (1,'Zapatillas nike',12000,'pal futbol',1,5,6,NULL),(2,'Pelota del mundial',25000,'pal futbol',2,6,6,NULL),(3,'Pelota del mundial',25000,'pal futbol',2,6,6,NULL),(4,'Pelota del mundial',25000,'pal futbol',2,6,6,NULL);
 /*!40000 ALTER TABLE `productos` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -149,14 +150,6 @@ LOCK TABLES `usuarios` WRITE;
 INSERT INTO `usuarios` VALUES (1,'Fabricio Jorge','Martinez','fabrii.mar1645@gmail.com','123Fjnnn','3884764530');
 /*!40000 ALTER TABLE `usuarios` ENABLE KEYS */;
 UNLOCK TABLES;
-
---
--- Dumping events for database 'sportifybase'
---
-
---
--- Dumping routines for database 'sportifybase'
---
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -167,4 +160,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-10-23 11:58:37
+-- Dump completed on 2023-11-15 23:28:36
