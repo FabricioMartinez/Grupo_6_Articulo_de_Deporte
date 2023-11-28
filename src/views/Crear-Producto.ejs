@@ -19,13 +19,12 @@
             <h1>Crear Producto</h1>
             <div class="Product-name">
                 <h2>Nombre del Producto</h2>
-                <input type="text" name="name" id="name"  placeholder="Insertar nombre" class="form-input">
+                <input type="text" name="name" id="name"  placeholder="Insertar nombre" class="name"><i class="fa-solid fa-exclamation alert"> </i><i class="fa-solid fa-check okey"></i>
 
             </div>
             <div class="Precio">
                 <label for="price" class="form-label">Precio del Producto:</label >
-                <input type="text" name="price" id="price"  placeholder="Insetar precio" class="form-input">
-
+                <input type="text" name="price" id="price"  placeholder="Insetar precio" class="form-input price"><i class="fa-solid fa-exclamation alert"></i><i class="fa-solid fa-check okey"></i>
             </div>
 
             <div class="Category">
@@ -80,5 +79,7 @@
         </form>
     </main>
     <%- include ("./partials/footer")%>
+    
+    <script src="/js/Crear-Producto.js"></script>
 </body>
 </html>

@@ -43,7 +43,7 @@ const productControllers= {
             console.error("Error al crear el producto:", error);
         });
     },
-
+    
     //EDICIÓN DE PRODUCTO
 
     edit: function (req, res) {
@@ -62,7 +62,7 @@ const productControllers= {
                 console.error(error);
             });
         })},
-        update: function (req, res) {
+    update: function (req, res) {
             const editproduct = req.params.id;
             const newData = {
                 name: req.body.name,
@@ -86,8 +86,7 @@ const productControllers= {
                 console.error(error);
                 res.status(500).send("Error interno del servidor");
             });
-        },
-        
+    },
 
     //LISTADO DE PRODUCTOS
 
