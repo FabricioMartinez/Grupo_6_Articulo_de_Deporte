@@ -1,3 +1,11 @@
+/**
+ * 
+ * @param {import('sequelize').Sequelize} sequelize 
+ * @param {import('sequelize/types').DataTypes} dataTypes 
+ * @returns 
+ */
+
+
 module.exports = (sequelize, dataTypes) => {
     let alias = 'usuarios';
     let colum = {

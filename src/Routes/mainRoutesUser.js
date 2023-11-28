@@ -1,26 +1,27 @@
-const express = require ("express");
-const {body}= require('express-validator')
-const mainRouterUser = express.Router();
+// const express = require ("express");
+// //const {body}= require('express-validator')
+// const mainRouterUser = express.Router();
 
-const path = require("path");
-const mainControllerUser = require("../Controllers/mainControllerUser");
-const validationRegister = require("../../middleware/validationRegister");
-
-
-
-mainRouterUser.get("/register", mainControllerUser.showRegister);
-mainRouterUser.post("/register",validationRegister, mainControllerUser.user)
+// const path = require("path");
+// const mainControllerUser = require("../Controllers/mainControllerUser");
+// //const validationRegister = require("../../middleware/validationRegister");
 
 
-//Creacion de producto
-mainRoutesUser.get('/Crear-Usuario', mainControllerUser.addUser)
-mainRouterUser.post("/Crear-Usuario/crear", mainControllerUser.createUser)
 
-//Router o Routes??
+// mainRouterUser.get("/register", mainControllerUser.addUser);
+// mainRouterUser.post("/register/crear", mainControllerUser.createUser)
 
-//Edición de productos
-mainRoutesUser.get('/edit/:id', mainControllerUser.editUser)
-mainRouterUser.put("/edit/:id", mainControllerUser.updateUser)
+
+
+// //Creacion de producto
+// mainRoutesUser.get('/Crear-Usuario', mainControllerUser.addUser);
+// mainRoutesUser.post("/register/crear", mainControllerUser.createUser);
+
+// //Router o Routes??
+
+// //user edition
+// mainRoutesUser.get('/edit/:id', mainControllerUser.editUser)
+// mainRouterUser.put("/edit/:id", mainControllerUser.updateUser)
 
 
 module.exports= mainRouterUser

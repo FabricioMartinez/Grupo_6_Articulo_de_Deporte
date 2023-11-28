@@ -1,59 +1,61 @@
 const express = require ("express");
 const mainController = require("../Controllers/mainControllers");
 const mainRouter = express.Router();
-const multer= require("multer");
+// const multer= require("multer");
 const path = require("path");
-const {body} = require("express-validator"); 
-const validationLogin = require("../../middleware/validationLongin");
+// const {body} = require("express-validator"); 
+// const validationLogin = require("../../middleware/validationLongin");
 
-//configuracion de express validator
-const validations=[
-    body("name").notEmpty().withMessage("Se requiere completar el campo de nombre"),
-    body("price").notEmpty().withMessage("Se requiere completar el campo de precio").bail().isNumeric().withMessage("El campo precio debe ser un numero."),
-]
-
-
-
-const storage= multer.diskStorage({
-    destination: (req, file, cb)=>{
-        cb(null, "./public/images/Home/main")
-    },
-    filename: (req, file,cb)=>{
-        const nameFile= `products_${Date.now()}${path.extname(file.originalname)}`;
-        cb(null, nameFile );
-    },
-});
-
-const uploadFile = multer({storage});
-
-mainRouter.get("/", mainController.showHome);
+// //configuracion de express validator
+// const validations=[
+//     body("name").notEmpty().withMessage("Se requiere completar el campo de nombre"),
+//     body("price").notEmpty().withMessage("Se requiere completar el campo de precio").bail().isNumeric().withMessage("El campo precio debe ser un numero."),
+// ]
 
 
 
-mainRouter.get("/carrito", mainController.showCart );
+// const storage= multer.diskStorage({
+//     destination: (req, file, cb)=>{
+//         cb(null, "./public/images/Home/main")
+//     },
+//     filename: (req, file,cb)=>{
+//         const nameFile= `products_${Date.now()}${path.extname(file.originalname)}`;
+//         cb(null, nameFile );
+//     },
+// });
 
-mainRouter.get("/login", mainController.showLogin);
-//post login
-mainRouter.post("/login",validationLogin,mainController.showLogin);
-mainRouter.get('/edit/:id', mainController.showEdit);
+// const uploadFile = multer({storage});
 
-
-
-// Ruta para crear producto
-//mainRouter.get("/Crear-Producto", mainController.showCrear);
-//validar campos de este formulario, pasar validaciones
-mainRouter.post('/', uploadFile.single("producImage"),validations, mainController.article); 
-
-mainRouter.get("/product", mainController.showproduct)
-
-mainRouter.get("/Seleccion", mainController.showSeleccion)
-mainRouter.get("/admin-confirm", mainController.showConfirmation);
+// mainRouter.get("/", mainController.showHome);
 
 
 
-mainRouter.get("/detalles/edit/:id", mainController.edit);
-mainRouter.post("/detalles/edit/:id", mainController.update);
-mainRouter.post("/detalles/delete/:id", mainController.destroy);
+// mainRouter.get("/carrito", mainController.showCart );
 
 
-module.exports = mainRouter;
+// mainRouter.get("/login", mainController.showLogin);
+// //post login
+// mainRouter.post("/login",validationLogin,mainController.showLogin);
+// mainRouter.get('/edit/:id', mainController.showEdit);
+
+
+
+// // Ruta para crear producto
+// //mainRouter.get("/Crear-Producto", mainController.showCrear);
+// //validar campos de este formulario, pasar validaciones
+// mainRouter.post('/', uploadFile.single("producImage"),validations, mainController.article); 
+
+// mainRouter.get("/product", mainController.showproduct)
+
+// mainRouter.get("/Seleccion", mainController.showSeleccion)
+// mainRouter.get("/admin-confirm", mainController.showConfirmation);
+
+
+
+// mainRouter.get("/detalles/edit/:id", mainController.edit);
+// mainRouter.post("/detalles/edit/:id", mainController.update);
+// mainRouter.post("/detalles/delete/:id", mainController.destroy);
+
+
+
+//module.exports = mainRouter;

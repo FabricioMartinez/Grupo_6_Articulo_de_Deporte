@@ -15,17 +15,25 @@ app.use(express.urlencoded({ extended: false }));
 app.use(methodOverride('_method'));
 
 // Ejecuto el llamado a mis rutas
-const mainRouter = require ("./Routes/mainRoutes");
+//const mainRouter = require ("./Routes/mainRoutes");
 const productRouter = require("./Routes/productRoutes");
-const mainRouterUser = require("./Routes/mainRoutesUser");
+
+//const mainRouterUser = require("./Routes/mainRoutesUser");
+const userRouter = require("./Routes/userRouter");
+
 
 // Para uso de Mysql como base de datos
 app.use(productRouter);
+app.use(userRouter)
 app.use(express.json());
 
+
 // Para uso de JSON como base de datos
-app.use(mainRouterUser);
-app.use(mainRouter);
+//app.use(mainRouterUser);
+//app.use(mainRouter);
+
+
+
 
 // Iniciar el servidor
 app.listen(3001, () => console.log("Servidor corriendo en el puerto 3001!"));
