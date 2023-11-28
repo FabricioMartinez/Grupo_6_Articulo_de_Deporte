@@ -16,7 +16,11 @@
                 <img src="./images/carrito/zapatillas-new-balance.jpg" alt="">
             </div>
             <div>
-                <h2>FULANITO DE AL</h2>
+                <% usuarios.forEach(usuario => { %>
+                    <div>
+                        <h2><%= usuario.name %> <%= usuario.last_name %></h2>
+                    </div> 
+                <% }); %>
             </div> 
         </section>
 
@@ -25,12 +29,12 @@
 
             <section class="card4">
 
-                <form action="/perfil_usuario" class="form-container" method="post">
+                <form action="/perfil_usuario" class="form-container" method="POST">
 
-                    
+                    <input type="hidden" name="_method" value="POST">
                     <div class="card2">
                         <label class="label" for="name">Cambiar nombre:</label>
-                        <input type="text" name="name" id="" >
+                        <input value= type="text" name="name" id="" >
                     </div>
                     <div class="card2">
                         <label class="label" for="last_name">Cambiar apellido:</label>

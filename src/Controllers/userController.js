@@ -33,8 +33,12 @@ const userController = {
     },
     
     showPerfilUsuario: (req, res)=>{
-        res.render("perfil_usuario");
+        // const usuarioid= req.params.id
+        db.usuarios.findAll( {raw:true } ) 
+        .then((usuario)=> res.render("perfil_usuario", {usuarios:usuario}))
+        
     },
+    
     
 }
 
