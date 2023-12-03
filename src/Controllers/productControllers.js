@@ -109,6 +109,14 @@ const productControllers= {
         const productId = req.params.id;
         db.Products.destroy({where:{id_productos:productId}}).then((result)=> {console.log("producto eliminado"); res.redirect('/');})
     },
+
+     showConfirmation: (req,res)=>{
+         res.render("admin-confirm");
+     },
+
+     showSeleccion: (req, res)=>{
+         res.render("Seleccion")
+     },
 }
 
 

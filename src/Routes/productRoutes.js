@@ -36,4 +36,8 @@ productRouter.put("/edit/:id",uploadFile.single("imagen"), productControllers.up
 //Eliminar producto
 productRouter.delete("/eliminar/:id", productControllers.eliminar)
 
+
+productRouter.get("/Seleccion", productControllers.showSeleccion)
+productRouter.get("/admin-confirm", productControllers.showConfirmation);
+
 module.exports=productRouter

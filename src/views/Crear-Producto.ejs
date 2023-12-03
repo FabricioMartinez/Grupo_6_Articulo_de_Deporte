@@ -14,19 +14,27 @@
 <body>
     <%- include ("./partials/header")%>
     <main>
-        <form action="/Crear-Producto/crear" class="New-product" method="POST" enctype="multipart/form-data">
+        <form action="/Crear-Producto/crear" class="New-product" id="form" method="POST" enctype="multipart/form-data">
             
             <h1>Crear Producto</h1>
             <div class="Product-name">
                 <h2>Nombre del Producto</h2>
-                <input type="text" name="name" id="name"  placeholder="Insertar nombre" class="name"><i class="fa-solid fa-exclamation alert"> </i><i class="fa-solid fa-check okey"></i>
-
+                <div class="input-container">
+                    <input type="text" name="name" id="name"  placeholder="Insertar nombre" class="name">
+                    <i class="fas fa-exclamation alert"></i>
+                    <i class="fas fa-check okey"></i>
+                </div>
             </div>
+            
             <div class="Precio">
-                <label for="price" class="form-label">Precio del Producto:</label >
-                <input type="text" name="price" id="price"  placeholder="Insetar precio" class="form-input price"><i class="fa-solid fa-exclamation alert"></i><i class="fa-solid fa-check okey"></i>
+                <h2>Precio del Producto</h2>
+                <div class="input-container">
+                    <input type="text" name="price" id="price"  placeholder="Insertar precio" class=" price"oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                    <i class="fas fa-exclamation alert"></i>
+                    <i class="fas fa-check okey"></i>
+                </div>
             </div>
-
+            
             <div class="Category">
                 <h2>Categoría del producto</h2>
                 <select name="id_categoria" id="id_categoria" class="form-input">
@@ -35,6 +43,7 @@
                         <option value="<%= categorias[i].id_categoria %>"><%= categorias[i].opciones %></option>
                     <% } %>
                 </select>
+                <i class="fa-solid fa-exclamation alert"> </i><i class="fa-solid fa-check okey"></i>
             </div>
 
             <div class="Category">
@@ -45,6 +54,7 @@
                         <option value="<%= color[i].id_color %>"><%= color[i].colores %></option>
                     <% } %>
                 </select>
+                <i class="fa-solid fa-exclamation alert"> </i><i class="fa-solid fa-check okey"></i>
             </div>
 
             <div class="Category">
@@ -55,11 +65,12 @@
                         <option value="<%= tallas[i].id_tallas %>"><%= tallas[i].talles %></option>
                     <% } %>
                 </select>
+                <i class="fa-solid fa-exclamation alert"> </i><i class="fa-solid fa-check okey"></i>
             </div>
 
             <div class="imagen">
                 <h2>Imagen del pruducto</h2>
-                <input type="file" name="imagen" id="imagen">
+                <input type="file" name="imagen" id="imagen"><i class="fa-solid fa-exclamation alert"> </i><i class="fa-solid fa-check okey"></i>
             </div>
             <div class="Descripcion">
                 <h2>Descripcion</h2>
@@ -70,13 +81,14 @@
                 <label for="terminos y condiciones">Aceptar Terminos y Condiciones</label>
             </div>
             <div class="botones">
-                
-                <button class="articlebutton" type="submit"><a href="./admin-confirm">Atras</a></button>
 
                 <button class="articlebutton" type="submit">Enviar</button>
 
             </div>
         </form>
+
+                <button class="articlebutton" type="submit"><a href="./admin-confirm">Atras</a></button>
+
     </main>
     <%- include ("./partials/footer")%>
     
