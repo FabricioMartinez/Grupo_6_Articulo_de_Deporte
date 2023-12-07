@@ -99,3 +99,4 @@ Retrospectiva del sprint 5:
   DAILY 2: hicimos un meet grupaln en el que nos sacamos dudas que teníamos. Surgió un error con el create, por lo que se consultó a los profesores y pudimos resolver la duda.
   DAILY 3: Edición y eliminación de pruductos. Quedaron algunos errores pendientes.
   DAILY 4 (14/11/23): Organización para realizar el CRUD de usuarios
+  daily 5: 7/12/23: validacion en grupo del formulario de registro. trabajamos con una sola computadora.s
