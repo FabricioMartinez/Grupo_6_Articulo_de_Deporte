@@ -106,7 +106,7 @@ main{
     padding-bottom: 20px;
 }
 
-.Product-name input{
+.name{
     background-color: #ffd850;
     border: none;
     width: 400px;
@@ -121,8 +121,8 @@ main{
     font-size: 1.6em;
     margin: 5px 0;
   }
+
 .form-input {
-    display: block;
     width: 400px;
     height: 30px;
     margin-bottom: 15px;
@@ -132,7 +132,7 @@ main{
     border: solid 1px var(--gray);
     padding: 0 15px;
   }
-.Precio input{
+.price{
     background-color: #ffd850;
     border: none;
     width: 400px;
@@ -184,7 +184,7 @@ main{
 .botones{
     width: 400px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 
 .botones button{
@@ -202,6 +202,20 @@ main{
     color: white;
 }
 
+.articlebutton{
+    width: 100px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    border: 2px solid;
+    cursor: pointer;
+    margin-left: 20px;
+}
+.articlebutton a{
+    text-decoration: none;
+    color: white;
+}
 footer{
     display: flex;
     flex-wrap: wrap;
@@ -247,5 +261,34 @@ footer{
     color: white;
 }
 .fa-brands{
+    color: black;
+}
+
+
+.alert{
+    opacity: 0;
+}
+.okey{
+    opacity: 0;
+}
+
+/******** Validar *******/
+
+.is-invalid {
+    box-shadow: 0 0 20px rgb(230, 64, 64)
+
+}
+.alerta{
+    opacity: 100;
+    color: red;
+    margin-left: -15px;
+}
+
+.ok{
+    margin-left: -25px;
+    color: green;
+    opacity: 100;
+}
+.is-valid {
     color: black;
 }

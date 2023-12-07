@@ -18,13 +18,13 @@ module.exports = (sequelize, dataTypes) => {
             type: dataTypes.STRING
         },
         last_name: {
-            type: dataTypes.INTEGER
+            type: dataTypes.STRING
         },
         email: {
-            type: dataTypes.INTEGER
+            type: dataTypes.STRING
         },
         password: {
-            type: dataTypes.INTEGER
+            type: dataTypes.STRING
         },
         phone: {
             type: dataTypes.INTEGER
@@ -34,7 +34,17 @@ module.exports = (sequelize, dataTypes) => {
         tableName: 'usuarios',
         timestamps: false
     };
-    const user = sequelize.define(alias, colum, config)
 
-    return user
-}
+    const Usuario = sequelize.define(alias, colum, config); 
+
+    Usuario.findByField = async (field, value) => {
+        try {
+            const result = await Usuario.findOne({ where: { [field]: value } });
+            return result;
+        } catch (error) {
+            throw error;
+        }
+    };
+
+    return Usuario; 
+};
