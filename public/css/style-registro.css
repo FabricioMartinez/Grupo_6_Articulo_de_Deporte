@@ -7,7 +7,7 @@
 
 body{
     background-color: white;
-    font-family: 'Vidaloka', serif;
+    font-family: 'Helvetica', serif;
 }
 
 nav{
@@ -295,3 +295,23 @@ footer{
 }
 
 
+/* ******* Validar 7/12/23 ******
+
+.is-invalid {
+    box-shadow: 0 0 20px rgb(230, 64, 64)
+
+}
+.alerta{
+    opacity: 100;
+    color: red;
+    margin-left: -15px;
+}
+
+.ok{
+    margin-left: -25px;
+    color: green;
+    opacity: 100;
+}
+.is-valid {
+    color: black;
+} */

@@ -13,14 +13,10 @@
         <h2>PERFIL DE USUARIO</h2>
         <section class="nombre-perfil">
             <div class="foto">
-                <img src="./images/carrito/zapatillas-new-balance.jpg" alt="">
+                <img src="/images/Home//main/<%= userDate.foto %>" alt="">
             </div>
             <div>
-                <% usuarios.forEach(usuario => { %>
-                    <div>
-                        <h2><%= usuario.name %> <%= usuario.last_name %></h2>
-                    </div> 
-                <% }); %>
+                <h2><%= userDate.name %> <%= userDate.last_name %></h2>
             </div> 
         </section>
 
@@ -29,46 +25,36 @@
 
             <section class="card4">
 
-                <form action="/perfil_usuario" class="form-container" method="POST">
-
-                    <input type="hidden" name="_method" value="POST">
+                <form action="/perfil_usuario/<%= userDate.id_usuarios %>" class="form-container" method="POST" >
+                    <input type="hidden" name="_method" value="PUT">
                     <div class="card2">
                         <label class="label" for="name">Cambiar nombre:</label>
-                        <input value= type="text" name="name" id="" >
+                        <input value= '<%= userDate.name %>' type="text" name="name" id="" >
                     </div>
                     <div class="card2">
                         <label class="label" for="last_name">Cambiar apellido:</label>
-                        <input type="text" name="last_name" id="">
+                        <input value="<%= userDate.last_name %>" type="text" name="last_name" id="">
                     </div>
                     <div class="card2" >
                         <label class="label" for="email">Cambiar e-mail:</label>
-                        <input type="email" name="email" id="">
+                        <input value="<%= userDate.email %>" type="email" name="email" id="">
                     </div>
-                    <div class="card2">
-                        <label class="label" for="password">Cambiar contraseña:</label>
-                        <input type="password" name="password" id="" >
-                    </div>
-                    <!-- <div class="card2">
-                        <input type="password" name="confirm_password" id="" placeholder="Confirmar contraseña">
-                    </div> -->
                     <div class="card2">
                         <label class="label" for="phone">Cambiar número:</label>
-                        <input type="text" name="phone" id="" >
+                        <input value="<%= userDate.phone %>" type="text" name="phone" id="" >
                     </div>
                     <div class="buttons1">
                         <button type="submit">Guardar Cambios</button>
                    </div>   
+                </form>
+                <form action="/cerrarSesion">
+                    <button type="submit">Cerrar Sesion</button>
                 </form>
                 
                 
             </section>
 
         </div> 
-
-
-
-
-
     </main>
     <%- include ("./partials/footer")%>
 
