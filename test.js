@@ -21,17 +21,19 @@ const db= require('./src/dataBase/models')
 //      id_tallas:2
 //  }).then(result=>console.log(result))
 
-const bcryptjs= require('bcryptjs')
+// const bcryptjs= require('bcryptjs')
 
-let hashPassword= bcryptjs.hashSync('123456', 10)
-console.log(hashPassword);
-
-
-const user={
-    name: 'pepe',
-    mail:'pepito@gmail.com',
-    passwosr: '$2a$10$vFg2lP84X1cCbIlG.7okZuvo2.7GvHT/cbGMF5lIYKvGEfwaauEfy'
-}
+// let hashPassword= bcryptjs.hashSync('123456', 10)
+// console.log(hashPassword);
 
 
-console.log(bcryptjs.compareSync("123456", '$2a$10$vFg2lP84X1cCbIlG.7okZuvo2.7GvHT/cbGMF5lIYKvGEfwaauEfy'));
+// const user={
+//     name: 'pepe',
+//     mail:'pepito@gmail.com',
+//     passwosr: '$2a$10$vFg2lP84X1cCbIlG.7okZuvo2.7GvHT/cbGMF5lIYKvGEfwaauEfy'
+// }
+
+
+// console.log(bcryptjs.compareSync("123456", '$2a$10$vFg2lP84X1cCbIlG.7okZuvo2.7GvHT/cbGMF5lIYKvGEfwaauEfy'));
+
+
