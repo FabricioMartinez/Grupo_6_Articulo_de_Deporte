@@ -86,7 +86,7 @@ CREATE TABLE `productos` (
   CONSTRAINT `productos_ibfk_1` FOREIGN KEY (`id_categoria`) REFERENCES `categorias` (`id_categoria`),
   CONSTRAINT `productos_ibfk_2` FOREIGN KEY (`id_color`) REFERENCES `color` (`id_color`),
   CONSTRAINT `productos_ibfk_3` FOREIGN KEY (`id_tallas`) REFERENCES `tallas` (`id_tallas`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -95,7 +95,7 @@ CREATE TABLE `productos` (
 
 LOCK TABLES `productos` WRITE;
 /*!40000 ALTER TABLE `productos` DISABLE KEYS */;
-INSERT INTO `productos` VALUES (1,'Zapatillas nike',12000,'pal futbol',1,5,6,NULL),(2,'Pelota del mundial',25000,'pal futbol',2,6,6,NULL),(3,'Pelota del mundial',25000,'pal futbol',2,6,6,NULL),(4,'Pelota del mundial',25000,'pal futbol',2,6,6,NULL);
+INSERT INTO `productos` VALUES (1,'Zapatillas nike',12000,'pal futbol',1,5,6,'products_1700102185136.jpg'),(5,'arania',3000,'arania feli',2,2,4,'products_1701041429936.jpg'),(6,'Mouse',13000,'dsadasd',2,3,1,'products_1701353479057.jpeg'),(7,'Mouse',13000,'asdawda',1,3,2,'products_1701632675768.jpeg'),(8,'Bici',28000,'Bicicleta para recorrer el mundo ',1,5,6,'products_1701957132397.jpg'),(9,'Bicicleta',50000,'Bici',1,1,6,'products_1701957407497.webp');
 /*!40000 ALTER TABLE `productos` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -135,10 +135,12 @@ CREATE TABLE `usuarios` (
   `name` varchar(50) NOT NULL,
   `last_name` varchar(50) NOT NULL,
   `email` varchar(50) NOT NULL,
-  `password` varchar(50) NOT NULL,
+  `foto` varchar(200) DEFAULT NULL,
+  `password` varchar(200) NOT NULL,
+  `password_confirm` varchar(200) DEFAULT NULL,
   `phone` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id_usuarios`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=30 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -147,7 +149,7 @@ CREATE TABLE `usuarios` (
 
 LOCK TABLES `usuarios` WRITE;
 /*!40000 ALTER TABLE `usuarios` DISABLE KEYS */;
-INSERT INTO `usuarios` VALUES (1,'Fabricio Jorge','Martinez','fabrii.mar1645@gmail.com','123Fjnnn','3884764530');
+INSERT INTO `usuarios` VALUES (1,'Fabricio Jorge','Martinez','fabrii.mar1645@gmail.com',NULL,'123Fjnnn',NULL,'3884764530'),(28,'joaquin','Martinez','fabrii.mar1645@gmail.com','products_1701833837205.png','$2a$10$eFcEYng6PrIfeHuBA.aNtOOzUFiyUNabwpIJjx02YRyMhtSwg8HW2',NULL,'388 476-4530'),(29,'enzo','torrez','enzo@gmail.com','products_1701834705388.jpg','$2a$10$cQyxVQ8/F6F/1k.ENBndJOovjYVvezkJyW8wvfLErYGo0EXU9SXr.',NULL,'+54 (54) 3884764530');
 /*!40000 ALTER TABLE `usuarios` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -160,4 +162,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-11-15 23:28:36
+-- Dump completed on 2023-12-07 17:05:38
