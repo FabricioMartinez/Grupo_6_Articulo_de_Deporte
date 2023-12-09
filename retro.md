@@ -95,8 +95,22 @@ Retrospectiva del sprint 5:
    Durante el meet participaron todos los integrantes del grupo para la resolucion de la retro. 
 
   Retrospectiva del sprint 6:
+1. Comenzar a hacer: Hacer mas daily para mantenernos en contacto.
+2. Hacer mas: participacion en los espacios grupales de las clases de zoom, cumpir con las fechas de las tareas asignadas.
+3. Continuar haciendo: la distribucion de responsables para cada reuniones y seguir trabajando en equipo.
+4. Hacer menos: Postergar las cosas y no perder el contacto entre nosotros.
+
   DAILY 1: se realizo una reuniòn de meet en el que asistieron todos los itegrantes del grupo y se realizo la retrospectiva del  sprint 5, tambien se logro avanzar un poco del sprint 6 y se repartieron tareas.
   DAILY 2: hicimos un meet grupaln en el que nos sacamos dudas que teníamos. Surgió un error con el create, por lo que se consultó a los profesores y pudimos resolver la duda.
   DAILY 3: Edición y eliminación de pruductos. Quedaron algunos errores pendientes.
   DAILY 4 (14/11/23): Organización para realizar el CRUD de usuarios
-  daily 5: 7/12/23: validacion en grupo del formulario de registro. trabajamos con una sola computadora.s
+  daily 5: 7/12/23: validacion en grupo del formulario de registro. trabajamos con una sola computadora.
+
+  Retrospectiva del sprint 7:
+1. Comenzar a hacer: 
+2. Hacer mas: 
+3. Continuar haciendo:
+4. Hacer menos: 
+5. Dejar de hacer:
+  DAYLI 1 :9/12/23: se realizo un met grupal para continuar con las validaciones y seguir avanzando con el sprit 8
+  tambien damos a conocer que una compañera (Ángeles Apaza) dejo el curso por razones personales.

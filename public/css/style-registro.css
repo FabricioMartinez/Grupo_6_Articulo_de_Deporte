@@ -295,7 +295,7 @@ footer{
 }
 
 
-/* ******* Validar 7/12/23 ******
+/****** Validar 7/12/23 ******/
 
 .is-invalid {
     box-shadow: 0 0 20px rgb(230, 64, 64)
@@ -314,4 +314,4 @@ footer{
 }
 .is-valid {
     color: black;
-} */
+} 
