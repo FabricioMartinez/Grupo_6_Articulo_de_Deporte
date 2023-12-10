@@ -100,3 +100,6 @@ Retrospectiva del sprint 5:
   DAILY 3: Edición y eliminación de pruductos. Quedaron algunos errores pendientes.
   DAILY 4 (14/11/23): Organización para realizar el CRUD de usuarios
   daily 5: 7/12/23: validacion en grupo del formulario de registro. trabajamos con una sola computadora.s
+
+Retrospectiva del sprint 7:
+Daily 1 (9/12/23): Hicimos un meet y logramos hacer el back-end en equipo
