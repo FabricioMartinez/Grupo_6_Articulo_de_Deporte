@@ -27,3 +27,5 @@ userRouter.post('/login', userController.loginUser);
 userRouter.get('/cerrarSesion', userController.cerrarSesion);
 
 module.exports = userRouter;
+
+

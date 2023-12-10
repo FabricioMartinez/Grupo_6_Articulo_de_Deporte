@@ -109,3 +109,19 @@ const userController = {
 
 module.exports = userController
 
+// profile: (req, res) => {
+        
+                
+    //             return res.render("userProfile", {
+    //               user: req.session.userLogged.
+    //               res.cookies("userEmail", req.session.userLogged,{maxAge:(1000*60)*5});
+                  
+    //             });
+    //           },
+            
+    //           logout: (req, res) => {
+    //             res.clearCookie("userEmail");
+    //             req.session.destroy(() => {
+    //               res.redirect("/");
+    //             });
+              // }
