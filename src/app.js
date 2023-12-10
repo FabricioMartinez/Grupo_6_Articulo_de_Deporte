@@ -7,6 +7,7 @@ const app = express ();
 const userLoggerMiddelware = require('../middleware/userLoggedMiddelware');
 
 
+
 // view engine setup
 app.set("view engine", "ejs");
 app.set("views", "./src/views");
@@ -18,6 +19,7 @@ app.use(session({
 }))
 app.use(cookies())
 app.use(userLoggerMiddelware)
+
 
 // URL encode - Para que nos pueda llegar la información desde el formulario al req.body
 app.use(express.urlencoded({ extended: false }));

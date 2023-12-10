@@ -2,6 +2,7 @@
 const db= require('../dataBase/models')
 const express = require('express');
 const app = express();
+const {validationResult}= require("express-validator");
 
 const productControllers= {
 
@@ -27,7 +28,16 @@ const productControllers= {
     },
     create:function(req,res){
         const newproduct= req.body;
-        console.log(newproduct);
+        const resultvalidation= validationResult(req);
+        console.log(resultvalidation.mapped());
+        //   if (resultvalidation.errors.length > 0) {
+        //       res.render("Crear-Producto", {
+        //           errors: resultvalidation.mapped(),
+        //           oldData: req.body,
+                  
+        //       })
+        //       console.log(errors);;
+        //  }else{
         db.Products.create({
             name:req.body.name,
             price:req.body.price,
@@ -42,7 +52,8 @@ const productControllers= {
         }).catch(error => {
             console.error("Error al crear el producto:", error);
         });
-    },
+        //}
+},
     
     //EDICIÓN DE PRODUCTO
 

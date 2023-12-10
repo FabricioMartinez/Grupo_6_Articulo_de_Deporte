@@ -14,6 +14,7 @@
 <body>
     <%- include ("./partials/header")%>
     <main>
+        <% console.log(locals.errors); %>
         <form action="/Crear-Producto/crear" class="New-product" id="form" method="POST" enctype="multipart/form-data">
             
             <h1>Crear Producto</h1>
@@ -26,14 +27,17 @@
                 </div>
             </div>
             
-            <div class="Precio">
-                <h2>Precio del Producto</h2>
-                <div class="input-container">
-                    <input type="text" name="price" id="price"  placeholder="Insertar precio" class=" price"oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
-                    <i class="fas fa-exclamation alert"></i>
-                    <i class="fas fa-check okey"></i>
+            <%// if (locals.errors && errors.price) { %>
+                <div class="Precio">
+                    <h2>Precio del Producto</h2>
+                    <div class="input-container">
+                        <input type="text" name="price" id="price" placeholder="Insertar precio" class="price" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" >
+                        <i class="fas fa-exclamation alert"></i>
+                        <i class="fas fa-check okey"></i>
+                    </div>
                 </div>
-            </div>
+            <% //} %>
+            
             
             <div class="Category">
                 <h2>Categoría del producto</h2>
