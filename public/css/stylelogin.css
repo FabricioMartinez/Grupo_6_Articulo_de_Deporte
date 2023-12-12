@@ -184,6 +184,15 @@ h1{
   text-align: center;
   margin-top: 15px;
 }
+.botonLogin{
+  background-color: #007bff;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  color: wheat;
+  font-weight: bold;
+  cursor: pointer;
+}
 
 /* Pie de página */
 /*footer {
@@ -281,3 +290,26 @@ footer{
 .fa-brands{
   color: black;
 }
+
+ /*estilo de la validacion del lado del front end */
+ .is-invalid {
+  box-shadow: 0 0 20px rgb(230, 64, 64)
+} 
+.is-valid {
+  box-shadow: 0 0 5px rgb(117, 233, 34)
+} 
+/*no son necesarios*/
+.alerta{
+    opacity: 100;
+    color: red;
+    margin-left: -15px;
+    margin-top: 9px;
+}
+
+.ok{
+    margin-left: -29px;
+    margin-top: 9px;
+    color: green;
+    opacity: 100;
+}
+/*fin estilo de las validaciones del front end*/

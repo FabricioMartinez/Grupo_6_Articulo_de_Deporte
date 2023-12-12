@@ -14,14 +14,14 @@
 <body>
     <%- include ("./partials/header")%>
     <main>
-        <h1>BIENVENID@ A SPORTIFY</h1>
+        <h1>Ingresar a Sportify</h1>
         <section class="conteiner">
-            <form class="for" action="/login" method="POST">
+            <form class="for" id="ingresoLogin" action="/login" method="post">
                 <label><i class="fa-solid fa-bicycle"></i> Username:</label>
-                <input type="text" id="username" name="name" placeholder="name" required><br>
+                <input type="text" id="username" class="" name="name" placeholder="name" required><br>
                 <label><i class="fa-solid fa-person-skiing-nordic"></i> Password:</label>
-                <input type="password" id="password" name="password" placeholder="contraseña" required>
-                <input type="submit" value="Login">
+                <input type="password" id="password" class="" name="password" placeholder="contraseña" required>
+                <button type="submit" class="botonLogin">Login</button>
             </form>
             <div class="register">
                 <p>No tienes una cuenta? <a href="./register">Regístrate aquí</a></p>
@@ -29,5 +29,6 @@
         </section>
     </main>
     <%- include ("./partials/footer")%>
+    <script src="/js/loginUsuarios.js"></script>
 </body>
 </html>
