@@ -17,10 +17,10 @@
             <li class="buy"><a class="color-nav" href="./carrito"><i class="fa-solid fa-cart-shopping"></i></a></li>
         </ul>
         <% if (locals.isLogged) { %>
-            <p class="color-nav">Hola <%= locals.isLogged ? locals.userLogged.name : "Usuario" %></p>
+            <a href="../perfil_usuario"><p class="color-nav"> Hola <%= locals.isLogged ? locals.userLogged.name : "Usuario" %></p></a>
         <% } else { %>
             <ul>
-                <li class="buy"><a class="color-nav" href="./carrito"><i class="fa-solid fa-cart-shopping"></i></a></li>
+
                 <li class="New-user"><a class="color-nav" href="./register"><i class="fa-solid fa-user-plus"></i></a></li>
                 <li class="registro"><a class="color-nav" href="./login"><i class="fa-solid fa-user"></i></a></li>
             </ul>
