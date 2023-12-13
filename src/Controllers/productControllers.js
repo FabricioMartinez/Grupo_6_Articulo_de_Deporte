@@ -117,6 +117,13 @@ const productControllers= {
      showSeleccion: (req, res)=>{
          res.render("Seleccion")
      },
+
+     //CARRITO DE COMPRAS
+     showCarrito: (req, res)=>{
+        res.render("carrito",  
+        {products ,título: "Productos para comprar"}
+        );
+        }
 }
 
 
