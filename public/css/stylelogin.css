@@ -141,10 +141,8 @@ h1{
 .for {
   max-width: 300px;
   margin: 0 auto;
-  padding: 70px;
+  padding: 0px;
   border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(202, 202, 202, 0.2);
- 
   text-align: center;
 }
 
@@ -159,7 +157,7 @@ h1{
 
 .for input[type="text"],
 .for input[type="password"] {
-  width: 200%;
+  width: 100%;
   padding: 8px;
   margin-bottom: 15px;
   border: 1px solid #ccc;
