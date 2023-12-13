@@ -34,6 +34,9 @@ module.exports = (sequelize, dataTypes) => {
         },
         phone: {
             type: dataTypes.INTEGER
+        },
+        rol:{
+            type: dataTypes.STRING
         }
     };
     let config = {

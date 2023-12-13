@@ -79,7 +79,7 @@ const productControllers= {
                 console.error(error);
             });
         })},
-        update: function (req, res) {
+    update: function (req, res) {
             const editproduct = req.params.id;
             const newImageData = req.file ? { imagen: req.file.filename } : {};
         
@@ -105,7 +105,7 @@ const productControllers= {
                 console.error(error);
                 res.status(500).send("Error interno del servidor");
             });
-        },
+    },
         
 
     //LISTADO DE PRODUCTOS
@@ -131,8 +131,14 @@ const productControllers= {
     },
 
      showConfirmation: (req,res)=>{
-         res.render("admin-confirm");
-     },
+        if (req.session.userLogged) {
+         res.render("admin-confirm", {
+            userDate: req.session.userLogged
+        });
+        } else {
+            res.redirect('/login');
+        }
+    },
 
      showSeleccion: (req, res)=>{
          res.render("Seleccion")
@@ -140,10 +146,13 @@ const productControllers= {
 
      //CARRITO DE COMPRAS
      showCarrito: (req, res)=>{
-        res.render("carrito",  
-        {products ,título: "Productos para comprar"}
-        );
-        }
+        res.render("carrito")
+     },
+
+     busca: (req,res)=>{
+        db.Products.findAll({raw: true}).then((result) =>
+        res.render("buscar",{producto: result}));
+     }
 }
 
 

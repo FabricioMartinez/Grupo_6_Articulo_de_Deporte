@@ -1,0 +1,35 @@
+<!-- busqueda.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include ("./partials/head") %>
+</head>
+<body>
+    <%- include ("./partials/header")%>
+
+    <main>
+        <section class="productos">
+            <div class="stock">
+                <% producto.map(producto => { %>
+                    <section>
+                        <a href="./detalles/<%= producto.id %>">
+                            <article class="destacado1">
+                                <figure>
+                                    <img src="/images/Home//main/<%= producto.imagen %>" alt="imagen de productos">
+                                </figure>
+                                <div class="detalle">
+                                    <p><%= producto.name %></p>
+                                    <p><%= producto.price %></p>
+                                    <li class="caja-compra"><a class="compra" href="./carrito">Comprar</i></a></li>
+                                </div>
+                            </article>
+                        </a>
+                    </section>
+                <% }) %>
+            </div>
+        </section>
+    </main>
+    <%- include ("./partials/footer")%>
+    <script src="/js/ProductList.js"></script>
+</body>
+</html>
