@@ -17,29 +17,39 @@
         <h2>NUEVA CUENTA</h2>
             <div class="container">
                 <section class="card4">
-                    <form action="/register/crear" class="form-container" method="post" enctype="multipart/form-data">
+                    <form action="/register/crear" class="form-container" id="form" method="post" enctype="multipart/form-data">
                         <div class="card1">
-                            <input type="text" name="name" id=""  placeholder="Nombre Completo" >
+                            <input type="text" name="name" id="name"  placeholder="Nombre Completo" >
                             <i class="fas fa-exclamation alert"></i>
                             <i class="fas fa-check okey"></i>
                         </div>
-                        <div>
-                            <input class="last-name" type="text" name="last_name" id="" placeholder="Apellido">
+                        <div class="card1">
+                            <input type="text" name="last_name" id="last_name" placeholder="Apellido">
+                            <i class="fas fa-exclamation alert"></i>
+                            <i class="fas fa-check okey"></i>
                         </div>
-                        <div class="card2" >
-                            <input type="email" name="email" id="" placeholder="Email">
+                        <div class="card1" >
+                            <input type="email" name="email" id="email" placeholder="Email">
+                            <i class="fas fa-exclamation alert"></i>
+                            <i class="fas fa-check okey"></i>
                         </div>
-                        <div class="card2">
-                            <input type="password" name="password" id="" placeholder="Contraseña">
+                        <div class="card1">
+                            <input type="password" name="password" id="password" placeholder="Contraseña">
+                            <i class="fas fa-exclamation alert"></i>
+                            <i class="fas fa-check okey"></i>
                         </div>
-                        <div class="card2">
-                            <input type="password" name="password_confirm" id="" placeholder="Confirmar contraseña">
+                        <div class="card1">
+                            <input type="password" name="password_confirm" id="password_confirm" placeholder="Confirmar contraseña">
+                            <i class="fas fa-exclamation alert"></i>
+                            <i class="fas fa-check okey"></i>
                         </div>
-                        <div class="card2">
-                            <input type="text" name="phone" id="" placeholder="Teléfono (opcional)">
+                        <div class="card1">
+                            <input type="text" name="phone" id="phone" placeholder="Teléfono (opcional)">
+                            <i class="fas fa-exclamation alert"></i>
+                            <i class="fas fa-check okey"></i>
                         </div>
-                        <div class="card2">
-                            <input type="file" name="foto" />
+                        <div class="card1">
+                            <input type="file" name="foto" id="id_foto"/>
                         </div>
                         <div class="buttons1">
                             <button type="submit">Crear Cuenta</button>
@@ -60,6 +70,8 @@
 
        
     </main>
+
  <%- include ("./partials/footer") %>
+ <script src="/js/perfil-de-usuario.js"></script>
 </body>
 </html>

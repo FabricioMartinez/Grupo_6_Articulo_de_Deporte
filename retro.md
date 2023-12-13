@@ -106,11 +106,17 @@ Retrospectiva del sprint 5:
   DAILY 4 (14/11/23): Organización para realizar el CRUD de usuarios
   daily 5: 7/12/23: validacion en grupo del formulario de registro. trabajamos con una sola computadora.
 
+
+
+
   Retrospectiva del sprint 7:
 1. Comenzar a hacer: 
 2. Hacer mas: 
 3. Continuar haciendo:
 4. Hacer menos: 
 5. Dejar de hacer:
-  DAYLI 1 :9/12/23: se realizo un met grupal para continuar con las validaciones y seguir avanzando con el sprit 8
-  tambien damos a conocer que una compañera (Ángeles Apaza) dejo el curso por razones personales.
+
+
+DAYLI 1 (9/12/23): se realizo un met grupal para continuar con las validaciones y seguir avanzando con el sprit 8
+También damos a conocer que una compañera (Ángeles Apaza) dejo el curso por razones personales.
+Daily 2 (9/12/23): Hicimos un meet y logramos hacer el back-end en equipo

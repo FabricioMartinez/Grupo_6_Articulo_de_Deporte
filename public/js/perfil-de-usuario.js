@@ -1,52 +1,3 @@
-// window.onload = function(){
-
-//     const inputname= document.querySelector('input#name')
-//     const inputlast_name= document.querySelector('input#last_name')
-//     const inputpassword= document.querySelector('#id_password')
-//     const inputemail= document.querySelector('#id_email')
-//     const inputphone= document.querySelector('input#phone')
-//     // const selectfoto= document.querySelector('#id_foto')
-//     // const image= document.querySelector('#imagen')
-//     // const formCrear= document.querySelector('#form')
-
-//     function validate (){
-//         if(this.value.trim() === "") {
-//             this.classList.add('is-invalid');
-//         }else{
-//             this.classList.remove('is-invalid')
-//             this.classList.add('is-valid')
-//         }}
-
-//     inputname.addEventListener('blur', validate);
-//     inputlast_name.addEventListener('blur', validate);
-//     inputpassword.addEventListener('blur', validate);
-//     inputemail.addEventListener('blur', validate);
-//     inputphone.addEventListener('blur', validate);
-//     // selectfoto.addEventListener('blur', validate);
-
-//     // image.addEventListener('blur', validate)
-
-
-// createUser.addEvenListener ('submit', function (l)){
-//     l.preventDeFault();
-//     const formulario = [...createMovie.elements];
-//     formulario.pop();
-//     let thereErrors = false;
-//     formulario.forEach((element) =>{
-//         if(element.value.trim() === ""){
-//             element.classList.add('is-invalid')
-//             thereErrors = true
-//         } else {
-//             element.classList.add('is-invalid')
-//             element.classList.add('is-valid')
-//         }
-
-//         })
-    
-// }
-
-
-// }
 
 window.onload = function(){
 
@@ -55,9 +6,11 @@ window.onload = function(){
     const inputname= document.querySelector('input#name')
     const inputlast_name= document.querySelector('input#last_name')
     const inputpassword= document.querySelector('input#password')
+    const inputpassword_confirm= document.querySelector('input#password_confirm')
     const inputemail= document.querySelector('input#email')
     const inputphone= document.querySelector('input#phone')
-    const image= document.querySelector('#imagen')
+    const selectfoto= document.querySelector('#id_foto')
+    
     const formCrear= document.querySelector('#form')
     function validate (input){
         if (input.value.trim() === "") {
@@ -85,23 +38,44 @@ window.onload = function(){
         }
     }
 
+    function validate (input){
+        if(input.value.trim() === "") {
+            input.classList.add('is-invalid');
+            input.parentElement.querySelector('.fa-exclamation').classList.add('alerta');
+            input.parentElement.querySelector('.fa-check').classList.remove('ok');
+        }else{
+            input.classList.remove('is-invalid')
+            input.classList.add('is-valid')
+            input.parentElement.querySelector('.fa-exclamation').classList.remove('alerta');
+            input.parentElement.querySelector('.fa-check').classList.add('ok');
+        }}
+
     inputname.addEventListener('blur', function() {
         validate(inputname);
     });
-
     inputlast_name.addEventListener('blur', function() {
         validate(inputlast_name);
     });
-
     inputpassword.addEventListener('blur', function() {
-        validateSelect(inputpassword);
+        validate(inputpassword);
     });
-
+    inputpassword_confirm.addEventListener('blur', function() {
+        validate(inputpassword_confirm);
+    });
+    inputemail.addEventListener('blur', function() {
+        validate(inputemail);
+    });
     inputphone.addEventListener('blur', function() {
-        validateSelect(inputphone);
+        validate(inputphone);
     });
 
-    
+   
+    selectfoto.addEventListener('blur', function() {
+        validate(selectfoto); 
+    });
+
+
+  
     
     formCrear.addEventListener('submit', function(e){
         
@@ -128,6 +102,4 @@ window.onload = function(){
 
     })
 
-    image.addEventListener('blur', validate)
-
-}
+};
