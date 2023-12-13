@@ -19,6 +19,9 @@ app.use(session({
 app.use(cookies())
 app.use(userLoggerMiddelware)
 
+
+
+
 // URL encode - Para que nos pueda llegar la información desde el formulario al req.body
 app.use(express.urlencoded({ extended: false }));
 
@@ -31,8 +34,10 @@ const productRouter = require("./Routes/productRoutes");
 
 //const mainRouterUser = require("./Routes/mainRoutesUser");
 const userRouter = require("./Routes/userRouter");
+const apiROuter = require('./Routes/apis/apiProduct');
 
 
+app.use('/api', apiROuter)
 
 // Para uso de Mysql como base de datos
 app.use(productRouter);

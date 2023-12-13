@@ -167,11 +167,13 @@ main section h1{
     border-radius: 30px;
     margin-bottom: 20px;
     border: 1px solid;
+    margin-left: 80px;
+    margin-right: 80px;
 }
 
 figure img{
     width: 250px;
-    height: 250px;
+    height: 300px;
     border-radius: 30px;
 }
 
@@ -238,6 +240,7 @@ figure img{
 
 section article p{
     padding: 5px;
+    width: 200px;
 }
 
 .caja-compra{

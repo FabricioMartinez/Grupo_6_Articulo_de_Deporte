@@ -3,13 +3,19 @@
         <div class="logo">
             <a href="./"><img src="./images/Home/header/Logo-Sportify.jpg" width="150px" alt="logo"></a>
         </div>
-        <form class="search-box" action="" method="get">
+        <form class="search-box" action="get"  id="form">
             <input type="text" placeholder="Buscar Articulo...">
             <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
         </form>
-        <!-- <ul>
+
+       
+ <ul>
+
+        <ul class="list">
+        </ul>
+        <ul>
             <li class="buy"><a class="color-nav" href="./carrito"><i class="fa-solid fa-cart-shopping"></i></a></li>
-        </ul> -->
+        </ul>
         <% if (locals.isLogged) { %>
             <p class="color-nav">Hola <%= locals.isLogged ? locals.userLogged.name : "Usuario" %></p>
         <% } else { %>
@@ -20,4 +26,5 @@
             </ul>
         <% } %>
     </nav>
+    <script src="/js/Buscador.js"></script>
 </header>

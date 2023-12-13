@@ -83,11 +83,17 @@ const userController = {
             const userDate = await db.usuarios.findByField('name', user.name);
             if (userDate) {
                 const isPasswordValid= bcryptjs.compareSync(user.password, userDate.password)
+                console.log('Usuario encontrado:', userDate);
+
                 if (isPasswordValid) {
                     req.session.userLogged = userDate
                     res.cookie("userName", req.session.userLogged.name,{ maxAge:(1000*60*5)})
-                    console.log('Contraseña válida');
-                    res.redirect('/perfil_usuario');
+                    if (userDate.rol === 'admin') {
+                        res.redirect('/admin');
+                    } else {
+                        console.log('Contraseña válida');
+                        res.redirect('/perfil_usuario');
+                    }
                 } else {
                     console.log('Contraseña incorrecta');
                     res.redirect('/login');
@@ -100,6 +106,11 @@ const userController = {
             console.error('Error al acceder a los datos de usuario:', error);
             res.status(500).json({ error: 'Error interno del servidor.' });
         }
+    },
+    adminPerfil: (req,res)=>{
+        res.render('admin',{
+            userDate: req.session.userLogged
+        })
     }
 
 
@@ -109,19 +120,3 @@ const userController = {
 
 module.exports = userController
 
-// profile: (req, res) => {
-        
-                
-    //             return res.render("userProfile", {
-    //               user: req.session.userLogged.
-    //               res.cookies("userEmail", req.session.userLogged,{maxAge:(1000*60)*5});
-                  
-    //             });
-    //           },
-            
-    //           logout: (req, res) => {
-    //             res.clearCookie("userEmail");
-    //             req.session.destroy(() => {
-    //               res.redirect("/");
-    //             });
-              // }

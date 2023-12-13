@@ -1,7 +1,9 @@
-
+const fs= require('fs')
+const path= require('path')
 const db= require('../dataBase/models')
 const express = require('express');
 const app = express();
+const { validationResult } = require('express-validator');
 
 const productControllers= {
 
@@ -19,15 +21,29 @@ const productControllers= {
         Promise.all([
             db.categoria.findAll({ raw: true }),
             db.color.findAll({ raw: true }),
-            db.tallas.findAll({raw:true})
+            db.tallas.findAll({ raw: true })
         ]).then(([categorias, color, tallas]) => {
+            console.log("Categorias:", categorias,color,tallas);
             res.render("Crear-Producto", { categorias, color, tallas });
         }).catch((error) => {
+            console.error(error);
         });
+        
     },
-    create:function(req,res){
+    create: async function(req,res,next){
         const newproduct= req.body;
-        console.log(newproduct);
+        const validation = validationResult(req);
+        const categorias = await db.categoria.findAll({ raw: true })
+        const color =  db.color.findAll({ raw: true });
+        const tallas =  db.tallas.findAll({ raw: true });
+
+        if (validation.errors.length > 0) {
+            res.render('Crear-Producto', {
+                errors: validation.mapped(),
+                oldValue: req.body,
+                categorias: categorias, color, tallas 
+            });
+        } else {
         db.Products.create({
             name:req.body.name,
             price:req.body.price,
@@ -42,7 +58,8 @@ const productControllers= {
         }).catch(error => {
             console.error("Error al crear el producto:", error);
         });
-    },
+        }
+},
     
     //EDICIÓN DE PRODUCTO
 
@@ -64,13 +81,15 @@ const productControllers= {
         })},
     update: function (req, res) {
             const editproduct = req.params.id;
+            const newImageData = req.file ? { imagen: req.file.filename } : {};
+        
             const newData = {
                 name: req.body.name,
                 price: req.body.price,
                 description: req.body.description,
-                imagen: req.file.filename,
-                // ... otras propiedades a actualizar
+                ...newImageData, 
             };
+        
             db.Products.update(newData, {
                 where: {
                     id_productos: editproduct
@@ -81,12 +100,13 @@ const productControllers= {
                 } else {
                     console.log("Ningún producto actualizado");
                 }
-                res.redirect("/"); // Redirige a la página principal u otra página después de la actualización
+                res.redirect("/"); 
             }).catch((error) => {
                 console.error(error);
                 res.status(500).send("Error interno del servidor");
             });
     },
+        
 
     //LISTADO DE PRODUCTOS
 
@@ -111,8 +131,14 @@ const productControllers= {
     },
 
      showConfirmation: (req,res)=>{
-         res.render("admin-confirm");
-     },
+        if (req.session.userLogged) {
+         res.render("admin-confirm", {
+            userDate: req.session.userLogged
+        });
+        } else {
+            res.redirect('/login');
+        }
+    },
 
      showSeleccion: (req, res)=>{
          res.render("Seleccion")
@@ -120,10 +146,13 @@ const productControllers= {
 
      //CARRITO DE COMPRAS
      showCarrito: (req, res)=>{
-        res.render("carrito",  
-        {products ,título: "Productos para comprar"}
-        );
-        }
+        res.render("carrito")
+     },
+
+     busca: (req,res)=>{
+        db.Products.findAll({raw: true}).then((result) =>
+        res.render("buscar",{producto: result}));
+     }
 }
 
 

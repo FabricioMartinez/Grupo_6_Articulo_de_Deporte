@@ -7,9 +7,9 @@
 
 
 module.exports = (sequelize, dataTypes) => {
-    let alias = 'usuarios';
+    let alias = 'administradores';
     let colum = {
-        id_usuarios: {
+        id_admin: {
             type: dataTypes.INTEGER,
             primaryKey: true,
             autoIncrement: true
@@ -34,26 +34,21 @@ module.exports = (sequelize, dataTypes) => {
         },
         phone: {
             type: dataTypes.INTEGER
-        },
-        rol:{
-            type: dataTypes.STRING
         }
     };
     let config = {
-        tableName: 'usuarios',
+        tableName: 'administradores',
         timestamps: false
     };
+    const admin = sequelize.define(alias, colum, config); 
 
-    const Usuario = sequelize.define(alias, colum, config); 
-
-    Usuario.findByField = async (field, value) => {
+    admin.findByField = async (field, value) => {
         try {
-            const result = await Usuario.findOne({ where: { [field]: value } });
+            const result = await admin.findOne({ where: { [field]: value } });
             return result;
         } catch (error) {
             throw error;
         }
     };
-
-    return Usuario; 
+    return admin; 
 };

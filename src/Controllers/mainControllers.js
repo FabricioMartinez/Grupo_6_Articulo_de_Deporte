@@ -5,13 +5,13 @@
 // const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 // const {validationResult}= require("express-validator");
 
-     const mainController={
-        showPerfilUsuario: (req, res)=>{
-             res.render("perfil_usuario");
-         },
+     // const mainController={
+     //    showPerfilUsuario: (req, res)=>{
+     //         res.render("perfil_usuario");
+     //     },
 
 
-     }
+     // }
 //     showHome:(req, res)=>{
 //         res.render("index",{products});
 //     },
