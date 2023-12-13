@@ -40,4 +40,8 @@ productRouter.delete("/eliminar/:id", productControllers.eliminar)
 productRouter.get("/Seleccion", productControllers.showSeleccion)
 productRouter.get("/admin-confirm", productControllers.showConfirmation);
 
+//carrito
+// mainRouter.get("/carrito", mainController.showCart );
+productRouter.get("/carrito",productControllers.showCarrito)
+
 module.exports=productRouter
