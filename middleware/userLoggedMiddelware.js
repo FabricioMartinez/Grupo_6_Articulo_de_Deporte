@@ -3,6 +3,7 @@ const userLoggerMiddelware=(req,res,next)=>{
     res.locals.isLogged = false
     if(req.cookies && req.cookies.name){
         const userFound= user.findByField('name', req.cookies.name)
+        console.log(userFound);
         if(userFound){
             req.session.userLogged = userFound
         }

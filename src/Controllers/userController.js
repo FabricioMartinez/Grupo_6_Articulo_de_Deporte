@@ -42,7 +42,8 @@ const userController = {
         })
     },
     cerrarSesion:(req,res)=>{
-        req.session.destroy()
+        req.session.destroy();
+        res.clearCookie('name')
         res.redirect('/')
     },
     //editar usuario
@@ -81,13 +82,23 @@ const userController = {
         try {
             const user = req.body;
             const userDate = await db.usuarios.findByField('name', user.name);
+            const isAdmin = await db.administradores.findByField('name', user.name);
             if (userDate) {
-                const isPasswordValid= bcryptjs.compareSync(user.password, userDate.password)
-                if (isPasswordValid) {
-                    req.session.userLogged = userDate
-                    res.cookie("userName", req.session.userLogged.name,{ maxAge:(1000*60*5)})
-                    console.log('Contraseña válida');
-                    res.redirect('/perfil_usuario');
+                const isPasswordValid = bcryptjs.compareSync(user.password, userDate.password);
+    
+                if (isPasswordValid || user.password == userData.password) {
+                    // Verifica si el usuario es un administrador
+                  
+    
+                    if (isAdmin) {
+                        res.redirect('/admin');
+                    } else {
+                        // Lógica para usuarios no administradores
+                        req.session.userLogged = userDate;
+                        res.cookie("userName", req.session.userLogged.name, { maxAge: (1000 * 60 * 5) });
+                        console.log('Contraseña válida');
+                        res.redirect('/perfil_usuario');
+                    }
                 } else {
                     console.log('Contraseña incorrecta');
                     res.redirect('/login');
@@ -100,8 +111,11 @@ const userController = {
             console.error('Error al acceder a los datos de usuario:', error);
             res.status(500).json({ error: 'Error interno del servidor.' });
         }
+    },
+    
+    adminAuth:(req,res)=>{
+        res.send('Usuario Autorisado')
     }
-
 
 };
 

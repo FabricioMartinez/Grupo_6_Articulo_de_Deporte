@@ -3,6 +3,7 @@ const userRouter = express.Router();
 const path = require("path");
 const userController = require("../Controllers/userController");
 const multer = require("multer");
+const adminAuth = require("../../middleware/adminAuth");
 
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
@@ -25,6 +26,8 @@ userRouter.post('/perfil_usuario/:id', uploadFile.single("foto"),userController.
 userRouter.get('/login', userController.loginPag);
 userRouter.post('/login', userController.loginUser);
 userRouter.get('/cerrarSesion', userController.cerrarSesion);
+
+userRouter.get('/admin', adminAuth, userController.adminAuth)
 
 module.exports = userRouter;
 

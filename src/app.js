@@ -5,7 +5,8 @@ const path = require('path');
 const methodOverride = require('method-override');
 const app = express ();
 const userLoggerMiddelware = require('../middleware/userLoggedMiddelware');
-
+const validationProduct = require('../middleware/validationProductCreate');
+const adminAuth = require('../middleware/adminAuth');
 
 
 // view engine setup
@@ -21,6 +22,8 @@ app.use(cookies())
 app.use(userLoggerMiddelware)
 
 
+
+
 // URL encode - Para que nos pueda llegar la información desde el formulario al req.body
 app.use(express.urlencoded({ extended: false }));
 
@@ -33,6 +36,8 @@ const productRouter = require("./Routes/productRoutes");
 
 //const mainRouterUser = require("./Routes/mainRoutesUser");
 const userRouter = require("./Routes/userRouter");
+
+
 
 
 
