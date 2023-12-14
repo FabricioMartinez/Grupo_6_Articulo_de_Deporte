@@ -241,9 +241,13 @@ input {
 .account{
     width: 40%;
     align-items: center;
-
-   
 }
+.accountquestion{
+    background-color: beige;
+}
+
+
+
 
 /*FOOTER*/
 footer{
