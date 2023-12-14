@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+.logo a img:hover{
+  box-shadow: 0px 0px 10px yellow(200, 206, 207);
+  transform: translateY(-3%);
+}
 main{
     background-image: url(/images/Product-Confirmation/admin-confirm.jpeg);
     background-repeat: no-repeat;

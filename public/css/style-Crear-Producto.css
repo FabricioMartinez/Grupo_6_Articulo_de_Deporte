@@ -8,6 +8,10 @@ body{
     background-color: white;
     font-family: 'Helvetica', serif;
 }
+.logo a img:hover{
+    box-shadow: 0px 0px 10px yellow(200, 206, 207);
+    transform: translateY(-3%);
+}
 
 nav{
     display: flex;
