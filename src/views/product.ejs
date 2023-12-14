@@ -27,14 +27,14 @@
             <div class="stock">
                 <% producto.map(producto =>{ %>
                     <section>
-                        <a href="./detalles/<%= producto.id %>">
+                        <a href="./detalles/<%= producto.id_productos%>">
                             <article class="destacado1">
                                 <figure>
                                     <img src="/images/Home//main/<%= producto.imagen %>" alt="imagen de productos">
                                 </figure>
                                 <div class="detalle">
                                     <p><%= producto.name %></p>
-                                    <p><%= producto.price %></p>
+                                    <p>$<%= producto.price %></p>
                                     <li class="caja-compra"><a class="compra" href="./carrito">Comprar</i></a></li>
                                 </div>
                             </article>

@@ -6,7 +6,6 @@ module.exports = {
     list: async (req,res)=>{
         const data= await db.Products.findAll({
             include:['categoria'],
-            limit: 5,
             offset: 0,
         })
 

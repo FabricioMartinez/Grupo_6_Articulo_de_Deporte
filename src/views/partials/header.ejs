@@ -3,11 +3,10 @@
         <div class="logo">
             <a href="./"><img src="./images/Home/header/Logo-Sportify.jpg" width="150px" alt="logo"></a>
         </div>
-        <form class="search-box" action="get"  id="form">
-            <input type="text" placeholder="Buscar Articulo...">
+        <form class="search-box" id="form">
+            <input type="text" id="input-busqueda" placeholder="Buscar Articulo...">
             <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
         </form>
-
        
  <ul>
 
@@ -20,7 +19,6 @@
             <a href="../perfil_usuario"><p class="color-nav"> Hola <%= locals.isLogged ? locals.userLogged.name : "Usuario" %></p></a>
         <% } else { %>
             <ul>
-
                 <li class="New-user"><a class="color-nav" href="./register"><i class="fa-solid fa-user-plus"></i></a></li>
                 <li class="registro"><a class="color-nav" href="./login"><i class="fa-solid fa-user"></i></a></li>
             </ul>

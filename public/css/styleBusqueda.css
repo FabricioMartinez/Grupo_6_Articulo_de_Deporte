@@ -1,0 +1,417 @@
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+    font-family: 'Helvetica', serif;
+}
+
+nav{
+    display: flex;
+    height: auto;
+    background: #ffd850; 
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: center;
+    font-size: 25px;
+}
+
+nav .search-box{
+    margin: auto;
+}
+nav .search-box input{
+    border: none;
+    height: 30px;
+    width: 500px;
+    padding:  10px;
+    font-size: 1em;
+}
+
+nav .search-box button{
+    background-color: white;
+    position: absolute;
+    height: 30px;
+    width: 40px;
+    margin: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.logo{
+    
+    padding-left: 70px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo a{
+    
+    display: flex;
+    
+   
+}
+.logo a img{
+    border-radius: 5%;
+}
+
+.registro{
+    padding-right: 30px;
+    display: flex;
+    width: auto;
+    height: auto;
+    flex-direction: row;
+}
+
+.New-user{
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    width: auto;
+    height: auto;
+    flex-direction: row;
+}
+
+.buy{
+    padding-right: 60px;
+    padding-left: 30px;
+    display: flex;
+    width: auto;
+    height: auto;
+}
+
+.color-nav{
+    color: black;
+}
+
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.Option{
+    margin-top: 20px;
+    display: flex;
+    background:white;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px 10px;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+
+main section ul button{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 1px solid;
+    font-size: 20px;
+}
+
+.category{
+    display: flex;
+    width: 300px;
+    align-items: center;
+    text-decoration: none;
+    justify-content: space-evenly;
+}
+
+.banner img{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 400px;
+}
+
+.destacado{
+    display: flex;
+    margin-top: 20px;
+    background: rgb(192, 191, 191);
+    font-size: 20px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+main section h1{
+    padding: 20px;
+}
+
+.articulos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+}
+
+.destacado1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    border: 1px solid;
+    margin-left: 100px;
+}
+
+figure img{
+    width: 250px;
+    height: 300px;
+    border-radius: 30px;
+}
+
+
+.destacado2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    border: 1px solid;
+}
+
+
+.carrito{
+    display: flex;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.detalle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.detalle a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+}
+.productos{
+    margin-top: 20px;
+    background: white;
+    font-size: 20px;
+}
+
+.stock{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+}
+
+.compra{
+    display: flex;
+    width: 100px;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.cuadro{
+    border-radius: 30px;
+}
+
+section article p{
+    padding: 5px;
+    width: 200px;
+}
+
+.caja-compra{
+    display: flex;
+    width: auto;
+    height: 40px;
+    border: 2px solid;
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #ffd850;
+    color: black;
+}
+
+.container{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    padding: 20px 0px;
+    border-top: 5px solid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px;
+}
+.qr{
+    list-style: none;
+    margin-left: 60px;
+}
+.texto{
+    list-style: none;
+    border-left: 5px solid;
+}
+.colaboracion{
+    list-style: none;
+    border-left: 5px solid;
+}
+.redes{
+    border-left: 5px solid;
+}
+.contacto{
+    margin-top: 40px;
+    display: flex;
+    font-size: 2em;
+    list-style-type: none;
+    border-top: 5px solid;
+}
+
+.contacto li{
+    padding: 20px 20px;
+    color: white;
+}
+.fa-brands{
+    color: black;
+}
+
+.texto1{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+/* Estilos específicos para diferentes tamaños de pantalla */
+@media only screen and (max-width: 600px) {
+    /* Estilos para pantallas pequeñas (por ejemplo, dispositivos móviles) */
+    header, nav, main, footer {
+        padding: 10px;
+    }
+    
+    /* Estilos generales para el footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+main {
+    max-width: 1200px; /* Ajusta según tus necesidades */
+    margin: 0 auto; /* Centra el contenido */
+}
+main {
+    padding: 20px;
+}
+
+/* Media Query para pantallas más pequeñas (ej. dispositivos móviles) */
+@media only screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.qr img {
+    width: 50%; /* La imagen ocupará el 100% del ancho del contenedor */
+}
+
+.texto, .colaboracion, .redes {
+    width: 100%; /* Los elementos ocuparán el 100% del ancho del contenedor */
+    margin-bottom: 15px;
+}
+
+.redes h2 {
+    margin-top: 0; /* Elimina el margen superior de la sección de redes */
+}
+
+.contacto a i {
+    font-size: 24px; /* Ajusta según tus necesidades */
+    margin-right: 10px;
+}
+
+
+nav .search-box input{
+    border: none;
+    height: 30px;
+    width: 90%;
+    padding: 5px;
+    font-size: 1em;
+}
+/* .logo{
+    padding-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+} */
+header {
+    flex-direction: column; /* Cambia a una disposición de columna */
+    align-items: center;
+}
+.logo {
+    order: -1; /* Cambia el orden para que el logo aparezca primero */
+    margin-bottom: 10px; /* Añade espacio entre el logo y la barra de búsqueda */
+    
+}
+
+
+
+.logo, .search-bar {
+    width: 50%; /* Ocupa todo el ancho disponible */
+   text-align: center;
+}
+ 
+nav .search-box{
+    margin: auto;
+    padding: 5px;
+}
+
+nav .search-box button{
+    background-color: white;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    margin: auto;
+    cursor: pointer;
+    border: none;
+}
+
+main {
+    padding: 10px; /* Reducir el relleno para pantallas más pequeñas */
+}
+main img {
+    max-width: 100%;
+    height: auto;
+}
+}
+
+
+
+
+

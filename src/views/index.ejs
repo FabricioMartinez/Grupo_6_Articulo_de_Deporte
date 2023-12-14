@@ -12,8 +12,7 @@
                 <lu><a class="category" href="#">Oferta</a></lu>
                 <lu><a class="category" href="./product">Todos los productos</a></lu>
                 <lu><a class="category" href="./admin-confirm">Vender</a></lu>
-                <lu><a class="category" href="#">Tendencia</a></lu>
-                <lu><a class="category" href="#">Ayuda</a></lu>
+
             </ul>
         </section>
         <section class="banner">
@@ -25,7 +24,7 @@
                 <h1>Destacado</h1>
             </div>
             <div class="articulos">
-                <% producto.map(producto =>{ %>
+                <% productosDestacados.forEach(producto => { %>
                 <section>
                     <a href="./detalles/<%= producto.id_productos %>">
                         <article class="destacado1">
@@ -45,10 +44,10 @@
         </section>
         <section class="productos">
             <div class="texto1">
-                <h1>Sport</h1>
+                <h1>Sugeridos</h1>
             </div>
             <div class="stock">
-                <% producto.map(producto =>{ %>
+                <% productosSport.forEach(producto => { %>
                     <section>
                         <a href="./detalles/<%= producto.id_productos%>">
                             <article class="destacado1">

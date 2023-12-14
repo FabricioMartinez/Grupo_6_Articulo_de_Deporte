@@ -8,12 +8,19 @@ const { validationResult } = require('express-validator');
 const productControllers= {
 
     //PAGINA PRINCIPAL
-
-    showHome:(req, res)=>{
-        db.Products.findAll({raw: true}).then((result) =>
-            res.render("index",{producto: result}));
+    showHome: (req, res) => {
+        db.Products.findAll({ raw: true }).then((result) => {
+            // Filtrar productos para cada sección
+            const productosDestacados = result.slice(0, 6); // Por ejemplo, toma los primeros 3 productos
+            const productosSport = result.slice(6, 10); // Toma los siguientes 3 productos
+    
+            res.render("index", { productosDestacados, productosSport });
+        }).catch((error) => {
+            console.error(error);
+            res.status(500).send("Error interno del servidor");
+        });
     },
-
+    
     //CREACION DE PRODUCTO
 
     add: function (req, res) {
@@ -149,10 +156,34 @@ const productControllers= {
         res.render("carrito")
      },
 
-     busca: (req,res)=>{
-        db.Products.findAll({raw: true}).then((result) =>
-        res.render("buscar",{producto: result}));
-     }
+     busca: (req, res) => {
+        const searchTerm = req.query.name;
+    
+        if (!searchTerm) {
+            // Si no se proporciona un término de búsqueda, muestra todos los productos
+            db.Products.findAll({ raw: true })
+                .then((result) => res.render("buscar", { producto: result }))
+                .catch((error) => {
+                    console.error(error);
+                    res.status(500).send("Error interno del servidor");
+                });
+        } else {
+            // Si se proporciona un término de búsqueda, realiza la búsqueda
+            db.Products.findAll({
+                where: {
+                    name: {
+                        [db.Sequelize.Op.like]: `%${searchTerm}%` // Buscar nombres que contengan el término
+                    }
+                },
+                raw: true
+            }).then((result) => {
+                res.render("buscar", { producto: result });
+            }).catch((error) => {
+                console.error(error);
+                res.status(500).send("Error interno del servidor");
+            });
+        }
+    }
 }
 
 

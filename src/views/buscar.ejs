@@ -2,34 +2,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <%- include ("./partials/head") %>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styleBusqueda.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vidaloka&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Sportify</title>
 </head>
 <body>
     <%- include ("./partials/header")%>
 
     <main>
+        <section class="Option">
+            <ul class="contenedor">
+                <lu><a class="category" href="#">Categoria</a></lu>
+                <lu><a class="category" href="#">Oferta</a></lu>
+                <lu><a class="category" href="#">Todos los productos</a></lu>
+                <lu><a class="category" href="./admin-confirm">Vender</a></lu>
+                <lu><a class="category" href="#">Tendencia</a></lu>
+                <lu><a class="category" href="#">Ayuda</a></lu>
+            </ul>
+        </section>
         <section class="productos">
             <div class="stock">
-                <% producto.map(producto => { %>
-                    <section>
-                        <a href="./detalles/<%= producto.id %>">
-                            <article class="destacado1">
-                                <figure>
-                                    <img src="/images/Home//main/<%= producto.imagen %>" alt="imagen de productos">
-                                </figure>
-                                <div class="detalle">
-                                    <p><%= producto.name %></p>
-                                    <p><%= producto.price %></p>
+                <% if (producto && producto.length > 0) { %>
+                        <% producto.forEach((element) => { %>
+                            <a href="./detalles/<%= element.id_productos %>">
+                                <article class="destacado1">
+                                    <figure>
+                                        <img src="/images/Home//main/<%= element.imagen %>" alt="imagen de productos">
+                                    </figure>
+                                    <div class="detalle">
+                                    <p><%= element.name %></p>
+                                    <p>Precio: $<%= element.price %></p>
                                     <li class="caja-compra"><a class="compra" href="./carrito">Comprar</i></a></li>
-                                </div>
-                            </article>
-                        </a>
-                    </section>
-                <% }) %>
+                                    </div>
+                                </article>
+                           </a>     
+                        <% }); %>
+                <% } else { %>
+                    <p>No se encontraron resultados</p>
+                <% } %>
             </div>
         </section>
     </main>
     <%- include ("./partials/footer")%>
     <script src="/js/ProductList.js"></script>
+    <script src="/js/Buscador.js"></script>
 </body>
 </html>
