@@ -340,6 +340,8 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+   
+    
 }
 main {
     max-width: 1200px; /* Ajusta según tus necesidades */
@@ -354,6 +356,7 @@ main {
     .container {
         flex-direction: column;
         align-items: center;
+        
     }
 }
 
@@ -364,6 +367,7 @@ main {
 .texto, .colaboracion, .redes {
     width: 100%; /* Los elementos ocuparán el 100% del ancho del contenedor */
     margin-bottom: 15px;
+    margin-left: 100px;
 }
 
 .redes h2 {

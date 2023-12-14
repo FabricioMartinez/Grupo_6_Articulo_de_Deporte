@@ -23,17 +23,18 @@
 <body>
     <%- include ("./partials/header")%>
     <main>
-        <h1>Ingresar a Sportify</h1>
+        <h2>Ingresar a Sportify</h2>
+        
         <section class="conteiner">
             <form class="for" id="ingresoLogin" action="/login" method="post">
-                <label><i class="fa-solid fa-bicycle"></i> nombre de usuario :</label>
-                <input type="text" id="username" class="" name="name" placeholder="nombre" required><br>
-                <label><i class="fa-solid fa-person-skiing-nordic"></i> contraseña:</label>
-                <input type="password" id="password" class="" name="password" placeholder="contraseña" required>
+                <label><i class="fa-solid fa-bicycle"></i> Nombre de usuario </label>
+                <input type="text" id="username" class="" name="name" placeholder="Nombre" required><br>
+                <label><i class="fa-solid fa-person-skiing-nordic"></i> Contraseña</label>
+                <input type="password" id="password" class="" name="password" placeholder="Contraseña" required>
                 <button type="submit" class="botonLogin">Login</button>
             </form>
             <div class="register">
-                <p>No tienes una cuenta? <a href="./register">Regístrate aquí</a></p>
+                <p>¿No tienes una cuenta? <a href="./register">Regístrate aquí</a></p>
             </div>
         </section>
     </main>

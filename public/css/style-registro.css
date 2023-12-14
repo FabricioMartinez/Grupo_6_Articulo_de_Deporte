@@ -130,11 +130,13 @@ input {
     padding: 10px 0px 10px 7px;
     margin-bottom: 15px;
     /* border-radius: 5px; */
-    color: yellow;
+    color: black;
 
 }
 
-   
+.container div .texto .colaboracion .redes a li{
+    padding-left: 100px;
+}
 
 .form-input {
     width: 400px;
@@ -257,6 +259,12 @@ footer{
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 50px;
 }
+
+li {
+    margin-left: 10px; 
+    padding-top: 20px;
+}
+
 .qr{
     list-style: none;
     margin-left: 60px;
@@ -356,6 +364,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    
 }
 
 /* Media Query para pantallas más pequeñas (ej. dispositivos móviles) */
@@ -382,6 +391,7 @@ footer {
 .contacto a i {
     font-size: 24px; /* Ajusta según tus necesidades */
     margin-right: 10px;
+    
 }
 
 
