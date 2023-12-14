@@ -12,7 +12,8 @@ body{
 
 nav{
     display: flex;
-    height: auto;
+    height: 70px;
+   /* height: auto;*/
     background: #ffd850; 
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -163,7 +164,7 @@ footer{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    background-color: #ffd850;
+    background-color: #e3e3e3;
     color: black;
 }
 
@@ -172,31 +173,44 @@ footer{
     margin: auto;
     display: grid;
     padding: 20px 0px;
-    border-top: 5px solid;
+    border-top: 3px solid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 50px;
+    align-items: center;
 }
 .qr{
     list-style: none;
     margin-left: 60px;
 }
 .texto{
+    text-align: center;
+    width: auto;
     list-style: none;
-    border-left: 5px solid;
+    border-left: 3px solid;
+    padding: inherit;
+}
+.texto li{
+    padding-bottom: 10px;
 }
 .colaboracion{
+    text-align: center;
     list-style: none;
-    border-left: 5px solid;
+    border-left: 3px solid;
+    padding: inherit;
+}
+.colaboracion li{
+    padding-bottom: 10px;
+    margin: 0 0 0 10px ;
 }
 .redes{
-    border-left: 5px solid;
+    border-left: 3px solid;
 }
 .contacto{
     margin-top: 40px;
     display: flex;
     font-size: 2em;
     list-style-type: none;
-    border-top: 5px solid;
+    border-top: 3px solid;
 }
 
 .contacto li{
