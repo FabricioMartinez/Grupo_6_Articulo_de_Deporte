@@ -3,7 +3,10 @@
     padding: 0px;
     box-sizing: border-box;
 }
-
+h1{
+    font-family: Montserrat;
+    font-weight: 900;
+}
 body{
     background-color: white;
     font-family: 'Helvetica', serif;
@@ -100,6 +103,8 @@ nav .search-box button{
     align-items: center;
     justify-content: center;
     font-size: 18px;
+    font-weight: 600;
+    font-family: Montserrat;
 }
 
 .Option{
@@ -142,9 +147,12 @@ main section ul button{
     display: flex;
     margin-top: 20px;
     background: rgb(192, 191, 191);
+    border-radius: 5px;
     font-size: 20px;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    width: 90%;
+    margin: auto;
 }
 
 main section h1{
@@ -254,7 +262,7 @@ footer{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    background-color: #ffd850;
+    background-color: #e3e3e3;
     color: black;
 }
 
@@ -266,6 +274,7 @@ footer{
     border-top: 5px solid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 50px;
+    align-items: center;
 }
 .qr{
     list-style: none;
@@ -273,21 +282,31 @@ footer{
 }
 .texto{
     list-style: none;
-    border-left: 5px solid;
+    border-left: 3px solid;
+    padding: inherit;
+}
+.texto li{
+    padding-bottom: 10px;
+    margin: 0 0 0 10px ;
 }
 .colaboracion{
     list-style: none;
-    border-left: 5px solid;
+    border-left: 3px solid;
+    padding: inherit;
+}
+.colaboracion li{
+    padding-bottom: 10px;
+    margin: 0 0 0 10px ;
 }
 .redes{
-    border-left: 5px solid;
+    border-left: 3px solid;
 }
 .contacto{
     margin-top: 40px;
     display: flex;
     font-size: 2em;
     list-style-type: none;
-    border-top: 5px solid;
+    border-top: 3px solid;
 }
 
 .contacto li{
