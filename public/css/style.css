@@ -68,6 +68,13 @@ nav .search-box button{
     border-radius: 5%;
 }
 
+.logo a img:hover{
+    box-shadow: 0px 0px 10px yellow(200, 206, 207);
+    transform: translateY(-3%);
+}
+
+
+
 .registro{
     padding-right: 30px;
     display: flex;
@@ -134,6 +141,12 @@ main section ul button{
     align-items: center;
     text-decoration: none;
     justify-content: space-evenly;
+    color:#333
+}
+.category:hover {
+    background-color: #ffd850;
+    border-radius: 4px;
+    transform: scale(1.1);
 }
 
 .banner img{
@@ -177,7 +190,18 @@ main section h1{
     border: 1px solid;
     margin-left: 80px;
     margin-right: 80px;
+    transition: all 200ms ease;
 }
+
+.destacado1:hover{
+    border: 0;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    transform: translateY(-3%);
+}
+
+
+
 
 figure img{
     width: 250px;
@@ -240,6 +264,12 @@ figure img{
     text-decoration: none;
     justify-content: center;
     align-items: center;
+}
+
+.compra:hover {
+    background-color: #ffd850;
+    color: #333;
+    transform: scale(1.1);
 }
 
 .cuadro{
