@@ -28,6 +28,10 @@ nav{
   justify-content: space-evenly;
 }
 
+.logo a img:hover{
+  box-shadow: 0px 0px 10px yellow(200, 206, 207);
+  transform: translateY(-3%);
+}
 nav ul{
   display: flex;
   align-items: center;
@@ -137,16 +141,17 @@ h2{
   text-align: center;
   font-family: 'Paytone One', sans-serif;
   color:#e9dd0a;
-
+  font-size: 50px; 
 }
 
 
 .for {
   max-width: 300px;
   margin: 0 auto;
-  padding: 0px;
+  padding: 15px;
   border-radius: 5px;
   text-align: center;
+  background-color: rgba(171, 208, 245, 0.298);
 }
 
 .for label {
@@ -183,9 +188,19 @@ h2{
 
 .register {
   font-size: 18px;
-  color: #333;
+  color: #0552f7;
   text-align: center;
   margin-top: 15px;
+  display: flex;
+
+  justify-content: center;
+}
+
+.register p{
+  background-color: #e9dd0a;
+  background-color:hsla(59, 88%, 60%, 0.7) ;
+    border-radius: 10px;
+    border: 3px solid hsla(59, 88%, 60%, 0.7);
 }
 .botonLogin{
   background-color: #007bff;
@@ -196,6 +211,7 @@ h2{
   font-weight: bold;
   cursor: pointer;
 }
+
 
 /* Pie de página */
 /*footer {
