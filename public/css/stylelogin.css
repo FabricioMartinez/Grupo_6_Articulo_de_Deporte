@@ -132,11 +132,14 @@ main section ul button{
 
 /* Formulario de inicio de sesión */
 
-h1{
- font-family: 'Paytone One', sans-serif;
+
+h2{
   text-align: center;
-  color:#e9dd0a
+  font-family: 'Paytone One', sans-serif;
+  color:#e9dd0a;
+
 }
+
 
 .for {
   max-width: 300px;
@@ -259,6 +262,10 @@ footer{
   border-top: 5px solid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 50px;
+}
+li {
+  margin-left: 10px; 
+  padding-top: 20px;
 }
 .qr{
   list-style: none;
