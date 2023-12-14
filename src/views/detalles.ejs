@@ -43,6 +43,7 @@
                             <input type="button" value="XX">
                         </div>
                         </form>
+                        <% if (userRole=== 'admin') { %>
                         <div class="botones">
                             <a href="/edit/<%= producto.id_productos %>" class="action-button edit">MODIFICAR</a>
                             <form action="/eliminar/<%= producto.id_productos %>?_method=DELETE" method="POST" style="display: inline-flex">
@@ -50,6 +51,7 @@
                                 <button type="submit" class="action-button delete">ELIMINAR</button>
                             </form>
                         </div>
+                        <% } %>
                     </div>
                 </article>
                 <article class="descripcion">

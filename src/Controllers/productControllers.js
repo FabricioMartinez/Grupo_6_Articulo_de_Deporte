@@ -124,11 +124,31 @@ const productControllers= {
 
     //DETALLES DE PRODUCTOS
 
-    detalle: function(req, res){
-        const productId = req.params.id;
-        db.Products.findByPk(productId, { raw: true })
-        .then((product)=> {res.render('detalles', { producto: product })})
-    },
+// productControllers.js
+
+detalle: function(req, res){
+    const productId = req.params.id;
+    db.Products.findByPk(productId, { raw: true })
+        .then((product) => {
+            // Obtén el rol del usuario desde donde lo tengas almacenado (por ejemplo, desde la sesión)
+            const userRole = req.session.userLogged.rol; // Ajusta según la lógica de autenticación de tu aplicación
+            console.log(userRole);
+
+            if (userRole === 'admin') {
+                res.render('detalles', { 
+                    producto: product,
+                    userRole: userRole // Pasa el rol del usuario al renderizado
+                });
+            } else {
+                res.render('detalles', { 
+                    producto: product,
+                    userRole: userRole // Pasa el rol del usuario al renderizado
+                }); // Redirige a una página específica para usuarios no administradores
+            }
+        })
+},
+
+    
 
     //ELIMINACION DE PRODUCTO
 
@@ -155,6 +175,42 @@ const productControllers= {
      showCarrito: (req, res)=>{
         res.render("carrito")
      },
+     // En tu controlador (productControllers.js)
+// TRATAR DE IMPLEMENTAR MA;ANA 
+// const showCarrito = async (req, res) => {
+//     try {
+//         // Obtén el ID del producto desde la URL
+//         const productId = req.params.productId;
+
+//         // Añade el producto al carrito en la base de datos
+//         const carrito = await db.Carrito.create({
+//             id_usuario: req.session.userLogged.id, // Ajusta según cómo almacenas el usuario en tu sesión
+//             Carrito_Productos: [
+//                 {
+//                     id_producto: productId,
+//                     cantidad: 1, // Puedes ajustar esto según tus necesidades
+//                 },
+//             ],
+//         }, {
+//             include: [{ model: db.Carrito_Productos, as: 'Carrito_Productos' }],
+//         });
+
+//         // Obtén la lista de productos en el carrito
+//         const productosEnCarrito = await db.Carrito_Productos.findAll({
+//             where: {
+//                 id_carrito: carrito.id_carrito,
+//             },
+//             include: [{ model: db.Productos, as: 'producto' }],
+//         });
+
+//         res.render('carrito', { productosEnCarrito });
+//     } catch (error) {
+//         console.error('Error al mostrar el carrito de compras:', error);
+//         res.status(500).send('Error interno del servidor');
+//     }
+// };
+
+
 
      busca: (req, res) => {
         const searchTerm = req.query.name;

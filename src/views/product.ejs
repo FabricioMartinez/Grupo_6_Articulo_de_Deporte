@@ -12,14 +12,71 @@
                 <lu><a class="category" href="#">Categoria</a></lu>
                 <lu><a class="category" href="#">Oferta</a></lu>
                 <lu><a class="category" href="#">Todos los productos</a></lu>
-                <lu><a class="category" href="./admin-confirm">Vender</a></lu>
-                <lu><a class="category" href="#">Tendencia</a></lu>
-                <lu><a class="category" href="#">Ayuda</a></lu>
             </ul>
         </section>
-        <section class="banner">
-            <img src="./images/Home/main/Banner-Sportify.png" alt="logo">
-        </section>
+        <div class="wrapper">
+            <div class="carousel">
+              <div class="carousel-buttons">
+                <div id="previousButton">
+                  <span class="material-icons"><i class="fa-regular fa-arrow-left"></i></span>
+                </div>
+                <div id="nextButton">
+                  <span class="material-icons"><i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+              </div>
+              <div class="banner show">
+                <img
+                  src="./images/Home/main/aKwLkX.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="banner">
+                <img
+                  src="./images/Home/main/4DFWD_FW22_MALE_CLOSE_UP_IN_ACTION_GX9250_003.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="banner">
+                <img
+                  src="./images/Home/main/correr-calle-1629459267.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <script>
+            let bannerCount = 0;
+            let banners = document.getElementsByClassName("banner");
+            let previousButton = document.querySelector("#previousButton");
+            let nextButton = document.querySelector("#nextButton");
+      
+            previousButton.addEventListener("click", function () {
+              let current = bannerCount;
+      
+              if (current === 0) {
+                bannerCount = banners.length - 1;
+              } else {
+                bannerCount--;
+              }
+      
+              banners[current].classList.remove("show");
+              banners[bannerCount].classList.add("show");
+            });
+      
+            nextButton.addEventListener("click", function () {
+              let current = bannerCount;
+              console.log(current);
+      
+              if (current === banners.length - 1) {
+                bannerCount = 0;
+              } else {
+                bannerCount++;
+              }
+      
+              banners[current].classList.remove("show");
+              banners[bannerCount].classList.add("show");
+            });
+          </script>
         <section class="productos">
             <div class="texto1">
                 <h1>Sport</h1>

@@ -136,12 +136,13 @@ main section ul button{
     justify-content: space-evenly;
 }
 
-.banner img{
-    margin-top: 30px;
-    margin-bottom: 30px;
-    width: 100%;
-    height: 400px;
-}
+/*  Apartado de banner*/
+
+
+
+
+
+
 
 .destacado{
     display: flex;
@@ -438,5 +439,74 @@ main img {
 
 
 
-
+  .wrapper {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .wrapper .carousel {
+    position: relative;
+  }
+  
+  .carousel .carousel-buttons {
+    width: 100%;
+    top: 40%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+  }
+  
+  .carousel .carousel-buttons div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: #ffffff;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    transition: all 100ms ease;
+    z-index: 1;
+  }
+  
+  .carousel .carousel-buttons div:hover {
+    color: #ffffff;
+    background: #000000;
+  }
+  
+  .wrapper .carousel .banner {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    transition: all 1s ease;
+  }
+  
+  .wrapper .carousel .banner.show {
+    opacity: 1;
+    position: relative;
+    left: 0;
+    animation-name: slideIn;
+    animation-duration: 1s;
+  }
+  
+  .wrapper .carousel .banner img {
+    display: block;
+    max-height: 400px; /* Limita la altura a 400px */
+    width: 2000px; /* Permite que el ancho se ajuste automáticamente */
+    object-fit: cover; 
+  }
+  
+  @keyframes slideIn {
+    from {
+      left: 100%;
+    }
+    to {
+      left: 0;
+    }
+  }
+  
 

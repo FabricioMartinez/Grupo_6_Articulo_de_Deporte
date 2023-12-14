@@ -5,5 +5,5 @@ exports.isAdmin = (req, res, next) => {
         return next();
     }
     console.log('Usuario no autorizado o estructura de sesión no válida:', req.session.userLogged);
-    return res.redirect('/login');
+    return next(); // Continúa al controlador y deja que maneje la redirección
 };
