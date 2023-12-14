@@ -137,16 +137,17 @@ h2{
   text-align: center;
   font-family: 'Paytone One', sans-serif;
   color:#e9dd0a;
-
+  font-size: 50px; 
 }
 
 
 .for {
   max-width: 300px;
   margin: 0 auto;
-  padding: 0px;
+  padding: 15px;
   border-radius: 5px;
   text-align: center;
+  background-color: rgba(171, 208, 245, 0.298);
 }
 
 .for label {
@@ -183,9 +184,17 @@ h2{
 
 .register {
   font-size: 18px;
-  color: #333;
+  color: #0552f7;
   text-align: center;
   margin-top: 15px;
+  
+  
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 1px;
+  border-radius: 5px;
+  text-align: center;
+  background-color: rgba(171, 208, 245, 0.298);
 }
 .botonLogin{
   background-color: #007bff;
