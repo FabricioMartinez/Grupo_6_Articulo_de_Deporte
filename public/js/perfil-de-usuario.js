@@ -11,6 +11,40 @@ window.onload = function(){
     const inputphone= document.querySelector('input#phone')
     const selectfoto= document.querySelector('#id_foto')
     
+    function validatePassword() {
+        const password = inputpassword.value.trim();
+        if (password.length < 8) {
+            inputpassword.classList.add('is-invalid');
+            passwordError.textContent = 'La contraseña debe tener al menos 8 caracteres.';
+            passwordError.classList.add('alerta');
+        } else {
+            inputpassword.classList.remove('is-invalid');
+            inputpassword.classList.add('is-valid');
+            passwordError.textContent = '';
+            passwordError.classList.remove('alerta');
+            inputpassword.parentElement.querySelector('.fa-check').classList.add('ok');
+        }
+    }
+
+    inputpassword.addEventListener('blur', validatePassword);
+
+    function validateFoto() {
+        const selectedOption = selectfoto.value;
+        if (selectedOption === "" || selectedOption === 'Seleccionar foto') {
+            selectfoto.classList.add('is-invalid');
+            fotoError.textContent = 'Debe seleccionar una foto.';
+            fotoError.classList.add('alerta');
+        } else {
+            selectfoto.classList.remove('is-invalid');
+            selectfoto.classList.add('is-valid');
+            fotoError.textContent = '';
+            fotoError.classList.remove('alerta');
+            selectfoto.parentElement.querySelector('.fa-check').classList.add('ok');
+        }
+    }
+
+    selectfoto.addEventListener('blur', validateFoto);
+
     const formCrear= document.querySelector('#form')
     function validate (input){
         if (input.value.trim() === "") {
@@ -24,20 +58,6 @@ window.onload = function(){
             input.parentElement.querySelector('.fa-check').classList.add('ok');
         }
     }
-    function validateSelect(select) {
-        const selectedOption = select.value;
-        if (selectedOption === "" || selectedOption === 'Seleccionar Categoria' || selectedOption=== 'Seleccionar color' || selectedOption === 'Seleccionar talla') {
-            select.classList.add('is-invalid');
-            select.parentElement.querySelector('.fa-exclamation').classList.add('alerta');
-            select.parentElement.querySelector('.fa-check').classList.remove('ok');
-        } else {
-            select.classList.remove('is-invalid');
-            select.classList.add('is-valid');
-            select.parentElement.querySelector('.fa-exclamation').classList.remove('alerta');
-            select.parentElement.querySelector('.fa-check').classList.add('ok');
-        }
-    }
-
     function validate (input){
         if(input.value.trim() === "") {
             input.classList.add('is-invalid');
@@ -68,18 +88,8 @@ window.onload = function(){
     inputphone.addEventListener('blur', function() {
         validate(inputphone);
     });
-
-   
-    selectfoto.addEventListener('blur', function() {
-        validate(selectfoto); 
-    });
-
-
-  
     
     formCrear.addEventListener('submit', function(e){
-        
-
         const formulario= [...formCrear.elements]
 
         formulario.pop()
@@ -101,5 +111,6 @@ window.onload = function(){
         }
 
     })
+
 
 };

@@ -2,11 +2,9 @@ const express = require ("express");
 const productControllers = require("../Controllers/productControllers");
 const productRouter= express.Router()
 const {body} = require("express-validator"); 
-const validationProduct = require("../../middleware/validationProductCreate");
-const uploadFile = require("../../middleware/multerProduct");
 const { isAdmin } = require("../../middleware/adminAuth");
-
-
+const uploadFile = require("../../middleware/multerProduct");
+const validationProduct = require("../../middleware/validationProductCreate");
 
 
 // Inicio de pagina
@@ -14,7 +12,8 @@ productRouter.get("/", productControllers.showHome);
 
 //Creacion de producto
 productRouter.get('/Crear-Producto', productControllers.add)
-productRouter.post('/Crear-Producto', uploadFile, validationProduct, productControllers.create);
+
+productRouter.post('/Crear-Producto', uploadFile, validationProduct ,productControllers.create);
 
 
 //Listado de productos
@@ -36,7 +35,7 @@ productRouter.get("/Seleccion", productControllers.showSeleccion)
 productRouter.get("/admin-confirm", productControllers.showConfirmation);
 
 //Crear
-productRouter.get("/carrito/:productId",productControllers.showCarrito)
+productRouter.get("/carrito",productControllers.showCarrito)
 
 
 module.exports=productRouter

@@ -54,31 +54,41 @@ window.onload = function(){
         validateSelect(selectTalla);
     });
     
-    formCrear.addEventListener('submit', function(e){
-        
+    formCrear.addEventListener('submit', function(e) {
+        const formulario = [...formCrear.elements];
+        formulario.pop();
 
-        const formulario= [...formCrear.elements]
+        let errors = false;
 
-        formulario.pop()
+        formulario.forEach((element) => {
+            if (element.type !== 'file') {
+                if (element.value.trim() === "") {
+                    element.classList.add('is-invalid');
+                    errors = true;
+                } else {
+                    element.classList.remove('is-invalid');
+                    element.classList.add('is-valid');
+                }
+            }
+        });
 
-        let errors= false
-
-        formulario.forEach((element)=>{
-            if(element.value.trim() === "" ){
-                element.classList.add('is-invalid')
-                errors=true
-            }else{
-                element.classList.remove('is-invalid')
-                element.classList.add('is-valid')
-            } 
-        })
-        
-        if (errors === true){
-            e.preventDefault()
+        // Validar la imagen (archivo)
+        if (!image.files.length) {
+            image.classList.add('is-invalid');
+            errors = true;
+        } else {
+            image.classList.remove('is-invalid');
+            image.classList.add('is-valid');
         }
 
-    })
+        if (errors) {
+            e.preventDefault();
+        }
+    });
 
-    image.addEventListener('blur', validate)
+    image.addEventListener('change', function() {
+        validate(image);
+    });
+
 
 }

@@ -26,7 +26,7 @@
                     <div class="ajustables-producto">
                         <h2> <%= producto.name %>
                         </h2>
-                        <h1>Precio: $<%= producto.price %>
+                        <h1>Precio: $<%= toThousand(producto.price) %>
                         </h1>
                         <p>Conoce los metodos de entrega <a href="#"><i class="fa-solid fa-truck-fast"></i></a></p>
                         <div class="disponibles-colores">

@@ -246,7 +246,7 @@ footer{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    background-color: #ffd850;
+    background-color: #e3e3e3;
     color: black;
 }
 .container{

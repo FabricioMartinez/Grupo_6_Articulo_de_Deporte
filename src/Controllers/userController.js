@@ -13,12 +13,30 @@ const userController = {
         const user = req.body;
         const password = req.body.password;
         const confirmPassword = req.body.password_confirm;
+        const image = req.file; // Obtiene el archivo de imagen
+
+// Asegúrate de que la imagen no esté vacía
+        if (!image) {
+            console.log("La imagen no puede estar vacía.");
+            res.redirect('/register');
+            return;
+        }
+        
+        // Asegúrate de que las contraseñas no estén vacías
+        if (!password || !confirmPassword) {
+            console.log("Las contraseñas no pueden estar vacías.");
+            res.redirect('/register');
+            return;
+        }
+        
         if (password !== confirmPassword) {
             console.log("Las contraseñas no coinciden.");
             res.redirect('/register');
             return;
         }
+        
         const hashedPassword = bcryptjs.hashSync(password, 10);
+        
         db.usuarios.create({
             name: user.name,
             last_name: user.last_name,
@@ -32,7 +50,7 @@ const userController = {
         }).catch(error => {
             console.error("Error al crear el usuario:", error);
         });
-    },
+    },        
     
     
 //PERFIL DE USUARIO
@@ -83,7 +101,6 @@ const userController = {
             const userDate = await db.usuarios.findByField('name', user.name);
             if (userDate) {
                 const isPasswordValid= bcryptjs.compareSync(user.password, userDate.password)
-                console.log('Usuario encontrado:', userDate);
 
                 if (isPasswordValid) {
                     req.session.userLogged = userDate

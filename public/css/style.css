@@ -117,7 +117,7 @@ nav .search-box button{
 .Option{
     margin-top: 20px;
     display: flex;
-    background:white;
+    background:#ffe888;
     align-items: center;
     justify-content: space-evenly;
     padding: 10px 10px;
@@ -160,7 +160,7 @@ main section ul button{
 .destacado{
     display: flex;
     margin-top: 20px;
-    background: rgb(192, 191, 191);
+    background: #fffbeb;
     border-radius: 5px;
     font-size: 20px;
     flex-wrap: wrap;
@@ -185,7 +185,7 @@ main section h1{
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: white;
+    background-color: #ffe888;
     border-radius: 30px;
     margin-bottom: 20px;
     border: 1px solid;
@@ -293,7 +293,7 @@ footer{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    background-color: #e3e3e3;
+    background-color: #f9a207;
     color: black;
 }
 
@@ -361,18 +361,15 @@ footer{
     }
     
     /* Estilos generales para el footer */
-footer {
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
-}
 
 .container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-   
-    
+    justify-content: space-between;  
+}
+.enlaceAPI{
+    text-decoration: none;
+    color: white;
 }
 main {
     max-width: 1200px; /* Ajusta según tus necesidades */

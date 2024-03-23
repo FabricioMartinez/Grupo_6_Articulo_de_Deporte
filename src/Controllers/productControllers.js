@@ -3,6 +3,7 @@ const path= require('path')
 const db= require('../dataBase/models')
 const express = require('express');
 const app = express();
+const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 const { validationResult } = require('express-validator');
 
 const productControllers= {
@@ -14,7 +15,7 @@ const productControllers= {
             const productosDestacados = result.slice(0, 6); // Por ejemplo, toma los primeros 3 productos
             const productosSport = result.slice(6, 10); // Toma los siguientes 3 productos
     
-            res.render("index", { productosDestacados, productosSport });
+            res.render("index", { productosDestacados, productosSport, toThousand});
         }).catch((error) => {
             console.error(error);
             res.status(500).send("Error interno del servidor");
@@ -41,14 +42,16 @@ const productControllers= {
         const newproduct= req.body;
         const validation = validationResult(req);
         const categorias = await db.categoria.findAll({ raw: true })
-        const color =  db.color.findAll({ raw: true });
-        const tallas =  db.tallas.findAll({ raw: true });
+        const color = await db.color.findAll({ raw: true });
+        const tallas =  await db.tallas.findAll({ raw: true });
 
         if (validation.errors.length > 0) {
             res.render('Crear-Producto', {
                 errors: validation.mapped(),
                 oldValue: req.body,
-                categorias: categorias, color, tallas 
+                categorias: categorias,
+                color: color,
+                tallas: tallas
             });
         } else {
         db.Products.create({
@@ -125,27 +128,32 @@ const productControllers= {
     //DETALLES DE PRODUCTOS
 
 // productControllers.js
-
 detalle: function(req, res){
     const productId = req.params.id;
     db.Products.findByPk(productId, { raw: true })
         .then((product) => {
-            // Obtén el rol del usuario desde donde lo tengas almacenado (por ejemplo, desde la sesión)
-            const userRole = req.session.userLogged.rol; // Ajusta según la lógica de autenticación de tu aplicación
-            console.log(userRole);
 
+            const userRole = req.session.userLogged ? req.session.userLogged.rol : undefined; // Ajusta según la lógica de autenticación de tu aplicación
+            console.log(userRole);
+            
             if (userRole === 'admin') {
-                res.render('detalles', { 
+                res.render('detalles', {
+                    toThousand,
                     producto: product,
                     userRole: userRole // Pasa el rol del usuario al renderizado
                 });
             } else {
                 res.render('detalles', { 
+                    toThousand,
                     producto: product,
                     userRole: userRole // Pasa el rol del usuario al renderizado
                 }); // Redirige a una página específica para usuarios no administradores
             }
         })
+        .catch((error) => {
+            console.error(error);
+            res.status(500).send('Error al obtener los detalles del producto');
+        });
 },
 
     
@@ -233,7 +241,7 @@ detalle: function(req, res){
                 },
                 raw: true
             }).then((result) => {
-                res.render("buscar", { producto: result });
+                res.render("buscar", { producto: result, toThousand });
             }).catch((error) => {
                 console.error(error);
                 res.status(500).send("Error interno del servidor");

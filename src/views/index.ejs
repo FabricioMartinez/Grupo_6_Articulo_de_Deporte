@@ -106,7 +106,7 @@
                             </figure>
                             <div class="detalle">
                                 <p><%= producto.name %></p>
-                                <p>$<%= producto.price %></p>
+                                <p>$<%= toThousand(producto.price) %></p>
                                 <li class="caja-compra"><a class="compra" href="./carrito">Comprar</i></a></li>
                             </div>
                         </article>
@@ -129,7 +129,7 @@
                                 </figure>
                                 <div class="detalle">
                                     <p><%= producto.name %></p>
-                                    <p><%= producto.price %></p>
+                                    <p>$<%= toThousand(producto.price) %></p>
                                     <li class="caja-compra"><a class="compra" href="./carrito">Comprar</i></a></li>
                                 </div>
                             </article>
